@@ -1,95 +1,13 @@
 # AI-Powered-Incident-Investigation-System
 
-Sample Project for Generative AI using LangChain and Zod
+## System Architecture
 
-## Installation
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-This will install all required dependencies including:
-- @langchain/community
-- @langchain/core
-- @langchain/ollama
-- langchain
-- openai
-- pdf-parse
-- zod
-- dotenv
-- hnswlib-node
-- TypeScript
-- ts-node
-
-## Start Chroma (Required for Day 4+ Retrieval Tasks)
-
-Run Chroma from the project root so vector data is stored in the local `./chroma` folder.
-
-### 1) Start Chroma
-
-```bash
-.venv/bin/chroma run --host 127.0.0.1 --port 8000 --path ./chroma
-```
-
-If you do not use a local virtual environment, use:
-
-```bash
-chroma run --host 127.0.0.1 --port 8000 --path ./chroma
-```
-
-If you see `chroma: command not found`, use the `.venv/bin/chroma ...` command (or activate your venv first with `source .venv/bin/activate`).
-
-### 2) Verify Chroma is running
-
-```bash
-lsof -nP -iTCP:8000 -sTCP:LISTEN
-```
-
-Expected: a process listening on `127.0.0.1:8000`.
-
-### 3) Run retrieval tasks in another terminal
-
-```bash
-npm run run:rag-pdf-eval
-npm run run:day6-chunking
-npm run run:day7-query-opt
-```
-
-### 4) Stop Chroma
-
-Press `Ctrl + C` in the terminal where Chroma is running.
-
-## Docker & Qdrant Setup
-
-For comprehensive Docker and Qdrant vector database setup instructions, see [DOCKER_QDRANT_SETUP.md](DOCKER_QDRANT_SETUP.md).
-
-This includes:
-- Docker installation and basic commands
-- Qdrant setup and configuration
-- Docker Compose configuration
-- API examples and troubleshooting
-
-## Usage
-
-To run any TypeScript file in this project, use the following command:
-
-```bash
-npx ts-node tasks/{fileName}.ts
-```
+The platform performs end-to-end incident investigation by combining hybrid retrieval, multi-agent reasoning, and knowledge graph analysis.
 
 ## Environment Variables
 
 Make sure to create a `.env` file in the root directory if required by your scripts, with necessary API keys and configuration.
 
-## System Architecture
-
-The platform performs end-to-end incident investigation by combining hybrid retrieval, multi-agent reasoning, and knowledge graph analysis.
 
 ### Architecture Overview
 
