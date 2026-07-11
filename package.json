@@ -1,8 +1,8 @@
 {
-  "name": "genai",
+  "name": "AI-Powered-Incident-Investigation-System",
   "version": "1.0.0",
   "type": "module",
-  "description": "Sample Project for Generative AI using LangChain and Zod",
+  "description": "Sample Project for AI-Powered-Incident-Investigation-System",
   "main": "index.js",
   "scripts": {
     "test": "npx tsc --noEmit",
