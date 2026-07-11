@@ -1,0 +1,77 @@
+{
+  "incidents": [
+    {
+      "incident_id": "incident-2026-04-20T08:45:41.489Z",
+      "recorded_at": "2026-04-20T08:47:34.075Z",
+      "summary": "Auth-service Errors Cause Cascading Failures Across Orders and Payments",
+      "root_cause": "H3: The major version upgrade of payments-service (v1.8.0) caused a cascading failure in orders and payments services.",
+      "affected_services": [
+        "auth-service",
+        "orders-service",
+        "payments-service",
+        "gateway-service"
+      ],
+      "confidence_score": 0.98
+    },
+    {
+      "incident_id": "incident-2026-04-20T08:45:41.489Z",
+      "recorded_at": "2026-04-20T08:54:06.355Z",
+      "summary": "Auth-service Errors Cause Cascading Failures Across Orders and Payments",
+      "root_cause": "H3: The major version upgrade of payments-service (v1.8.0) caused a cascading failure in orders and payments services.",
+      "affected_services": [
+        "auth-service",
+        "orders-service",
+        "payments-service",
+        "gateway-service"
+      ],
+      "confidence_score": 0.98
+    },
+    {
+      "incident_id": "incident-2026-04-20T09:15:14.145Z",
+      "recorded_at": "2026-04-20T09:15:15.049Z",
+      "summary": "Production Incident Report - April 10, 2026",
+      "root_cause": "payments-service v1.8.2: Rolled back payments-service to v1.8.2 due to compatibility issues.",
+      "affected_services": [
+        "auth-service",
+        "orders-service",
+        "payments-service",
+        "gateway-service",
+        "Kafka"
+      ],
+      "confidence_score": 0.98
+    },
+    {
+      "incident_id": "incident-2026-04-21T11:25:09.968Z",
+      "recorded_at": "2026-04-21T11:25:10.923Z",
+      "summary": "Auth-Service Error and Cascading Failures on 2026-04-10",
+      "root_cause": "payments-service v2.0.0: Updated payment gateway integration",
+      "affected_services": [
+        "auth-service",
+        "orders-service",
+        "payments-service",
+        "gateway-service"
+      ],
+      "confidence_score": 0.98
+    }
+  ],
+  "recurring_patterns": [
+    "Order write queue lag increased",
+    "Dependency failure: gateway->auth token introspection timeout",
+    "Dependency failure: gateway->payments timeout (escalating impact)",
+    "Kafka dependency failure while publishing order event (escalating impact)",
+    "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "Order event processing delay observed (post-14:00 degradation)",
+    "Auth dependency failure: identity-provider timeout",
+    "Dependency failure: gateway->payments upstream closed connection",
+    "Inventory service returned stale data (post-14:00 degradation)",
+    "Dependency failure: orders->payments RPC connection reset",
+    "Dependency failure: orders->payments status lookup failed",
+    "PSP dependency returned 502 for charge request",
+    "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "JWKS endpoint slow response (post-14:00 degradation)",
+    "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "Retrying PSP call due to elevated latency (post-14:00 degradation)"
+  ]
+}

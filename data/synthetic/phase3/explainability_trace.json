@@ -1,0 +1,89 @@
+[
+  {
+    "claim": "payments-service v2.0.0: Updated payment gateway integration",
+    "citations": [
+      {
+        "source": "deployment_history",
+        "reference": "2026-04-10T11:50:10Z",
+        "snippet": "Deployed v2.1.0: Refactored token validation logic for better security [BREAKING]",
+        "relevance": "high"
+      },
+      {
+        "source": "deployment_history",
+        "reference": "2026-04-10T12:45:00Z",
+        "snippet": "Deployed v2.0.0: Updated payment gateway integration [BREAKING]",
+        "relevance": "high"
+      },
+      {
+        "source": "deployment_history",
+        "reference": "2026-04-10T13:05:00Z",
+        "snippet": "Deployed v2.0.0: Refactored token validation logic [BREAKING]",
+        "relevance": "high"
+      },
+      {
+        "source": "logs",
+        "reference": "Dependency failure: orders->payments RPC connection reset",
+        "snippet": "Dependency failure: orders->payments RPC connection reset",
+        "relevance": "high"
+      },
+      {
+        "source": "logs",
+        "reference": "Order event processing delay observed (post-14:00 degradation)",
+        "snippet": "Order event processing delay observed (post-14:00 degradation)",
+        "relevance": "high"
+      }
+    ]
+  },
+  {
+    "claim": "Cascading service impact",
+    "citations": [
+      {
+        "source": "dependency_graph",
+        "reference": "auth-service",
+        "snippet": "auth-service impacts orders-service, gateway-service, payments-service",
+        "relevance": "medium"
+      },
+      {
+        "source": "dependency_graph",
+        "reference": "redis-cache",
+        "snippet": "redis-cache impacts auth-service, orders-service, gateway-service, payments-service, notifications-service",
+        "relevance": "medium"
+      },
+      {
+        "source": "tickets_step2.json",
+        "reference": "users cannot log in",
+        "snippet": "TICKET INC-2010: Users can't log in due to auth-issue\nWe're seeing an issue where users are unable to log in. I think it might be related to the auth-service itself. Can you please look into it?",
+        "relevance": "medium"
+      },
+      {
+        "source": "tickets_step2.json",
+        "reference": "users cannot log in",
+        "snippet": "TICKET INC-2007: Auth-service not authenticating users\nUsers are unable to log in. I think it might be an issue with the auth-service itself. Can you please investigate?",
+        "relevance": "medium"
+      },
+      {
+        "source": "deployments_step4.json",
+        "reference": "auth-service deployment",
+        "snippet": "SERVICE: auth-service\nVERSION: v2.0.5\nCHANGE: Rolled back auth-service to a known good state",
+        "relevance": "medium"
+      }
+    ]
+  },
+  {
+    "claim": "Detected 2 ticket-to-evidence conflicts where user assumptions diverge from logs or deployments.",
+    "citations": [
+      {
+        "source": "logs",
+        "reference": "INC-2004",
+        "snippet": "DB issue with auth-service -> Ticket leans toward a database cause while logs are dominated by auth/token failures.",
+        "relevance": "medium"
+      },
+      {
+        "source": "logs",
+        "reference": "INC-2011",
+        "snippet": "Orders service slow -> Ticket blames the frontend but backend dependency failures are present in logs.",
+        "relevance": "medium"
+      }
+    ]
+  }
+]

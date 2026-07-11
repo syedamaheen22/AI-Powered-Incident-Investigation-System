@@ -1,0 +1,143 @@
+{
+  "model": "llama3",
+  "words": 16413,
+  "chars": 123643,
+  "naiveContextChars": 12000,
+  "summaryChars": 703,
+  "naiveRuns": [
+    {
+      "questionId": "q1",
+      "type": "factual-early",
+      "question": "What is the project codename?",
+      "answer": "Canonical fact: project codename is ORBIT-LANTERN.",
+      "eval": {
+        "matched": 1,
+        "total": 1,
+        "score": 1,
+        "missingKeywords": []
+      }
+    },
+    {
+      "questionId": "q2",
+      "type": "factual-mid",
+      "question": "Name the three pilot cities.",
+      "answer": "Not found in provided context.",
+      "eval": {
+        "matched": 0,
+        "total": 3,
+        "score": 0,
+        "missingKeywords": [
+          "lahore",
+          "berlin",
+          "nairobi"
+        ]
+      }
+    },
+    {
+      "questionId": "q3",
+      "type": "factual-late",
+      "question": "Who is the emergency fallback vendor?",
+      "answer": "Not found in provided context.",
+      "eval": {
+        "matched": 0,
+        "total": 1,
+        "score": 0,
+        "missingKeywords": [
+          "northwind grid services"
+        ]
+      }
+    },
+    {
+      "questionId": "q4",
+      "type": "numeric-late",
+      "question": "What final budget was approved, and what contingency amount was set?",
+      "answer": "Not found in provided context.",
+      "eval": {
+        "matched": 0,
+        "total": 2,
+        "score": 0,
+        "missingKeywords": [
+          "4.8 million",
+          "600k"
+        ]
+      }
+    },
+    {
+      "questionId": "q5",
+      "type": "synthesis",
+      "question": "What is the main risk and the main mitigation strategy described across the scenario?",
+      "answer": "Not found in provided context.",
+      "eval": {
+        "matched": 0,
+        "total": 2,
+        "score": 0,
+        "missingKeywords": [
+          "supply chain delays",
+          "regional buffer warehouses"
+        ]
+      }
+    }
+  ],
+  "summaryRuns": [
+    {
+      "questionId": "q1",
+      "type": "factual-early",
+      "question": "What is the project codename?",
+      "answer": "ORBIT-LANTERN",
+      "eval": {
+        "matched": 1,
+        "total": 1,
+        "score": 1,
+        "missingKeywords": []
+      }
+    },
+    {
+      "questionId": "q2",
+      "type": "factual-mid",
+      "question": "Name the three pilot cities.",
+      "answer": "Lahore, Berlin, and Nairobi.",
+      "eval": {
+        "matched": 3,
+        "total": 3,
+        "score": 1,
+        "missingKeywords": []
+      }
+    },
+    {
+      "questionId": "q3",
+      "type": "factual-late",
+      "question": "Who is the emergency fallback vendor?",
+      "answer": "Northwind Grid Services.",
+      "eval": {
+        "matched": 1,
+        "total": 1,
+        "score": 1,
+        "missingKeywords": []
+      }
+    },
+    {
+      "questionId": "q4",
+      "type": "numeric-late",
+      "question": "What final budget was approved, and what contingency amount was set?",
+      "answer": "According to the provided context, the final budget was $4.8 million, and the contingency reserve was $600k.",
+      "eval": {
+        "matched": 2,
+        "total": 2,
+        "score": 1,
+        "missingKeywords": []
+      }
+    },
+    {
+      "questionId": "q5",
+      "type": "synthesis",
+      "question": "What is the main risk and the main mitigation strategy described across the scenario?",
+      "answer": "Main risk: supply chain delays\nMain mitigation: regional buffer warehouses",
+      "eval": {
+        "matched": 2,
+        "total": 2,
+        "score": 1,
+        "missingKeywords": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "score": 0.98,
+  "factors": [
+    {
+      "name": "critic_verdicts",
+      "value": 0.28,
+      "reason": "1 confirmed and 1 plausible hypotheses"
+    },
+    {
+      "name": "deployment_proximity",
+      "value": 0.2,
+      "reason": "3 breaking deployments found before the failure window"
+    },
+    {
+      "name": "log_signal_strength",
+      "value": 0.22,
+      "reason": "189 error logs across 500 analyzed logs"
+    },
+    {
+      "name": "dependency_impact",
+      "value": 0.16,
+      "reason": "3 impacted downstream services inferred from the graph"
+    },
+    {
+      "name": "user_feedback",
+      "value": 0,
+      "reason": "No feedback yet"
+    },
+    {
+      "name": "conflict_penalty",
+      "value": -0.04,
+      "reason": "2 conflicting ticket assumptions detected against logs/deployments"
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "generated_at": "2026-04-21T11:22:04.272Z",
+  "total_documents_indexed": 668,
+  "retrieval_method": "hybrid (BM25 + cosine similarity via nomic-embed-text, fused with RRF)",
+  "query_results": [
+    {
+      "query": "users cannot log in",
+      "results": [
+        {
+          "content": "TICKET INC-2010: Users can't log in due to auth-issue\nWe're seeing an issue where users are unable to log in. I think it might be related to the auth-service itself. Can you please look into it?",
+          "score": 0.032266458495966696,
+          "source": "tickets_step2.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:50:00Z",
+          "metadata": {
+            "type": "ticket",
+            "source": "tickets_step2.json",
+            "ticket_id": "INC-2010",
+            "title": "Users can't log in due to auth-issue",
+            "service": "auth-service",
+            "timestamp": "2026-04-10T14:50:00Z",
+            "doc_id": "INC-2010"
+          }
+        },
+        {
+          "content": "TICKET INC-2007: Auth-service not authenticating users\nUsers are unable to log in. I think it might be an issue with the auth-service itself. Can you please investigate?",
+          "score": 0.031754032258064516,
+          "source": "tickets_step2.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:35:00Z",
+          "metadata": {
+            "type": "ticket",
+            "source": "tickets_step2.json",
+            "ticket_id": "INC-2007",
+            "title": "Auth-service not authenticating users",
+            "service": "auth-service",
+            "timestamp": "2026-04-10T14:35:00Z",
+            "doc_id": "INC-2007"
+          }
+        },
+        {
+          "content": "TICKET INC-2009: Auth-service issue with users not being authenticated\nWe have an issue where users are unable to log in. It seems like the auth-service is not authenticating users properly. Can you p",
+          "score": 0.0315136476426799,
+          "source": "tickets_step2.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:45:00Z",
+          "metadata": {
+            "type": "ticket",
+            "source": "tickets_step2.json",
+            "ticket_id": "INC-2009",
+            "title": "Auth-service issue with users not being authenticated",
+            "service": "auth-service",
+            "timestamp": "2026-04-10T14:45:00Z",
+            "doc_id": "INC-2009"
+          }
+        },
+        {
+          "content": "TICKET INC-2002: Users can't access system\nWe're experiencing an issue where users are unable to log in. It seems like the auth-service is down. Could you please look into it?",
+          "score": 0.030330882352941176,
+          "source": "tickets_step2.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:05:00Z",
+          "metadata": {
+            "type": "ticket",
+            "source": "tickets_step2.json",
+            "ticket_id": "INC-2002",
+            "title": "Users can't access system",
+            "service": "auth-service",
+            "timestamp": "2026-04-10T14:05:00Z",
+            "doc_id": "INC-2002"
+          }
+        },
+        {
+          "content": "TICKET INC-2051: auth-service regression: login failing for all users\nlogin attempts failing for all users since latest deploy (13:55:00 UTC). Investigating.",
+          "score": 0.01639344262295082,
+          "source": "tickets_step2.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:02:00Z",
+          "metadata": {
+            "type": "ticket",
+            "source": "tickets_step2.json",
+            "ticket_id": "INC-2051",
+            "title": "auth-service regression: login failing for all users",
+            "service": "auth-service",
+            "timestamp": "2026-04-10T14:02:00Z",
+            "doc_id": "INC-2051"
+          }
+        }
+      ]
+    },
+    {
+      "query": "auth-service deployment",
+      "results": [
+        {
+          "content": "SERVICE: auth-service\nVERSION: v2.0.5\nCHANGE: Rolled back auth-service to a known good state",
+          "score": 0.03813366960907945,
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:08:00Z",
+          "metadata": {
+            "type": "deployment",
+            "source": "deployments_step4.json",
+            "service": "auth-service",
+            "version": "v2.0.5",
+            "timestamp": "2026-04-10T14:08:00Z",
+            "is_breaking_change": false,
+            "doc_id": "deployment_32"
+          }
+        },
+        {
+          "content": "SERVICE: auth-service\nVERSION: v2.3.4\nCHANGE: Upgraded dependencies for improved security",
+          "score": 0.03726528647087145,
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T10:00:00Z",
+          "metadata": {
+            "type": "deployment",
+            "source": "deployments_step4.json",
+            "service": "auth-service",
+            "version": "v2.3.4",
+            "timestamp": "2026-04-10T10:00:00Z",
+            "is_breaking_change": false,
+            "doc_id": "deployment_0"
+          }
+        },
+        {
+          "content": "SERVICE: auth-service\nVERSION: v2.1.3\nCHANGE: Reverted to previous version after rolling back to v2.0.5",
+          "score": 0.01875,
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T14:13:00Z",
+          "metadata": {
+            "type": "deployment",
+            "source": "deployments_step4.json",
+            "service": "auth-service",
+            "version": "v2.1.3",
+            "timestamp": "2026-04-10T14:13:00Z",
+            "is_breaking_change": false,
+            "doc_id": "deployment_34"
+          }
+        },
+        {
+          "content": "SERVICE: auth-service\nVERSION: v2.0.0\nCHANGE: Refactored token validation logic",
+          "score": 0.018461538461538463,
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T13:05:00Z",
+          "metadata": {
+            "type": "deployment",
+            "source": "deployments_step4.json",
+            "service": "auth-service",
+            "version": "v2.0.0",
+            "timestamp": "2026-04-10T13:05:00Z",
+            "is_breaking_change": true,
+            "doc_id": "deployment_24"
+          }
+        },
+        {
+          "content": "SERVICE: auth-service\nVERSION: v2.0.1\nCHANGE: Additional logging for authentication flows",
+          "score": 0.01764705882352941,
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "timestamp": "2026-04-10T13:45:00Z",
+          "metadata": {
+            "type": "deployment",
+            "source": "deployments_step4.json",
+            "service": "auth-service",
+            "version": "v2.0.1",
+            "timestamp": "2026-04-10T13:45:00Z",
+            "is_breaking_change": false,
+            "doc_id": "deployment_28"
+          }
+        }
+      ]
+    },
+    {
+      "query": "payment timeout",
+      "results": [
+        {
+          "content": "[ERROR] payments - Dependency failure: gateway->payments timeout",
+          "score": 0.045531464833421464,
+          "source": "logs_step1.json",
+          "service": "payments",
+          "timestamp": "2026-04-10T14:17:44.653Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "payments",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:17:44.653Z",
+            "request_id": "req_1277",
+            "doc_id": "log_280"
+          }
+        },
+        {
+          "content": "[ERROR] payments - Dependency failure: gateway->payments timeout",
+          "score": 0.04480286738351254,
+          "source": "logs_step1.json",
+          "service": "payments",
+          "timestamp": "2026-04-10T14:20:54.189Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "payments",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:20:54.189Z",
+            "request_id": "req_1308",
+            "doc_id": "log_310"
+          }
+        },
+        {
+          "content": "[ERROR] payments - Dependency failure: gateway->payments timeout (escalating impact)",
+          "score": 0.02222222222222222,
+          "source": "logs_step1.json",
+          "service": "payments",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "payments",
+            "level": "ERROR",
+            "request_id": "req_1387",
+            "doc_id": "log_12"
+          }
+        },
+        {
+          "content": "[ERROR] payments - Dependency failure: gateway->payments timeout (escalating impact)",
+          "score": 0.021875,
+          "source": "logs_step1.json",
+          "service": "payments",
+          "timestamp": "2026-04-10T14:21:29.702Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "payments",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:21:29.702Z",
+            "request_id": "req_1314",
+            "doc_id": "log_316"
+          }
+        },
+        {
+          "content": "[ERROR] payments - Dependency failure: gateway->payments timeout (escalating impact)",
+          "score": 0.021538461538461538,
+          "source": "logs_step1.json",
+          "service": "payments",
+          "timestamp": "2026-04-10T14:22:32.160Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "payments",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:22:32.160Z",
+            "request_id": "req_1325",
+            "doc_id": "log_327"
+          }
+        }
+      ]
+    },
+    {
+      "query": "orders failing",
+      "results": [
+        {
+          "content": "[ERROR] orders - Dependency failure: orders->inventory read timeout",
+          "score": 0.045173041894353366,
+          "source": "logs_step1.json",
+          "service": "orders",
+          "timestamp": "2026-04-10T14:02:48.674Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "orders",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:02:48.674Z",
+            "request_id": "req_1128",
+            "doc_id": "log_140"
+          }
+        },
+        {
+          "content": "[ERROR] orders - Dependency failure: orders->inventory read timeout",
+          "score": 0.044455645161290316,
+          "source": "logs_step1.json",
+          "service": "orders",
+          "timestamp": "2026-04-10T14:04:45.250Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "orders",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:04:45.250Z",
+            "request_id": "req_1147",
+            "doc_id": "log_158"
+          }
+        },
+        {
+          "content": "[ERROR] orders - Dependency failure: orders->inventory read timeout",
+          "score": 0.04376068376068376,
+          "source": "logs_step1.json",
+          "service": "orders",
+          "timestamp": "2026-04-10T14:14:57.228Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "orders",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:14:57.228Z",
+            "request_id": "req_1249",
+            "doc_id": "log_253"
+          }
+        },
+        {
+          "content": "[ERROR] orders - Dependency failure: orders->inventory read timeout",
+          "score": 0.04308712121212121,
+          "source": "logs_step1.json",
+          "service": "orders",
+          "timestamp": "2026-04-10T14:20:14.982Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "orders",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:20:14.982Z",
+            "request_id": "req_1302",
+            "doc_id": "log_305"
+          }
+        },
+        {
+          "content": "[ERROR] orders - Dependency failure: orders->inventory read timeout",
+          "score": 0.042433983926521236,
+          "source": "logs_step1.json",
+          "service": "orders",
+          "timestamp": "2026-04-10T14:20:44.333Z",
+          "metadata": {
+            "type": "log",
+            "source": "logs_step1.json",
+            "service": "orders",
+            "level": "ERROR",
+            "timestamp": "2026-04-10T14:20:44.333Z",
+            "request_id": "req_1307",
+            "doc_id": "log_309"
+          }
+        }
+      ]
+    }
+  ],
+  "filtered_result": {
+    "query": "token validation error",
+    "filter": {
+      "service": "auth-service"
+    },
+    "results": [
+      {
+        "content": "SERVICE: auth-service\nVERSION: v2.0.0\nCHANGE: Refactored token validation logic",
+        "score": 0.0390269698572184,
+        "source": "deployments_step4.json",
+        "service": "auth-service",
+        "timestamp": "2026-04-10T13:05:00Z",
+        "metadata": {
+          "type": "deployment",
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "version": "v2.0.0",
+          "timestamp": "2026-04-10T13:05:00Z",
+          "is_breaking_change": true,
+          "doc_id": "deployment_24"
+        }
+      },
+      {
+        "content": "SERVICE: auth-service\nVERSION: v2.1.0\nCHANGE: Refactored token validation logic for better security",
+        "score": 0.03840245775729646,
+        "source": "deployments_step4.json",
+        "service": "auth-service",
+        "timestamp": "2026-04-10T11:50:10Z",
+        "metadata": {
+          "type": "deployment",
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "version": "v2.1.0",
+          "timestamp": "2026-04-10T11:50:10Z",
+          "is_breaking_change": true,
+          "doc_id": "deployment_13"
+        }
+      },
+      {
+        "content": "SERVICE: auth-service\nVERSION: v1.8.2-hotfix.1\nCHANGE: Minor bug fix for token validation",
+        "score": 0.037797619047619045,
+        "source": "deployments_step4.json",
+        "service": "auth-service",
+        "timestamp": "2026-04-10T12:35:00Z",
+        "metadata": {
+          "type": "deployment",
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "version": "v1.8.2-hotfix.1",
+          "timestamp": "2026-04-10T12:35:00Z",
+          "is_breaking_change": false,
+          "doc_id": "deployment_20"
+        }
+      },
+      {
+        "content": "SERVICE: auth-service\nVERSION: v2.4.0-hotfix.1\nCHANGE: Refactored token validation logic for better security",
+        "score": 0.03693181818181818,
+        "source": "deployments_step4.json",
+        "service": "auth-service",
+        "timestamp": "2026-04-10T10:25:00Z",
+        "metadata": {
+          "type": "deployment",
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "version": "v2.4.0-hotfix.1",
+          "timestamp": "2026-04-10T10:25:00Z",
+          "is_breaking_change": false,
+          "doc_id": "deployment_4"
+        }
+      },
+      {
+        "content": "SERVICE: auth-service\nVERSION: v2.0.4\nCHANGE: Updated token validation library to fix security vulnerabilities",
+        "score": 0.036923076923076927,
+        "source": "deployments_step4.json",
+        "service": "auth-service",
+        "timestamp": "2026-04-10T14:20:00Z",
+        "metadata": {
+          "type": "deployment",
+          "source": "deployments_step4.json",
+          "service": "auth-service",
+          "version": "v2.0.4",
+          "timestamp": "2026-04-10T14:20:00Z",
+          "is_breaking_change": false,
+          "doc_id": "deployment_37"
+        }
+      }
+    ]
+  }
+}

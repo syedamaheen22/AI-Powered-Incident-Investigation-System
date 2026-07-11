@@ -1,0 +1,706 @@
+[
+  {
+    "ticket_id": "INC-2001",
+    "title": "Auth-service not responding",
+    "description": "Auth-service is not responding and users are unable to log in. We have tried restarting the service but it's still not working. Please investigate ASAP.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2002",
+    "title": "Users can't access system",
+    "description": "We're experiencing an issue where users are unable to log in. It seems like the auth-service is down. Could you please look into it?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:05:00Z"
+  },
+  {
+    "ticket_id": "INC-2003",
+    "title": "Auth-service issue",
+    "description": "We're seeing an error message saying 'invalid token' when users try to log in. It's possible that the auth-service is not working properly.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2004",
+    "title": "DB issue with auth-service",
+    "description": "We're experiencing issues with users being unable to log in. I think it might be a database problem with the auth-service. Could you please check the DB?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2005",
+    "title": "Users can't log in",
+    "description": "We're seeing a high volume of 'login failed' errors. It seems like the auth-service is down. Can you please investigate?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2006",
+    "title": "Resolution required for auth-service issue",
+    "description": "We have an issue with the auth-service where users can't log in. It seems like the JWT secret is not working properly. Can you please resolve this ASAP?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2007",
+    "title": "Auth-service not authenticating users",
+    "description": "Users are unable to log in. I think it might be an issue with the auth-service itself. Can you please investigate?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2008",
+    "title": "Users can't access system due to auth-issue",
+    "description": "We're experiencing an issue where users are unable to log in. It seems like the auth-service is not working properly. Can you please look into it?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2009",
+    "title": "Auth-service issue with users not being authenticated",
+    "description": "We have an issue where users are unable to log in. It seems like the auth-service is not authenticating users properly. Can you please investigate?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2010",
+    "title": "Users can't log in due to auth-issue",
+    "description": "We're seeing an issue where users are unable to log in. I think it might be related to the auth-service itself. Can you please look into it?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2011",
+    "title": "Orders service slow",
+    "description": "orders-service is taking around 30 seconds to respond, impacting checkout completion rate. We're seeing high latency on the frontend. Any ideas?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2012",
+    "title": "Orders service unavailable",
+    "description": "orders-service is down, error message says 'Service Unavailable'. We're seeing a surge in orders, possibly related?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2013",
+    "title": "Orders timing out",
+    "description": "When trying to checkout, the order is timing out. The error message says 'Timeout Error'. Any idea what's causing this?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2014",
+    "title": "Orders slow due to payments issues",
+    "description": "We think it's the payments-service causing our orders service to be slow. Please investigate why this is happening.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2015",
+    "title": "Orders not processing",
+    "description": "When trying to place an order, it's not completing. Error message says 'Unknown error'. Is this related to the high load?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2016",
+    "title": "Slow checkout due to orders service",
+    "description": "Checkout is taking ages because our orders-service is slow. Please look into this ASAP.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2017",
+    "title": "Orders timing out (again)",
+    "description": "We're seeing the same issue as before - orders service is timing out. Any idea what's causing this?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2018",
+    "title": "Orders slow due to high load",
+    "description": "We're experiencing a high volume of orders and it seems like our orders service is struggling. Please investigate.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2019",
+    "title": "Orders not completing due to slow service",
+    "description": "When trying to place an order, it's not completing. We think this is because our orders-service is too slow.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2020",
+    "title": "Orders service slow due to high latency",
+    "description": "We're seeing high latency on the orders-service, which is causing issues. Please look into this ASAP.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:55:00Z"
+  },
+  {
+    "ticket_id": "INC-2021",
+    "title": "Payment Gateway Timeout: Payments Service Unavailable",
+    "description": "Payment gateway is timing out for some users, causing payments-service to become unavailable. We're seeing errors in our logs indicating a timeout at 14:05 UTC. Users are unable to complete transactions.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T13:55:00Z"
+  },
+  {
+    "ticket_id": "INC-2022",
+    "title": "Payment Gateway Error: Orders Service Impacted",
+    "description": "We're experiencing errors processing payments through our payment gateway, affecting orders-service. The issue is intermittent, but we've had multiple reports of failed transactions since 14:10 UTC.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T13:58:00Z"
+  },
+  {
+    "ticket_id": "INC-2023",
+    "title": "Payment Gateway Timeout: Auth Service Unavailable",
+    "description": "Auth-service is experiencing issues processing payments due to payment gateway timeouts. Users are unable to complete transactions, and we're seeing errors in our logs indicating a timeout at 14:15 UTC.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2024",
+    "title": "Gateway Service Issue: Payments Unavailable",
+    "description": "Gateway service is experiencing an issue, causing payments to be unavailable. We're seeing errors in our logs indicating a timeout at 14:18 UTC. Users are unable to complete transactions.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:02:00Z"
+  },
+  {
+    "ticket_id": "INC-2025",
+    "title": "Payment Processing Issue: Payments Service Down",
+    "description": "Payments service is experiencing an issue processing payments, causing users to receive error messages. We're seeing errors in our logs indicating a timeout at 14:20 UTC.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2026",
+    "title": "Duplicate: Payment Gateway Timeout: Payments Service Unavailable",
+    "description": "Payment gateway is timing out for some users, causing payments-service to become unavailable. We're seeing errors in our logs indicating a timeout at 14:22 UTC. Users are unable to complete transactions.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:23:00Z"
+  },
+  {
+    "ticket_id": "INC-2027",
+    "title": "Front-end Code Issue: Payments Not Processing",
+    "description": "We're experiencing an issue with our front-end code, causing payments to not process. We've had multiple reports of failed transactions since 14:25 UTC.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:27:00Z"
+  },
+  {
+    "ticket_id": "INC-2028",
+    "title": "Payment Gateway Timeout: Duplicate",
+    "description": "Payment gateway is timing out for some users, causing payments-service to become unavailable. We're seeing errors in our logs indicating a timeout at 14:30 UTC. Users are unable to complete transactions.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:31:00Z"
+  },
+  {
+    "ticket_id": "INC-2029",
+    "title": "Payment Gateway Outage: Resolved",
+    "description": "The payment gateway is experiencing an outage, causing payments to be unavailable. We're seeing errors in our logs indicating a timeout at 14:40 UTC. Users are unable to complete transactions.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T15:00:00Z",
+    "resolution": "Payment gateway team resolved the issue at 14:45 UTC."
+  },
+  {
+    "ticket_id": "INC-2030",
+    "title": "Resolution: Payment Gateway Outage Resolved",
+    "description": "The payment gateway is experiencing an outage, causing payments to be unavailable. We're seeing errors in our logs indicating a timeout at 14:50 UTC. Users are unable to complete transactions.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T15:05:00Z",
+    "resolution": "Payment gateway team resolved the issue at 14:55 UTC."
+  },
+  {
+    "ticket_id": "INC-2031",
+    "title": "Gateway Service Down",
+    "description": "Gateway service is returning 502 errors, not routing traffic to backend services. Urgent resolution needed.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T13:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2032",
+    "title": "SSL Certificate Issue",
+    "description": "Received reports of SSL certificate errors for gateway service. Investigation ongoing.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:05:00Z"
+  },
+  {
+    "ticket_id": "INC-2033",
+    "title": "Partial Understanding",
+    "description": "Reporter claims 'the entire platform is down' but monitoring shows gateway service only affected. Further investigation needed.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2034",
+    "title": "API Gateway Errors",
+    "description": "Received reports of 503 errors for API gateway service. Still trying to gather more info.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2035",
+    "title": "Vague Description",
+    "description": "Gateway service not working... something about orders-service? More info needed to investigate.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2036",
+    "title": "Routing Failure",
+    "description": "API gateway service not routing traffic to backend services (auth-service and payments-service). Urgent resolution needed.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2037",
+    "title": "Inconsistent Reports",
+    "description": "Some users reporting 502 errors, others saying gateway service is fine. Investigation ongoing.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2038",
+    "title": "Vague Description (Again)",
+    "description": "Gateway service doing something bad... need more info to investigate.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2039",
+    "title": "Resolution Found",
+    "description": "Found the issue! Misconfigured load balancer causing routing failures. Resolved with config update.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T15:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2040",
+    "title": "Orders Service Affected",
+    "description": "Reports of orders-service not receiving API calls due to gateway service errors. Investigation ongoing.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T15:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2041",
+    "title": "Orders Service Slow - User Experience Impacted",
+    "description": "Reports of slow performance when processing orders. Users are experiencing timeouts and errors. We've seen a significant spike in order volume this quarter, but we're not sure if that's related.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2042",
+    "title": "Database Slow - Connection Pool Exhausted",
+    "description": "Database queries are taking an inordinate amount of time to complete. We're seeing a high number of pending queries and connection pool exhaustion. Impacting multiple services.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:05:00Z"
+  },
+  {
+    "ticket_id": "INC-2043",
+    "title": "Storage I/O Bottleneck - Payments Service Down",
+    "description": "Payments service is experiencing slow response times and intermittent failures. We suspect a storage I/O issue due to high disk usage. Impacting revenue.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:10:00Z"
+  },
+  {
+    "ticket_id": "INC-2044",
+    "title": "Orders Service Slow (Again) - Multiple Users Affected",
+    "description": "Reports of slow performance when processing orders. Users are experiencing timeouts and errors. We're not sure what's causing the slowness, but it's been ongoing for hours.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2045",
+    "title": "Database Slow - High CPU on App Server?",
+    "description": "Database queries are taking an inordinate amount of time to complete. We suspect high CPU usage on the app server is causing the slowness. Impacting multiple services.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2046",
+    "title": "Database Slow - Missing Index?",
+    "description": "Database queries are taking an inordinate amount of time to complete. We suspect a missing index is causing the slowness. Impacting orders service.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2047",
+    "title": "Storage I/O Bottleneck - Orders Service Slow",
+    "description": "Orders service is experiencing slow response times and intermittent failures. We suspect a storage I/O issue due to high disk usage. Impacting revenue.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2048",
+    "title": "Database Slow - Connection Pool Exhausted (Again)",
+    "description": "Database queries are taking an inordinate amount of time to complete. We're seeing a high number of pending queries and connection pool exhaustion. Impacting multiple services.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2049",
+    "title": "Database Slow - High Disk Usage?",
+    "description": "Database queries are taking an inordinate amount of time to complete. We suspect high disk usage is causing the slowness. Impacting payments service.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2050",
+    "title": "Database Slow - Missing Index (Again)",
+    "description": "Database queries are taking an inordinate amount of time to complete. We suspect a missing index is causing the slowness. Impacting orders service.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2051",
+    "title": "auth-service regression: login failing for all users",
+    "description": "login attempts failing for all users since latest deploy (13:55:00 UTC). Investigating.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:02:00Z"
+  },
+  {
+    "ticket_id": "INC-2052",
+    "title": "payments-service not honoring feature flag",
+    "description": "payment processing not respecting the 'dry-run' feature flag since recent deploy (13:58:30 UTC). Needing immediate resolution.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2053",
+    "title": "orders-service canary release failed",
+    "description": "canary release of orders-service at 13:52:45 UTC did not succeed. Users reporting errors when attempting to place orders.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2054",
+    "title": "gateway-service regression: API endpoint down",
+    "description": "API endpoint for gateway-service is currently unavailable since recent deploy (13:59:15 UTC). Impacting multiple services.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2055",
+    "title": "auth-service rollout issue: incorrect config value",
+    "description": "auth-service rollout at 13:53:30 UTC resulted in incorrect config value. Users unable to access accounts.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:27:00Z"
+  },
+  {
+    "ticket_id": "INC-2056",
+    "title": "wrong assumption: infrastructure issue caused auth-service regression",
+    "description": "auth-service login failure attributed to infrastructure issue, but it's actually due to incorrect config value. Urgent correction required.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2057",
+    "title": "orders-service feature flag misfire: incorrect behavior",
+    "description": "orders-service is behaving incorrectly since recent deploy (13:54:45 UTC). Feature flag not honoring correct settings.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2058",
+    "title": "payments-service canary release failed again",
+    "description": "canary release of payments-service at 13:56:30 UTC did not succeed. Payment processing issues ongoing.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2059",
+    "title": "auth-service rollback required: incorrect rollout",
+    "description": "auth-service rollout at 13:57:45 UTC was incorrect. Rolling back to previous version.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:42:00Z"
+  },
+  {
+    "ticket_id": "INC-2060",
+    "title": "gateway-service regression: API endpoint still down",
+    "description": "API endpoint for gateway-service remains unavailable. Impacting multiple services.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2061",
+    "title": "Memory leak in auth-service causing CPU spikes",
+    "description": "Auth service CPU usage is spiking, currently at 80%. Memory utilization also increasing rapidly. Noticed a few minutes ago. Hoping for some help to figure out what's going on.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2062",
+    "title": "OOM kill in payments-service, system is unstable",
+    "description": "Payments service just got OOM killed. System is not responding well now. Trying to figure out what's causing this.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:05:00Z"
+  },
+  {
+    "ticket_id": "INC-2063",
+    "title": "Gateway-service experiencing CPU spikes",
+    "description": "Gateway service is currently running hot, CPU usage at 90%. System memory also increasing. Not sure what's causing this.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2064",
+    "title": "Memory leak in orders-service, needs investigation",
+    "description": "Orders service is slowly consuming more memory. Need someone to help figure out why this is happening.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2065",
+    "title": "OOM kill in auth-service, system unresponsive",
+    "description": "Auth service just got OOM killed. System is not responding to requests now. Help needed ASAP.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2066",
+    "title": "Duplicate: OOM kill in payments-service, system unstable",
+    "description": "Payments service just got OOM killed. System is not responding well now. Same issue as earlier.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2067",
+    "title": "auth-service keeps restarting, possibly due to traffic spike?",
+    "description": "Auth service keeps restarting every few minutes. Assuming it's because of a traffic spike, but not entirely sure.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2068",
+    "title": "OOM kill in gateway-service, system unresponsive",
+    "description": "Gateway service just got OOM killed. System is not responding to requests now. Help needed ASAP.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2069",
+    "title": "Memory leak in payments-service, needs investigation",
+    "description": "Payments service is slowly consuming more memory. Need someone to help figure out why this is happening.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2070",
+    "title": "OOM kill in orders-service, system unstable",
+    "description": "Orders service just got OOM killed. System is not responding well now. Hoping for some help to figure out what's going on.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2071",
+    "title": "Auth Service Timeout",
+    "description": "Auth service is timing out for users trying to access orders-service ( approx 20% of users affected). DNS resolution failing intermittently. Users getting 504 error. Need to investigate root cause ASAP.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2072",
+    "title": "DNS Resolution Issues with Payments Service",
+    "description": "Payments service is experiencing intermittent DNS resolution failures. Users getting 503 error. Need to troubleshoot and resolve ASAP.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:05:00Z"
+  },
+  {
+    "ticket_id": "INC-2073",
+    "title": "Orders Service Unavailable - Gateway Issue",
+    "description": "Orders service is unavailable due to gateway issue. Duplicate of previous ticket INC-2045 from devops team, but our users are affected too.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:10:00Z"
+  },
+  {
+    "ticket_id": "INC-2074",
+    "title": "Third-Party Dependency Issue with Gateway Service",
+    "description": "Gateway service is experiencing issues due to third-party dependency outage. Need to coordinate with upstream team for resolution.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2075",
+    "title": "Auth Service Unavailable - Application Issue?",
+    "description": "Auth service is unavailable. Users getting 503 error. Our app logs show that it's timing out, but we're unsure if issue is at application layer or elsewhere.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2076",
+    "title": "Duplicate of INC-2035 from Devops Team",
+    "description": "Orders service is still unavailable due to gateway issue. Same incident as INC-2035, but our team is seeing different error messages.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2077",
+    "title": "Payments Service Unavailable - Network ACL Issue?",
+    "description": "Payments service is unavailable. Our logs show that it's timing out, and we suspect a network ACL issue at the application layer.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2078",
+    "title": "Third-Party Dependency Issue with Auth Service",
+    "description": "Auth service is experiencing issues due to third-party dependency outage. Need to coordinate with upstream team for resolution.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2079",
+    "title": "Gateway Service Unavailable - Firewall Rule Issue?",
+    "description": "Gateway service is unavailable. Our logs show that it's timing out, and we suspect a firewall rule issue at the application layer.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2080",
+    "title": "Orders Service Now Available - Previous Gateway Issue Resolved",
+    "description": "Orders service is now available after resolving the previous gateway issue. No further action required.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:55:00Z"
+  },
+  {
+    "ticket_id": "INC-2081",
+    "title": "auth-service false positive alert storm",
+    "description": "We're getting hammered with auth-service alerts claiming connections are timing out. However, after checking the dashboards, everything looks good. Possible threshold misconfiguration?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2082",
+    "title": "payments-service alert fatigue",
+    "description": "We're getting a bunch of repetitive payments-service alerts about high latency. I've checked the dashboards and nothing seems out of the ordinary, but my eyes are getting tired from all these notifications.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:15:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2083",
+    "title": "orders-service alert threshold issue",
+    "description": "I'm getting a bunch of orders-service alerts claiming orders are taking too long to process. However, I've checked the dashboard and everything looks fine. Possible misconfigured alert threshold?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:25:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2084",
+    "title": "gateway-service missing monitoring coverage",
+    "description": "We're missing some key metrics for the gateway-service. Could someone please check if our monitoring setup is correct?",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:35:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2085",
+    "title": "auth-service false positive alert (again)",
+    "description": "Another auth-service alert claiming connections are timing out. Same story as before - dashboard looks good, possible threshold misconfiguration?",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:40:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2086",
+    "title": "incorrectly reported outage (payments-service)",
+    "description": "Someone just opened a ticket claiming the payments-service is down. I checked the dashboard and everything looks fine, but they're insistent it's an outage. Anyone have any ideas what could be causing this?",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:45:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2087",
+    "title": "orders-service high CPU alert (threshold issue)",
+    "description": "I'm getting a bunch of orders-service alerts about high CPU usage. However, I've checked the dashboard and everything looks fine. Possible misconfigured alert threshold?",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:50:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2088",
+    "title": "gateway-service missing monitoring coverage (again)",
+    "description": "We're still missing some key metrics for the gateway-service. Anyone know why our monitoring setup is not capturing this data?",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:55:00+00:00"
+  },
+  {
+    "ticket_id": "INC-2089",
+    "title": "auth-service alert storm resolved",
+    "description": "The auth-service alert storm from earlier has subsided. After some investigation, it looks like a misconfigured alert threshold was the culprit.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T15:20:00+00:00",
+    "resolution": "misconfigured alert threshold"
+  },
+  {
+    "ticket_id": "INC-2090",
+    "title": "orders-service high CPU alert resolved",
+    "description": "The orders-service high CPU alert storm from earlier has subsided. After some investigation, it looks like a misconfigured alert threshold was the culprit.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T15:25:00+00:00",
+    "resolution": "misconfigured alert threshold"
+  },
+  {
+    "ticket_id": "INC-2091",
+    "title": "Auth Service Degraded - Users Unable to Log In",
+    "description": "Users are reporting issues logging in to the system. Auth service metrics indicate high error rates and slow response times. Further investigation suggests a possible LDAP sync failure is causing the issue.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:00:00Z"
+  },
+  {
+    "ticket_id": "INC-2092",
+    "title": "SSO Broken - Multiple Services Impacted",
+    "description": "Single sign-on (SSO) is currently broken, preventing users from accessing multiple services including orders and payments. Investigation is ongoing to determine the root cause.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:15:00Z"
+  },
+  {
+    "ticket_id": "INC-2093",
+    "title": "Payments Service Failing Due to Auth Issues",
+    "description": "The payments service is experiencing a high volume of errors and timeouts. Investigation suggests that the auth service is struggling to validate user credentials, causing the payment processing failure.",
+    "service": "payments-service",
+    "timestamp": "2026-04-10T14:20:00Z"
+  },
+  {
+    "ticket_id": "INC-2094",
+    "title": "Orders Service Unavailable - Auth and Payments Issues",
+    "description": "The orders service is currently unavailable due to authentication and payment processing issues. Investigation is ongoing to determine the root cause.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:25:00Z"
+  },
+  {
+    "ticket_id": "INC-2095",
+    "title": "Gateway Service Failing Due to Auth and Payments Issues",
+    "description": "The gateway service is experiencing errors and timeouts. Investigation suggests that the auth and payments services are struggling, causing the gateway failure.",
+    "service": "gateway-service",
+    "timestamp": "2026-04-10T14:30:00Z"
+  },
+  {
+    "ticket_id": "INC-2096",
+    "title": "Auth Service Still Degraded - Orders and Payments Failing",
+    "description": "The auth service remains degraded, causing orders and payments services to fail. Further investigation is needed to determine the root cause.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:35:00Z"
+  },
+  {
+    "ticket_id": "INC-2097",
+    "title": "Assuming Auth Service Is Root Cause - Orders and Payments Unavailable",
+    "description": "Based on initial investigation, it appears that the auth service is the root cause of the issue. However, further verification is needed to confirm.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:40:00Z"
+  },
+  {
+    "ticket_id": "INC-2098",
+    "title": "Orders Service Down - Payments and Gateway Failing",
+    "description": "The orders service is currently down, causing payment processing and gateway failures. Investigation is ongoing to determine the root cause.",
+    "service": "orders-service",
+    "timestamp": "2026-04-10T14:45:00Z"
+  },
+  {
+    "ticket_id": "INC-2099",
+    "title": "Auth Service Unresponsive - Payments and Gateway Failing",
+    "description": "The auth service is currently unresponsive, causing payment processing and gateway failures. Investigation is ongoing to determine the root cause.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T14:50:00Z"
+  },
+  {
+    "ticket_id": "INC-2100",
+    "title": "Partial Resolution - Auth Service Mostly Resolved",
+    "description": "The auth service has mostly been restored to normal operation. However, some users are still experiencing issues. Further investigation is needed to determine the root cause and ensure full resolution.",
+    "service": "auth-service",
+    "timestamp": "2026-04-10T15:20:00Z"
+  }
+]

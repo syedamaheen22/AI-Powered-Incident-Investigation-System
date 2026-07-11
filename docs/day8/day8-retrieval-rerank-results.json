@@ -1,0 +1,1896 @@
+{
+  "run_date": "2026-03-27T07:50:29.437Z",
+  "llm_model": "llama3",
+  "embedding_model": "nomic-embed-text",
+  "top_k": 5,
+  "rerank_pool": 15,
+  "retrieval_strategies": [
+    "vector_only",
+    "hybrid"
+  ],
+  "summary": {
+    "vector_only_without_rerank": {
+      "hit_rate_at_5": 0.48,
+      "answer_correct_rate": 0.48,
+      "citation_accuracy_rate": 0.48
+    },
+    "vector_only_with_rerank": {
+      "hit_rate_at_5": 0.52,
+      "answer_correct_rate": 0.48,
+      "citation_accuracy_rate": 0.6
+    },
+    "hybrid_without_rerank": {
+      "hit_rate_at_5": 0.72,
+      "answer_correct_rate": 0.44,
+      "citation_accuracy_rate": 0.48
+    },
+    "hybrid_with_rerank": {
+      "hit_rate_at_5": 0.56,
+      "answer_correct_rate": 0.44,
+      "citation_accuracy_rate": 0.56
+    }
+  },
+  "examples_hybrid_improved": [
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "vector_ids": [
+        "JPM-p106-c3",
+        "JPM-p117-c1",
+        "JPM-p121-c1",
+        "JPM-p106-c2",
+        "JPM-p3-c1"
+      ],
+      "hybrid_ids": [
+        "JPM-p106-c3",
+        "JPM-p121-c1",
+        "JPM-p2-c3",
+        "JPM-p88-c4",
+        "JPM-p88-c5"
+      ]
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "vector_ids": [
+        "JPM-p3-c1",
+        "JPM-p8-c3",
+        "JPM-p108-c1",
+        "JPM-p123-c1",
+        "JPM-p1-c1"
+      ],
+      "hybrid_ids": [
+        "JPM-p88-c4",
+        "JPM-p88-c3",
+        "JPM-p3-c1",
+        "JPM-p5-c2",
+        "JPM-p8-c3"
+      ]
+    },
+    {
+      "question_id": "q07",
+      "question": "What cash dividend per share did JPMorgan Chase declare in 2024?",
+      "vector_ids": [
+        "JPM-p139-c1",
+        "JPM-p234-c3",
+        "JPM-p234-c4",
+        "JPM-p268-c4",
+        "JPM-p325-c1"
+      ],
+      "hybrid_ids": [
+        "JPM-p325-c1",
+        "JPM-p139-c1",
+        "JPM-p2-c1",
+        "JPM-p325-c7",
+        "JPM-p234-c3"
+      ]
+    },
+    {
+      "question_id": "q08",
+      "question": "What was JPMorgan Chase's Return on Tangible Common Equity (ROTCE) in 2024?",
+      "vector_ids": [
+        "JPM-p1-c1",
+        "JPM-p178-c5",
+        "JPM-p178-c6",
+        "JPM-p3-c1",
+        "JPM-p262-c4"
+      ],
+      "hybrid_ids": [
+        "JPM-p1-c1",
+        "JPM-p5-c2",
+        "JPM-p178-c5",
+        "JPM-p13-c1",
+        "JPM-p178-c6"
+      ]
+    },
+    {
+      "question_id": "q10",
+      "question": "What was JPMorgan Chase's book value per share at end of 2024?",
+      "vector_ids": [
+        "JPM-p2-c3",
+        "JPM-p234-c3",
+        "JPM-p234-c4",
+        "JPM-p106-c3",
+        "JPM-p178-c6"
+      ],
+      "hybrid_ids": [
+        "JPM-p88-c1",
+        "JPM-p5-c2",
+        "JPM-p2-c1",
+        "JPM-p2-c3",
+        "JPM-p234-c3"
+      ]
+    }
+  ],
+  "examples_rerank_changed_answer": [
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "strategy": "vector_only",
+      "answer_before": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information on international metrics and loans retained as of or for the years ended December 31, 2024 and 2023.",
+      "answer_after": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only mentions net income and revenue figures for different years or periods, but not specifically for FY 2024.",
+      "correct_before": false,
+      "correct_after": false
+    },
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "strategy": "hybrid",
+      "answer_before": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information about international metrics and non-GAAP financial measures, but does not provide the total net revenue figure for the entire company.",
+      "answer_after": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information on the firm's net interest income and noninterest revenue, as well as international metrics for different regions.",
+      "correct_before": false,
+      "correct_after": false
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "strategy": "vector_only",
+      "answer_before": "Insufficient context. The provided context does not mention JPMorgan Chase's net income in 2024 specifically. It only mentions net income for certain years (2020, 2021, and 2023) but not 2024.",
+      "answer_after": "Insufficient context. The provided context does not mention JPMorgan Chase's net income for 2024, only comparing it to 2023.",
+      "correct_before": false,
+      "correct_after": false
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "strategy": "hybrid",
+      "answer_before": "Insufficient context. The provided context does not mention JPMorgan Chase's net income for 2024, only providing information about its performance and rankings in various areas.",
+      "answer_after": "Insufficient context. The provided context only mentions JPMorgan Chase's net income in 2024 being $17.6 billion [JPM-p108-c1] and $10.6 billion [JPM-p123-c1], but it does not specify which one is the correct answer for 2024.",
+      "correct_before": false,
+      "correct_after": false
+    },
+    {
+      "question_id": "q03",
+      "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+      "strategy": "vector_only",
+      "answer_before": "Insufficient context. The provided context does not mention JPMorgan Chase's closing share price at the end of 2024.",
+      "answer_after": "Insufficient context. The provided context does not contain information about JPMorgan Chase's closing share price at end of 2024.",
+      "correct_before": false,
+      "correct_after": false
+    }
+  ],
+  "per_question": [
+    {
+      "question_id": "q01",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p117-c1",
+            "JPM-p121-c1",
+            "JPM-p106-c2",
+            "JPM-p3-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information on international metrics and loans retained as of or for the years ended December 31, 2024 and 2023.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p123-c1",
+            "JPM-p88-c5",
+            "JPM-p108-c1",
+            "JPM-p117-c1",
+            "JPM-p88-c4"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only mentions net income and revenue figures for different years or periods, but not specifically for FY 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p121-c1",
+            "JPM-p2-c3",
+            "JPM-p88-c4",
+            "JPM-p88-c5"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information about international metrics and non-GAAP financial measures, but does not provide the total net revenue figure for the entire company.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p84-c4",
+            "JPM-p88-c5",
+            "JPM-p121-c1",
+            "JPM-p117-c1",
+            "JPM-p2-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total net revenue for fiscal year 2024. It only provides information on the firm's net interest income and noninterest revenue, as well as international metrics for different regions.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q02",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p3-c1",
+            "JPM-p8-c3",
+            "JPM-p108-c1",
+            "JPM-p123-c1",
+            "JPM-p1-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's net income in 2024 specifically. It only mentions net income for certain years (2020, 2021, and 2023) but not 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p108-c1",
+            "JPM-p113-c1",
+            "JPM-p3-c1",
+            "JPM-p88-c5",
+            "JPM-p123-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's net income for 2024, only comparing it to 2023.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p88-c4",
+            "JPM-p88-c3",
+            "JPM-p3-c1",
+            "JPM-p5-c2",
+            "JPM-p8-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's net income for 2024, only providing information about its performance and rankings in various areas.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p108-c1",
+            "JPM-p123-c1",
+            "JPM-p106-c3",
+            "JPM-p96-c3",
+            "JPM-p88-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context only mentions JPMorgan Chase's net income in 2024 being $17.6 billion [JPM-p108-c1] and $10.6 billion [JPM-p123-c1], but it does not specify which one is the correct answer for 2024.",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p108-c1",
+            "JPM-p123-c1"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q03",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p234-c3",
+            "JPM-p234-c4",
+            "JPM-p84-c4",
+            "JPM-p178-c6",
+            "JPM-p2-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's closing share price at the end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p9-c3",
+            "JPM-p178-c6",
+            "JPM-p234-c5",
+            "JPM-p178-c5",
+            "JPM-p88-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not contain information about JPMorgan Chase's closing share price at end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p84-c4",
+            "JPM-p88-c3",
+            "JPM-p9-c3",
+            "JPM-p106-c3",
+            "JPM-p234-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's closing share price at the end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p9-c3",
+            "JPM-p234-c4",
+            "JPM-p2-c3",
+            "JPM-p89-c4",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's closing share price at end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q04",
+      "source": "JPM",
+      "type": "factual",
+      "question": "How many employees did JPMorgan Chase have at year-end 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p262-c4",
+            "JPM-p1-c1",
+            "JPM-p70-c1",
+            "JPM-p110-c1",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention the number of employees at JPMorgan Chase at year-end 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p110-c1",
+            "JPM-p90-c1",
+            "JPM-p2-c1",
+            "JPM-p3-c1",
+            "JPM-p71-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention the number of employees at JPMorgan Chase as of year-end 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p262-c4",
+            "JPM-p264-c2",
+            "JPM-p1-c1",
+            "JPM-p5-c2"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p110-c1",
+            "JPM-p96-c2",
+            "JPM-p96-c1",
+            "JPM-p70-c1",
+            "JPM-p90-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention the number of employees at JPMorgan Chase as of year-end 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q05",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p141-c6",
+            "JPM-p84-c4",
+            "JPM-p335-c4",
+            "JPM-p89-c4",
+            "JPM-p136-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024. It only provides information about J.P. Morgan SE's risk-based and leverage-based capital metrics, but not specifically about JPMorgan Chase's CET1 capital ratio.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p141-c6",
+            "JPM-p335-c2",
+            "JPM-p335-c4",
+            "JPM-p84-c4",
+            "JPM-p89-c4"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context only mentions CET1 capital ratio for JPMorgan Chase & Co. and JPMorgan Chase Bank, N.A., but not specifically for the end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p335-c4",
+            "JPM-p84-c4",
+            "JPM-p335-c3",
+            "JPM-p88-c2",
+            "JPM-p141-c6"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not contain information about JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p84-c2",
+            "JPM-p335-c4",
+            "JPM-p335-c3",
+            "JPM-p141-c6",
+            "JPM-p88-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q06",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p346-c2",
+            "JPM-p107-c4",
+            "JPM-p89-c4",
+            "JPM-p262-c4",
+            "JPM-p262-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total assets at the end of fiscal year 2024. It only provides financial data for revenue, expense, income, and net income, as well as some capital metrics, but it does not include total asset information.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p89-c4",
+            "JPM-p109-c1",
+            "JPM-p234-c3",
+            "JPM-p262-c3",
+            "JPM-p2-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total assets at the end of fiscal year 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p84-c4",
+            "JPM-p346-c2",
+            "JPM-p96-c1",
+            "JPM-p107-c4"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's total assets at the end of fiscal year 2024. It only provides information about revenue, expense, and income before income tax expense for different regions and years.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p203-c1",
+            "JPM-p313-c3",
+            "JPM-p233-c3",
+            "JPM-p262-c3",
+            "JPM-p121-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not include JPMorgan Chase's total assets at the end of fiscal year 2024. It only mentions specific financial information such as securitized assets, net liquidation losses/recoveries, and nonrecurring fair value changes, but it does not provide a comprehensive view of the company's total assets.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q07",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What cash dividend per share did JPMorgan Chase declare in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p139-c1",
+            "JPM-p234-c3",
+            "JPM-p234-c4",
+            "JPM-p268-c4",
+            "JPM-p325-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "$1.25 per share [JPM-p139-c1]",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p139-c1"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p139-c1",
+            "JPM-p268-c4",
+            "JPM-p325-c1",
+            "JPM-p178-c6",
+            "JPM-p2-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "The cash dividend per share declared by JPMorgan Chase in 2024 was $1.25 per share [JPM-p139-c1].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p139-c1"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p325-c1",
+            "JPM-p139-c1",
+            "JPM-p2-c1",
+            "JPM-p325-c7",
+            "JPM-p234-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context only discusses preferred stock and common stock dividends, but does not mention a cash dividend per share for JPMorgan Chase in 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p139-c1",
+            "JPM-p84-c1",
+            "JPM-p325-c7",
+            "JPM-p2-c1",
+            "JPM-p209-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "$1.25 per share [JPM-p139-c1]",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p139-c1"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q08",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's Return on Tangible Common Equity (ROTCE) in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p1-c1",
+            "JPM-p178-c5",
+            "JPM-p178-c6",
+            "JPM-p3-c1",
+            "JPM-p262-c4"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Return on Tangible Common Equity (ROTCE) or any related information for JPMorgan Chase in 2024.",
+          "answer_correct": true,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p178-c6",
+            "JPM-p262-c4",
+            "JPM-p107-c4",
+            "JPM-p60-c7",
+            "JPM-p234-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Return on Tangible Common Equity (ROTCE) or any relevant financial data for 2024.",
+          "answer_correct": true,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p1-c1",
+            "JPM-p5-c2",
+            "JPM-p178-c5",
+            "JPM-p13-c1",
+            "JPM-p178-c6"
+          ],
+          "hit_at_5": true,
+          "answer": "20% [JPM-p1-c2]",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": [
+            "JPM-p1-c2"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p84-c2",
+            "JPM-p13-c1",
+            "JPM-p103-c2",
+            "JPM-p5-c2",
+            "JPM-p2-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention the year 2024 for Return on Tangible Common Equity (ROTCE) of JPMorgan Chase.",
+          "answer_correct": true,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q09",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's provision for credit losses in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p171-c1",
+            "JPM-p171-c5",
+            "JPM-p113-c4",
+            "JPM-p304-c1",
+            "JPM-p95-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention JPMorgan Chase's provision for credit losses in 2024 specifically. It only discusses the Firm's allowance for credit losses and related management judgments.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p95-c1",
+            "JPM-p171-c1",
+            "JPM-p89-c2",
+            "JPM-p98-c1",
+            "JPM-p171-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "$10.7 billion [JPM-p95-c1]",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p95-c1"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p113-c4",
+            "JPM-p89-c1",
+            "JPM-p95-c3",
+            "JPM-p171-c5",
+            "JPM-p108-c4"
+          ],
+          "hit_at_5": false,
+          "answer": "The provision for credit losses in 2024 was $10.7 billion [JPM-p95-c3].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p95-c3"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p95-c1",
+            "JPM-p113-c4",
+            "JPM-p95-c2",
+            "JPM-p304-c1",
+            "JPM-p89-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "According to the provided context [JPM-p95-c1], JPMorgan Chase's provision for credit losses in 2024 was $10.7 billion.",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p95-c1"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q10",
+      "source": "JPM",
+      "type": "factual",
+      "question": "What was JPMorgan Chase's book value per share at end of 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p2-c3",
+            "JPM-p234-c3",
+            "JPM-p234-c4",
+            "JPM-p106-c3",
+            "JPM-p178-c6"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p2-c1",
+            "JPM-p234-c3",
+            "JPM-p234-c4",
+            "JPM-p350-c4",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "116.07 [JPM-p2-c1]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p2-c1"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p88-c1",
+            "JPM-p5-c2",
+            "JPM-p2-c1",
+            "JPM-p2-c3",
+            "JPM-p234-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention the book value per share at end of 2024 for JPMorgan Chase. It only provides information about the firm's financial performance and highlights, but does not specifically mention the book value per share.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p103-c2",
+            "JPM-p219-c2",
+            "JPM-p2-c3",
+            "JPM-p2-c1",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not contain information about JPMorgan Chase's book value per share at end of 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q11",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What were Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p40-c1",
+            "JNJ-p36-c2",
+            "JNJ-p100-c1",
+            "JNJ-p36-c1",
+            "JNJ-p44-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context only discusses the MedTech segment and Innovative Medicine segment sales, but does not mention Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024 specifically.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p40-c1",
+            "JNJ-p41-c1",
+            "JNJ-p44-c1",
+            "JNJ-p36-c3",
+            "JNJ-p36-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context only discusses Johnson & Johnson's MedTech segment sales, but does not mention Innovative Medicine segment sales for fiscal year 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p100-c1",
+            "JNJ-p43-c4",
+            "JNJ-p36-c3",
+            "JNJ-p40-c1",
+            "JNJ-p42-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not include Johnson & Johnson's Innovative Medicine segment sales for fiscal year 2024. It only shows additions to property, plant & equipment depreciation and amortization, income before tax by segment, and total sales.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p42-c3",
+            "JNJ-p42-c1",
+            "JNJ-p44-c1",
+            "JNJ-p40-c1",
+            "JNJ-p43-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024. It only discusses various expenses and income before tax as a percent to sales for the Innovative Medicine segment, but does not provide specific sales figures.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q12",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What was Johnson & Johnson's adjusted diluted net earnings per share in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p91-c1",
+            "JNJ-p91-c2",
+            "JNJ-p67-c6",
+            "JNJ-p48-c6",
+            "JNJ-p35-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context only shows the reconciliation of basic net earnings per share to diluted net earnings per share for 2024, but it does not provide the actual adjusted diluted net earnings per share figure for that year.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p91-c1",
+            "JNJ-p91-c2",
+            "JNJ-p67-c6",
+            "JNJ-p35-c1",
+            "JNJ-p48-c6"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context only shows the reconciliation of basic net earnings per share to diluted net earnings per share for 2024, but it does not provide the actual adjusted diluted net earnings per share figure for that year.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p91-c1",
+            "JNJ-p91-c2",
+            "JNJ-p93-c2",
+            "JNJ-p47-c2",
+            "JNJ-p3-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context only shows the reconciliation of basic net earnings per share to diluted net earnings per share, but it does not provide the actual value of Johnson & Johnson's adjusted diluted net earnings per share in 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p62-c2",
+            "JNJ-p57-c2",
+            "JNJ-p57-c1",
+            "JNJ-p6-c1",
+            "JNJ-p67-c6"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's adjusted diluted net earnings per share in 2024. It only provides information about the company's common stock, initial public offering, and financial statements for previous years (2023 and 2022).",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q13",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "For how many consecutive years had Johnson & Johnson increased its dividend as of 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p48-c6",
+            "JNJ-p3-c2",
+            "JNJ-p89-c2",
+            "JNJ-p48-c5",
+            "JNJ-p5-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson increased its dividend for the 62nd consecutive year as of 2024 [JNJ-p3-c2].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c2"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p48-c6",
+            "JNJ-p89-c2",
+            "JNJ-p41-c1",
+            "JNJ-p40-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson increased its dividend for the 62nd consecutive year as of 2024 [JNJ-p3-c2].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c2"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p5-c1",
+            "JNJ-p3-c2",
+            "JNJ-p48-c5",
+            "JNJ-p35-c1",
+            "JNJ-p3-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "62 [JNJ-p5-c1]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p5-c1"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p89-c2",
+            "JNJ-p35-c3",
+            "JNJ-p5-c1",
+            "JNJ-p35-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson increased its dividend for the 62nd consecutive year as of 2024 [JNJ-p3-c2].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c2"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q14",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What was Johnson & Johnson's total debt balance at the end of fiscal year 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p43-c3",
+            "JNJ-p46-c3",
+            "JNJ-p79-c2",
+            "JNJ-p79-c3",
+            "JNJ-p48-c5"
+          ],
+          "hit_at_5": true,
+          "answer": "$36.6 billion [JNJ-p46-c3]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p46-c3"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p43-c3",
+            "JNJ-p79-c1",
+            "JNJ-p48-c5",
+            "JNJ-p46-c3",
+            "JNJ-p79-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "The total debt balance at the end of fiscal year 2024 was $36.6 billion [JNJ-p48-c5].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p48-c5"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p43-c3",
+            "JNJ-p46-c3",
+            "JNJ-p43-c2",
+            "JNJ-p79-c2",
+            "JNJ-p70-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "$36.6 billion [JNJ-p46-c3].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p46-c3"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p43-c3",
+            "JNJ-p79-c2",
+            "JNJ-p46-c3",
+            "JNJ-p43-c2",
+            "JNJ-p48-c5"
+          ],
+          "hit_at_5": true,
+          "answer": "$36.6 billion [JNJ-p46-c3].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p46-c3"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q15",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What was Johnson & Johnson's approximate free cash flow in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p6-c2",
+            "JNJ-p45-c4",
+            "JNJ-p45-c3",
+            "JNJ-p61-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Approximate free cash flow in 2024 was $19,842 [JNJ-p6-c2].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p6-c2"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p100-c1",
+            "JNJ-p6-c2",
+            "JNJ-p43-c3",
+            "JNJ-p46-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Approximate free cash flow in 2024 was $19.8 billion [JNJ-p6-c2].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p6-c2"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p6-c2",
+            "JNJ-p47-c3",
+            "JNJ-p46-c3",
+            "JNJ-p104-c6"
+          ],
+          "hit_at_5": true,
+          "answer": "Approximate free cash flow in 2024 was $19.842 billion [JNJ-p6-c2].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p6-c2"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p6-c2",
+            "JNJ-p3-c2",
+            "JNJ-p43-c3",
+            "JNJ-p46-c3",
+            "JNJ-p45-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Approximate free cash flow in 2024 was $19,842 million [JNJ-p6-c2].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p6-c2"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q16",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What MedTech product did Johnson & Johnson receive FDA clearance for partial-knee and robot-assisted spine surgery in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p15-c2",
+            "JNJ-p105-c2",
+            "JNJ-p3-c1",
+            "JNJ-p38-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "VELYS [JNJ-p3-c5]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p3-c4",
+            "JNJ-p38-c3",
+            "JNJ-p3-c1",
+            "JNJ-p14-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "VELYS [JNJ-p3-c5]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p42-c3",
+            "JNJ-p3-c4",
+            "JNJ-p14-c3",
+            "JNJ-p15-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "VELYS [JNJ-p3-c5]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p40-c1",
+            "JNJ-p3-c4",
+            "JNJ-p105-c2",
+            "JNJ-p105-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided text does not mention Johnson & Johnson receiving FDA clearance for a MedTech product related to partial-knee and robot-assisted spine surgery in 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q17",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What planned acquisition did Johnson & Johnson announce in 2024 that is referenced in the annual report?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p105-c1",
+            "JNJ-p35-c1",
+            "JNJ-p102-c1",
+            "JNJ-p105-c2",
+            "JNJ-p102-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "The planned acquisition announced in 2024 that is referenced in the annual report is the acquisition of Intra-Cellular Therapies, Inc. (ITCI) for $14.6 billion [JNJ-p102-c1].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p102-c1"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p105-c1",
+            "JNJ-p102-c2",
+            "JNJ-p103-c1",
+            "JNJ-p104-c6",
+            "JNJ-p3-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson announced the planned acquisition of V-Wave Ltd. in 2024, which is referenced in the annual report [JNJ-p105-c1].",
+          "answer_correct": false,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p105-c1"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p5-c1",
+            "JNJ-p105-c1",
+            "JNJ-p35-c1",
+            "JNJ-p33-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "The planned acquisition announced by Johnson & Johnson in 2024 is that of Intra-Cellular Therapies. [JNJ-p3-c2]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c2"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c2",
+            "JNJ-p5-c1",
+            "JNJ-p33-c2",
+            "JNJ-p75-c4",
+            "JNJ-p9-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "The planned acquisition announced by Johnson & Johnson in 2024 is the acquisition of Intra-Cellular Therapies. [JNJ-p3-c2]",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c2"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q18",
+      "source": "JNJ",
+      "type": "factual",
+      "question": "What was Johnson & Johnson's full-year adjusted net earnings in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p35-c1",
+            "JNJ-p83-c2",
+            "JNJ-p48-c6",
+            "JNJ-p89-c2",
+            "JNJ-p119-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's full-year adjusted net earnings in 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p53-c5",
+            "JNJ-p57-c1",
+            "JNJ-p43-c3",
+            "JNJ-p56-c1",
+            "JNJ-p58-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's full-year adjusted net earnings for 2024.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p58-c1",
+            "JNJ-p6-c1",
+            "JNJ-p57-c1",
+            "JNJ-p35-c1",
+            "JNJ-p3-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's full-year adjusted net earnings in 2024. It only provides information about the company's consolidated statements of comprehensive income and reconciliation of non-GAAP financial measures for 2024, but it does not include the specific figure for adjusted net earnings.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p89-c2",
+            "JNJ-p48-c6",
+            "JNJ-p43-c1",
+            "JNJ-p42-c3",
+            "JNJ-p6-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context.",
+          "answer_correct": false,
+          "citation_accurate": false,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q19",
+      "source": "JPM",
+      "type": "synthesis",
+      "question": "What are JPMorgan Chase's two primary branded services mentioned in the annual report, and which customer segments do they each serve?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p86-c4",
+            "JPM-p347-c2",
+            "JPM-p104-c1",
+            "JPM-p112-c1",
+            "JPM-p65-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase's two primary branded services or which customer segments they serve. It only discusses the Firm's reportable business segments and corporate results.",
+          "answer_correct": true,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p65-c1",
+            "JPM-p111-c1",
+            "JPM-p60-c4",
+            "JPM-p104-c3",
+            "JPM-p348-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "According to the provided context, JPMorgan Chase's two primary branded services are:\n\n1. Consumer & Community Banking [JPM-p65-c1]\n2. Commercial & Investment Bank [JPM-p111-c1]\n\nThese services serve different customer segments:\n\n* Consumer & Community Banking serves consumers and communities.\n* Commercial & Investment Bank serves corporate and institutional clients globally.\n\nInsufficient context for other branded services or customer segments.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p65-c1",
+            "JPM-p111-c1"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p86-c4",
+            "JPM-p347-c2",
+            "JPM-p65-c2",
+            "JPM-p104-c1",
+            "JPM-p104-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase's two primary branded services or the customer segments they serve.",
+          "answer_correct": true,
+          "citation_accurate": false,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p104-c1",
+            "JPM-p86-c5",
+            "JPM-p348-c2",
+            "JPM-p347-c2",
+            "JPM-p104-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "According to the context, JPMorgan Chase's two primary branded services mentioned in the annual report are:\n\n1. Consumer & Community Banking [JPM-p104-c1]\n2. Commercial & Investment Bank (CIB) [JPM-p86-c5]\n\nThese services serve different customer segments:\n\n* Consumer & Community Banking serves individual customers.\n* Commercial & Investment Bank (CIB) serves wholesale businesses.\n\nNote: The context does not explicitly mention the specific branded services, but rather the business segments and their respective client bases.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JPM-p104-c1",
+            "JPM-p86-c5"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q20",
+      "source": "JNJ",
+      "type": "synthesis",
+      "question": "How many major products did Johnson & Johnson launch in its MedTech segment in 2024, and name at least two specific platforms mentioned?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p40-c4",
+            "JNJ-p41-c1",
+            "JNJ-p40-c3",
+            "JNJ-p15-c3",
+            "JNJ-p38-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "According to the provided context, Johnson & Johnson launched at least two specific platforms in its MedTech segment in 2024:\n\n1. VELYS Robotic assisted solution [JNJ-p40-c4]\n2. Impella 5.5 and Impella RP [JNJ-p41-c1]\n\nInsufficient information is available to determine the exact number of major products launched, as the context only mentions specific platforms rather than individual products.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p40-c4",
+            "JNJ-p41-c1"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p40-c1",
+            "JNJ-p3-c5",
+            "JNJ-p40-c4",
+            "JNJ-p38-c1",
+            "JNJ-p34-c2"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson launched 15 major products in its MedTech segment in 2024 [JNJ-p3-c5]. At least two specific platforms mentioned are VARIPULSE pulsed field ablation platform and VELYS system for robot-assisted spine and partial-knee surgery.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p34-c2",
+            "JNJ-p40-c4",
+            "JNJ-p5-c1",
+            "JNJ-p41-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson launched 15 major products in its MedTech segment in 2024 [JNJ-p3-c5]. Two specific platforms mentioned are VARIPULSE pulsed field ablation platform and VELYS system.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p3-c5",
+            "JNJ-p40-c1",
+            "JNJ-p34-c1",
+            "JNJ-p5-c1",
+            "JNJ-p40-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Johnson & Johnson launched 15 major products in its MedTech segment in 2024 [JNJ-p3-c5]. At least two specific platforms mentioned are VARIPULSE pulsed field ablation platform and VELYS system for robot-assisted spine and partial-knee surgery [JNJ-p3-c5].",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": [
+            "JNJ-p3-c5"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "q21",
+      "source": "NONE",
+      "type": "unanswerable",
+      "question": "What was the exact salary of JPMorgan Chase's CEO Jamie Dimon in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p1-c1",
+            "JPM-p3-c1",
+            "JNJ-p18-c1",
+            "JNJ-p100-c1",
+            "JNJ-p89-c3"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention Jamie Dimon's salary or any information related to his compensation package.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p123-c1",
+            "JPM-p108-c1",
+            "JPM-p96-c2",
+            "JPM-p262-c3",
+            "JPM-p3-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Jamie Dimon's salary in 2024 or any other year. It only discusses JPMorgan Chase's financial performance and compensation expenses.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p1-c1",
+            "JPM-p4-c1",
+            "JPM-p3-c1",
+            "JPM-p368-c1",
+            "JNJ-p18-c1"
+          ],
+          "hit_at_5": true,
+          "answer": "Insufficient context. The provided context does not mention Jamie Dimon's salary in 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p368-c1",
+            "JPM-p370-c1",
+            "JPM-p4-c1",
+            "JPM-p75-c1",
+            "JPM-p9-c2"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Jamie Dimon's salary in 2024 or any other year. It appears to be a list of individuals and their affiliations, as well as an excerpt from Jamie Dimon's letter to shareholders, but it does not provide specific information about his compensation.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q22",
+      "source": "NONE",
+      "type": "unanswerable",
+      "question": "What was Johnson & Johnson's quarterly revenue breakdown for Q3 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p107-c4",
+            "JPM-p2-c3",
+            "JPM-p350-c4",
+            "JPM-p104-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's quarterly revenue breakdown for Q3 2024, but rather discusses JPMorgan Chase & Co.'s financial information and notes.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p106-c3",
+            "JPM-p350-c4",
+            "JPM-p113-c1",
+            "JPM-p107-c4",
+            "JPM-p71-c4"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention Johnson & Johnson's quarterly revenue breakdown for Q3 2024. It appears to be discussing JPMorgan Chase & Co.'s financial statements and results.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p2-c3",
+            "JPM-p106-c3",
+            "JPM-p5-c2",
+            "JPM-p107-c4",
+            "JNJ-p54-c2"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not contain information about Johnson & Johnson's quarterly revenue breakdown for Q3 2024. It appears to be related to JPMorganChase, a different company.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p2-c1",
+            "JPM-p106-c1",
+            "JPM-p106-c3",
+            "JPM-p350-c4",
+            "JPM-p5-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not contain information about Johnson & Johnson's quarterly revenue breakdown for Q3 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q23",
+      "source": "NONE",
+      "type": "unanswerable",
+      "question": "How many hospital systems did JPMorgan Chase partner with in its healthcare lending division in 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p47-c1",
+            "JNJ-p3-c1",
+            "JPM-p68-c6",
+            "JNJ-p3-c3",
+            "JPM-p48-c2"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase partnering with any hospital systems in its healthcare lending division in 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p47-c2",
+            "JPM-p48-c2",
+            "JPM-p66-c2",
+            "JPM-p47-c1",
+            "JNJ-p3-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase's partnership with hospital systems in its healthcare lending division in 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p47-c1",
+            "JPM-p48-c2",
+            "JPM-p48-c1",
+            "JNJ-p3-c1",
+            "JPM-p39-c5"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase's partnership with hospital systems in its healthcare lending division in 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p68-c6",
+            "JPM-p47-c2",
+            "JPM-p68-c1",
+            "JPM-p47-c1",
+            "JPM-p48-c2"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase partnering with hospital systems in its healthcare lending division in 2024 or any other year.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q24",
+      "source": "NONE",
+      "type": "unanswerable",
+      "question": "What is Johnson & Johnson's projected revenue target for fiscal year 2027?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p100-c1",
+            "JNJ-p64-c6",
+            "JPM-p106-c3",
+            "JPM-p107-c4",
+            "JPM-p350-c4"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not contain any information about Johnson & Johnson's projected revenue target for fiscal year 2027.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p86-c1",
+            "JNJ-p100-c1",
+            "JNJ-p64-c6",
+            "JPM-p106-c3",
+            "JPM-p107-c4"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's projected revenue target for fiscal year 2027.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JNJ-p64-c6",
+            "JNJ-p100-c1",
+            "JPM-p260-c4",
+            "JNJ-p7-c1",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's projected revenue target for fiscal year 2027.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JNJ-p64-c6",
+            "JNJ-p100-c1",
+            "JPM-p260-c4",
+            "JNJ-p7-c1",
+            "JPM-p106-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided context does not mention Johnson & Johnson's projected revenue target for fiscal year 2027.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      }
+    },
+    {
+      "question_id": "q25",
+      "source": "NONE",
+      "type": "unanswerable",
+      "question": "How many data centers does JPMorgan Chase operate globally as of 2024?",
+      "vector_only": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p69-c2",
+            "JPM-p73-c4",
+            "JNJ-p27-c7",
+            "JPM-p66-c2",
+            "JPM-p65-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention JPMorgan Chase's data center count globally as of 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p69-c2",
+            "JPM-p73-c4",
+            "JPM-p72-c5",
+            "JPM-p65-c2",
+            "JPM-p69-c1"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention the number of data centers operated by JPMorgan Chase as of 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      },
+      "hybrid": {
+        "without_rerank": {
+          "ids": [
+            "JPM-p69-c2",
+            "JPM-p86-c3",
+            "JPM-p73-c4",
+            "JPM-p88-c1",
+            "JNJ-p27-c7"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention the number of data centers operated by JPMorgan Chase globally as of 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        },
+        "with_rerank": {
+          "ids": [
+            "JPM-p86-c3",
+            "JPM-p236-c2",
+            "JPM-p73-c4",
+            "JPM-p88-c1",
+            "JPM-p2-c3"
+          ],
+          "hit_at_5": false,
+          "answer": "Insufficient context. The provided text does not mention the number of data centers operated by JPMorgan Chase globally as of 2024.",
+          "answer_correct": true,
+          "citation_accurate": true,
+          "cited_ids": []
+        }
+      }
+    }
+  ]
+}

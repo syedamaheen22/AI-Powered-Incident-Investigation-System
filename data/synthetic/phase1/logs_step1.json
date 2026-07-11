@@ -1,0 +1,3450 @@
+[
+  {
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset",
+    "request_id": "req_1119"
+  },
+  {
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order event processing delay observed (post-14:00 degradation)",
+    "request_id": "req_1120"
+  },
+  {
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1141"
+  },
+  {
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1151"
+  },
+  {
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1167"
+  },
+  {
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1171"
+  },
+  {
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1172"
+  },
+  {
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1194"
+  },
+  {
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request",
+    "request_id": "req_1217"
+  },
+  {
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1237"
+  },
+  {
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1268"
+  },
+  {
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order event processing delay observed (post-14:00 degradation)",
+    "request_id": "req_1305"
+  },
+  {
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1387"
+  },
+  {
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1403"
+  },
+  {
+    "ts": "2026-04-10T13:50:00.515Z",
+    "svc": "orders",
+    "lvl": "WARN",
+    "message": "Order write queue lag increased",
+    "reqId": "req_1000"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:07.645Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1001"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:09.651Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1002"
+  },
+  {
+    "ts": "2026-04-10T13:50:15.855Z",
+    "svc": "payments",
+    "lvl": "INFO",
+    "message": "Ledger write committed",
+    "reqId": "req_1003"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:25.361Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1004"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:31.604Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1005"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:34.375Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1006"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:43.050Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1007"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:47.447Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1008"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:54.164Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1009"
+  },
+  {
+    "timestamp": "2026-04-10T13:50:58.947Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully",
+    "request_id": "req_1010"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:07.624Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing",
+    "request_id": "req_1011"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:11.208Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING",
+    "request_id": "req_1012"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:19.513Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1013"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:23.664Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1014"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:32.015Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed",
+    "request_id": "req_1015"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:35.244Z",
+    "service": "orders",
+    "message": "Order state transitioned to PROCESSING",
+    "request_id": "req_1016"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:43.201Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently",
+    "request_id": "req_1017"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:45.753Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response",
+    "request_id": "req_1018"
+  },
+  {
+    "timestamp": "2026-04-10T13:51:51.963Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "auth encountered transient error before incident window",
+    "request_id": "req_1019"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:00.987Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1020"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:08.535Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit",
+    "request_id": "req_1021"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:12.006Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1022"
+  },
+  {
+    "ts": "2026-04-10T13:52:20.399Z",
+    "svc": "gateway",
+    "lvl": "INFO",
+    "message": "Rate limiter check passed",
+    "reqId": "req_1023"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:22.791Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1024"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:31.130Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed",
+    "request_id": "req_1025"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:37.307Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed",
+    "request_id": "req_1026"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:44.400Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1027"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:49.987Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit",
+    "request_id": "req_1028"
+  },
+  {
+    "timestamp": "2026-04-10T13:52:54.363Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1029"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:00.350Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1030"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:04.840Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "gateway encountered transient error before incident window",
+    "request_id": "req_1031"
+  },
+  {
+    "ts": "2026-04-10T13:53:10.546Z",
+    "svc": "gateway",
+    "lvl": "INFO",
+    "message": "Request routed to backend",
+    "reqId": "req_1032"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:18.694Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold",
+    "request_id": "req_1033"
+  },
+  {
+    "ts": "2026-04-10T13:53:24.316Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "payments encountered transient error before incident window",
+    "reqId": "req_1034"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:28.677Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1035"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:34.753Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "orders encountered transient error before incident window",
+    "request_id": "req_1036"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:40.018Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully",
+    "request_id": "req_1037"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:46.986Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "orders encountered transient error before incident window",
+    "request_id": "req_1038"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:52.654Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed",
+    "request_id": "req_1039"
+  },
+  {
+    "timestamp": "2026-04-10T13:53:59.033Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1040"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:04.973Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1041"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:12.316Z",
+    "service": "gateway",
+    "level": "INFO",
+    "request_id": "req_1042"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:18.684Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed",
+    "request_id": "req_1043"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:26.758Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit",
+    "request_id": "req_1044"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:32.144Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1045"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:38.971Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully",
+    "request_id": "req_1046"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:44.070Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1047"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:49.606Z",
+    "service": "payments",
+    "level": "INFO",
+    "request_id": "req_1048"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:53.458Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1049"
+  },
+  {
+    "timestamp": "2026-04-10T13:54:59.348Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1050"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:08.203Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "gateway encountered transient error before incident window",
+    "request_id": "req_1051"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:11.834Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1052"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:16.971Z",
+    "service": "gateway",
+    "message": "Request routed to backend",
+    "request_id": "req_1053"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:22.530Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed",
+    "request_id": "req_1054"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:29.077Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1055"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:39.080Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed",
+    "request_id": "req_1056"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:44.742Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed",
+    "request_id": "req_1057"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:49.993Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1058"
+  },
+  {
+    "timestamp": "2026-04-10T13:55:55.569Z",
+    "service": "payments",
+    "level": "INFO",
+    "request_id": "req_1059"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:02.979Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING",
+    "request_id": "req_1060"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:09.107Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit",
+    "request_id": "req_1061"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:14.132Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1062"
+  },
+  {
+    "ts": "2026-04-10T13:56:17.095Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "OIDC metadata cache hit",
+    "reqId": "req_1063"
+  },
+  {
+    "ts": "2026-04-10T13:56:24.925Z",
+    "svc": "gateway",
+    "lvl": "INFO",
+    "message": "Rate limiter check passed",
+    "reqId": "req_1064"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:31.777Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1065"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:38.649Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1066"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:42.119Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1067"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:50.400Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:54.272Z",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1069"
+  },
+  {
+    "timestamp": "2026-04-10T13:56:58.622Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1070"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:06.859Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed",
+    "request_id": "req_1071"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:11.091Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING",
+    "request_id": "req_1072"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:19.715Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed",
+    "request_id": "req_1073"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:22.426Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1074"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:28.479Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1075"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:37.393Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully",
+    "request_id": "req_1076"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:43.278Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1077"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:49.061Z",
+    "level": "INFO",
+    "message": "Ledger write committed",
+    "request_id": "req_1078"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:57.185Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold",
+    "request_id": "req_1079"
+  },
+  {
+    "timestamp": "2026-04-10T13:57:59.559Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1080"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:05.718Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed",
+    "request_id": "req_1081"
+  },
+  {
+    "ts": "2026-04-10T13:58:15.285Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Order state transitioned to PROCESSING",
+    "reqId": "req_1082"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:18.161Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1083"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:26.081Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING",
+    "request_id": "req_1084"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:29.467Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit",
+    "request_id": "req_1085"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:36.972Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1086"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:41.483Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend",
+    "request_id": "req_1087"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:47.872Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1088"
+  },
+  {
+    "timestamp": "2026-04-10T13:58:55.837Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully",
+    "request_id": "req_1089"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:02.553Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Payment idempotency lock wait detected",
+    "request_id": "req_1090"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:04.991Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed",
+    "request_id": "req_1091"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:15.383Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline",
+    "request_id": "req_1092"
+  },
+  {
+    "ts": "2026-04-10T13:59:19.304Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "OIDC metadata cache hit",
+    "reqId": "req_1093"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:26.656Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded",
+    "request_id": "req_1094"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:32.071Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed",
+    "request_id": "req_1095"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:34.723Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency",
+    "request_id": "req_1096"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:42.347Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed",
+    "request_id": "req_1097"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:47.992Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated",
+    "request_id": "req_1098"
+  },
+  {
+    "timestamp": "2026-04-10T13:59:55.910Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned",
+    "request_id": "req_1099"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:02.247Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1100"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:07.594Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1101"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:13.307Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1102"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:16.821Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "request_id": "req_1103"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:24.703Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1104"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:29.129Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1105"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:36.265Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1106"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:43.911Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1107"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:48.635Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1108"
+  },
+  {
+    "timestamp": "2026-04-10T14:00:52.869Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1109"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:01.767Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1110"
+  },
+  {
+    "ts": "2026-04-10T14:01:09.750Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "reqId": "req_1111"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:12.622Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1112"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:17.195Z",
+    "service": "auth",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1113"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:23.078Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1114"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:32.665Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1115"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:39.728Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1116"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:43.332Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order event processing delay observed (post-14:00 degradation)",
+    "request_id": "req_1117"
+  },
+  {
+    "timestamp": "2026-04-10T14:01:51.865Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:07.003Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1121"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:14.183Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1122"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:19.093Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1123"
+  },
+  {
+    "ts": "2026-04-10T14:02:23.919Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection",
+    "reqId": "req_1124"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:33.460Z",
+    "service": "orders",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1125"
+  },
+  {
+    "ts": "2026-04-10T14:02:36.818Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "reqId": "req_1126"
+  },
+  {
+    "ts": "2026-04-10T14:02:45.500Z",
+    "svc": "auth",
+    "lvl": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "reqId": "req_1127"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:48.674Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "request_id": "req_1128"
+  },
+  {
+    "timestamp": "2026-04-10T14:02:56.101Z",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1129"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:02.981Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1130"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:08.066Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "request_id": "req_1131"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:14.517Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1132"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:17.742Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1133"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:23.244Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1134"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:31.264Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1135"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:37.345Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1136"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:45.117Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1137"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:50.139Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1138"
+  },
+  {
+    "ts": "2026-04-10T14:03:56.201Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "reqId": "req_1139"
+  },
+  {
+    "timestamp": "2026-04-10T14:03:59.958Z",
+    "service": "payments",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1140"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:14.214Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1142"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:20.154Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1143"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:25.341Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1144"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:31.318Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1145"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:37.932Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1146"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:45.250Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "request_id": "req_1147"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:47.709Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1148"
+  },
+  {
+    "timestamp": "2026-04-10T14:04:57.875Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1149"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:03.854Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1150"
+  },
+  {
+    "ts": "2026-04-10T14:05:11.604Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "reqId": "req_1152"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:20.281Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1153"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:28.304Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1154"
+  },
+  {
+    "ts": "2026-04-10T14:05:31.388Z",
+    "svc": "payments",
+    "lvl": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "reqId": "req_1155"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:37.509Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded (degraded environment)",
+    "request_id": "req_1156"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:46.036Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1157"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:51.091Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1158"
+  },
+  {
+    "timestamp": "2026-04-10T14:05:57.894Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1159"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:01.247Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1160"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:06.417Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "request_id": "req_1161"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:14.433Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1162"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:21.599Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable",
+    "request_id": "req_1163"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:27.941Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1164"
+  },
+  {
+    "ts": "2026-04-10T14:06:32.087Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "PSP dependency returned 502 for charge request",
+    "reqId": "req_1165"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:39.219Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1166"
+  },
+  {
+    "timestamp": "2026-04-10T14:06:52.504Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1168"
+  },
+  {
+    "ts": "2026-04-10T14:06:57.724Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "reqId": "req_1169"
+  },
+  {
+    "ts": "2026-04-10T14:07:00.158Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "reqId": "req_1170"
+  },
+  {
+    "ts": "2026-04-10T14:07:19.744Z",
+    "svc": "payments",
+    "lvl": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "reqId": "req_1173"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:25.921Z",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1174"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:32.551Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "request_id": "req_1175"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:37.753Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "request_id": "req_1176"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:43.828Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1177"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:52.378Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1178"
+  },
+  {
+    "timestamp": "2026-04-10T14:07:53.754Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1179"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:02.055Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1180"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:06.082Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1181"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:15.352Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1182"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:18.984Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1183"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:28.195Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection",
+    "request_id": "req_1184"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:30.428Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1185"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:38.254Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "request_id": "req_1186"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:45.594Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1187"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:51.854Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1188"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:57.413Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded (degraded environment)",
+    "request_id": "req_1189"
+  },
+  {
+    "timestamp": "2026-04-10T14:08:59.964Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1190"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:06.702Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1191"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:14.930Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1192"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:22.167Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1193"
+  },
+  {
+    "ts": "2026-04-10T14:09:32.357Z",
+    "svc": "gateway",
+    "lvl": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "reqId": "req_1195"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:37.116Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1196"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:43.593Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1197"
+  },
+  {
+    "ts": "2026-04-10T14:09:48.382Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "reqId": "req_1198"
+  },
+  {
+    "timestamp": "2026-04-10T14:09:54.713Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1199"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:02.838Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1200"
+  },
+  {
+    "ts": "2026-04-10T14:10:06.349Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "reqId": "req_1201"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:15.597Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order event processing delay observed (post-14:00 degradation)",
+    "request_id": "req_1202"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:18.313Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1203"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:26.217Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1204"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:33.749Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1205"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:36.969Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1206"
+  },
+  {
+    "ts": "2026-04-10T14:10:45.845Z",
+    "svc": "auth",
+    "lvl": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "reqId": "req_1207"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:49.246Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1208"
+  },
+  {
+    "timestamp": "2026-04-10T14:10:57.070Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1209"
+  },
+  {
+    "ts": "2026-04-10T14:11:00.075Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "reqId": "req_1210"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:07.597Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1211"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:13.796Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1212"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:19.576Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "request_id": "req_1213"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:28.759Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1214"
+  },
+  {
+    "ts": "2026-04-10T14:11:31.243Z",
+    "svc": "payments",
+    "lvl": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "reqId": "req_1215"
+  },
+  {
+    "ts": "2026-04-10T14:11:36.447Z",
+    "svc": "orders",
+    "lvl": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "reqId": "req_1216"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:52.321Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1218"
+  },
+  {
+    "timestamp": "2026-04-10T14:11:56.858Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1219"
+  },
+  {
+    "ts": "2026-04-10T14:12:03.246Z",
+    "svc": "orders",
+    "lvl": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "reqId": "req_1220"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:08.784Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1221"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:12.258Z",
+    "service": "auth",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1222"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:21.612Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1223"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:27.387Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1224"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:33.716Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset",
+    "request_id": "req_1225"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:36.379Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1226"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:43.820Z",
+    "service": "auth",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1227"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:50.535Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1228"
+  },
+  {
+    "timestamp": "2026-04-10T14:12:56.516Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1229"
+  },
+  {
+    "ts": "2026-04-10T14:13:02.969Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "reqId": "req_1230"
+  },
+  {
+    "timestamp": "2026-04-10T14:13:06.648Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1231"
+  },
+  {
+    "timestamp": "2026-04-10T14:13:13.641Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded (degraded environment)",
+    "request_id": "req_1232"
+  },
+  {
+    "ts": "2026-04-10T14:13:22.845Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "reqId": "req_1233"
+  },
+  {
+    "timestamp": "2026-04-10T14:13:25.434Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1234"
+  },
+  {
+    "ts": "2026-04-10T14:13:31.393Z",
+    "svc": "auth",
+    "lvl": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "reqId": "req_1235"
+  },
+  {
+    "timestamp": "2026-04-10T14:13:37.414Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)"
+  },
+  {
+    "timestamp": "2026-04-10T14:13:52.889Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1238"
+  },
+  {
+    "ts": "2026-04-10T14:13:55.540Z",
+    "svc": "payments",
+    "lvl": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "reqId": "req_1239"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:03.785Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1240"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:10.905Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded (degraded environment)",
+    "request_id": "req_1241"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:16.691Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request",
+    "request_id": "req_1242"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:19.821Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1243"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:26.274Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1244"
+  },
+  {
+    "ts": "2026-04-10T14:14:31.414Z",
+    "svc": "gateway",
+    "lvl": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "reqId": "req_1245"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:40.523Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Inventory reservation confirmed (degraded environment)",
+    "request_id": "req_1246"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:44.895Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1247"
+  },
+  {
+    "ts": "2026-04-10T14:14:50.651Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout",
+    "reqId": "req_1248"
+  },
+  {
+    "timestamp": "2026-04-10T14:14:57.228Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "request_id": "req_1249"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:04.883Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Card token lookup succeeded (degraded environment)",
+    "request_id": "req_1250"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:11.287Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Request routed to backend (degraded environment)",
+    "request_id": "req_1251"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:17.494Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order projection updated (degraded environment)",
+    "request_id": "req_1252"
+  },
+  {
+    "ts": "2026-04-10T14:15:20.915Z",
+    "svc": "gateway",
+    "lvl": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "reqId": "req_1253"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:28.343Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1254"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:35.068Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout",
+    "request_id": "req_1255"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:41.488Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Rate limiter check passed (degraded environment)",
+    "request_id": "req_1256"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:44.387Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1257"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:52.562Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1258"
+  },
+  {
+    "timestamp": "2026-04-10T14:15:58.829Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable",
+    "request_id": "req_1259"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:05.236Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1260"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:08.356Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1261"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:17.065Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1262"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:21.071Z",
+    "service": "payments",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "request_id": "req_1263"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:25.774Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1264"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:33.419Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1265"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:38.017Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1266"
+  },
+  {
+    "ts": "2026-04-10T14:16:47.603Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "reqId": "req_1267"
+  },
+  {
+    "timestamp": "2026-04-10T14:16:59.395Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1269"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:05.021Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1270"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:09.780Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable",
+    "request_id": "req_1271"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:15.577Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1272"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:19.271Z",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1273"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:29.440Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection",
+    "request_id": "req_1274"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:33.448Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503",
+    "request_id": "req_1275"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:39.473Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1276"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:44.653Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout",
+    "request_id": "req_1277"
+  },
+  {
+    "ts": "2026-04-10T14:17:50.571Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset",
+    "reqId": "req_1278"
+  },
+  {
+    "timestamp": "2026-04-10T14:17:57.781Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1279"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:01.436Z",
+    "service": "gateway",
+    "message": "Dependency failure: gateway->auth token introspection timeout",
+    "request_id": "req_1280"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:08.141Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Payment authorization completed (degraded environment)",
+    "request_id": "req_1281"
+  },
+  {
+    "ts": "2026-04-10T14:18:16.375Z",
+    "svc": "auth",
+    "lvl": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "reqId": "req_1282"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:22.690Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection",
+    "request_id": "req_1283"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:27.546Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "OIDC metadata cache hit (degraded environment)",
+    "request_id": "req_1284"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:35.444Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1285"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:41.375Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1286"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:45.639Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1287"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:49.204Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1288"
+  },
+  {
+    "timestamp": "2026-04-10T14:18:57.798Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1289"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:01.666Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection",
+    "request_id": "req_1290"
+  },
+  {
+    "ts": "2026-04-10T14:19:10.784Z",
+    "svc": "gateway",
+    "lvl": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "reqId": "req_1291"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:14.009Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1292"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:19.054Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset",
+    "request_id": "req_1293"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:27.154Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1294"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:33.240Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1295"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:39.114Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1296"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:43.665Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1297"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:49.572Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1298"
+  },
+  {
+    "timestamp": "2026-04-10T14:19:55.931Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1299"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:04.083Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event",
+    "request_id": "req_1300"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:11.985Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1301"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:14.982Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "request_id": "req_1302"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:22.208Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable",
+    "request_id": "req_1303"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:28.696Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1304"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:40.665Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout",
+    "request_id": "req_1306"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:44.333Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout",
+    "request_id": "req_1307"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:54.189Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout",
+    "request_id": "req_1308"
+  },
+  {
+    "timestamp": "2026-04-10T14:20:59.179Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed",
+    "request_id": "req_1309"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:02.703Z",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "request_id": "req_1310"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:10.784Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1311"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:15.864Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Token validated successfully (degraded environment)",
+    "request_id": "req_1312"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:19.303Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1313"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:29.702Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1314"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:31.326Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1315"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:38.518Z",
+    "service": "gateway",
+    "level": "INFO",
+    "message": "Response compressed and returned (degraded environment)",
+    "request_id": "req_1316"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:44.585Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "request_id": "req_1317"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:53.019Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "request_id": "req_1318"
+  },
+  {
+    "timestamp": "2026-04-10T14:21:59.565Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1319"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:05.808Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1320"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:10.318Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1321"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:17.636Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1322"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:21.648Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1323"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:27.612Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "request_id": "req_1324"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:32.160Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1325"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:40.225Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1326"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:48.206Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1327"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:51.859Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1328"
+  },
+  {
+    "timestamp": "2026-04-10T14:22:57.239Z",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1329"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:01.920Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1330"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:08.604Z",
+    "service": "payments",
+    "level": "ERROR",
+    "request_id": "req_1331"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:16.269Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1332"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:22.234Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1333"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:28.087Z",
+    "service": "orders",
+    "level": "INFO",
+    "message": "Order state transitioned to PROCESSING (degraded environment)",
+    "request_id": "req_1334"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:32.663Z",
+    "service": "orders",
+    "level": "WARN",
+    "request_id": "req_1335"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:38.494Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "request_id": "req_1336"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:45.957Z",
+    "service": "orders",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1337"
+  },
+  {
+    "ts": "2026-04-10T14:23:50.915Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "reqId": "req_1338"
+  },
+  {
+    "timestamp": "2026-04-10T14:23:58.892Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "request_id": "req_1339"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:05.557Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1340"
+  },
+  {
+    "ts": "2026-04-10T14:24:11.018Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "reqId": "req_1341"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:14.737Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1342"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:20.970Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1343"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:28.027Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1344"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:32.265Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1345"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:42.174Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1346"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:46.270Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1347"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:53.683Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1348"
+  },
+  {
+    "timestamp": "2026-04-10T14:24:56.126Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1349"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:04.587Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "request_id": "req_1350"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:12.621Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1351"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:17.855Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1352"
+  },
+  {
+    "ts": "2026-04-10T14:25:20.275Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "reqId": "req_1353"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:30.556Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1354"
+  },
+  {
+    "ts": "2026-04-10T14:25:35.789Z",
+    "svc": "orders",
+    "lvl": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "reqId": "req_1355"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:37.935Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1356"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:46.916Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1357"
+  },
+  {
+    "timestamp": "2026-04-10T14:25:53.441Z",
+    "service": "payments",
+    "level": "ERROR",
+    "request_id": "req_1358"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:00.535Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1359"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:05.874Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1360"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:12.375Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1361"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:18.213Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1362"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:23.842Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1363"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:26.005Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "request_id": "req_1364"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:32.745Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1365"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:38.677Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1366"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:45.434Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1367"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:52.851Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "request_id": "req_1368"
+  },
+  {
+    "timestamp": "2026-04-10T14:26:59.257Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request (escalating impact)",
+    "request_id": "req_1369"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:06.895Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1370"
+  },
+  {
+    "ts": "2026-04-10T14:27:10.895Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "reqId": "req_1371"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:15.801Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1372"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:23.323Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1373"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:26.027Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1374"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:33.089Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1375"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:41.846Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request (escalating impact)"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:45.723Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1377"
+  },
+  {
+    "timestamp": "2026-04-10T14:27:50.239Z",
+    "service": "payments",
+    "level": "INFO",
+    "message": "Ledger write committed (degraded environment)",
+    "request_id": "req_1378"
+  },
+  {
+    "ts": "2026-04-10T14:27:59.035Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "reqId": "req_1379"
+  },
+  {
+    "ts": "2026-04-10T14:28:02.923Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "reqId": "req_1380"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:12.178Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1381"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:14.449Z",
+    "service": "payments",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1382"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:24.993Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1383"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:30.724Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1384"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:35.694Z",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1385"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:40.272Z",
+    "service": "auth",
+    "level": "INFO",
+    "message": "Session refreshed (degraded environment)",
+    "request_id": "req_1386"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:51.796Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1388"
+  },
+  {
+    "timestamp": "2026-04-10T14:28:59.940Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "request_id": "req_1389"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:03.465Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1390"
+  },
+  {
+    "ts": "2026-04-10T14:29:09.586Z",
+    "svc": "auth",
+    "lvl": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "reqId": "req_1391"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:17.441Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1392"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:21.086Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1393"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:27.497Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1394"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:35.278Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1395"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:40.163Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1396"
+  },
+  {
+    "ts": "2026-04-10T14:29:49.119Z",
+    "svc": "auth",
+    "lvl": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "reqId": "req_1397"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:51.255Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1398"
+  },
+  {
+    "ts": "2026-04-10T14:30:01.152Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "reqId": "req_1399"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:04.223Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1400"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:11.371Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1401"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:18.516Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1402"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:30.872Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1404"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:33.482Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1405"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:43.184Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1406"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:46.325Z",
+    "service": "auth",
+    "message": "JWKS endpoint slow response (post-14:00 degradation)",
+    "request_id": "req_1407"
+  },
+  {
+    "timestamp": "2026-04-10T14:30:55.385Z",
+    "service": "orders",
+    "level": "ERROR",
+    "request_id": "req_1408"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:00.613Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1409"
+  },
+  {
+    "ts": "2026-04-10T14:31:03.986Z",
+    "svc": "orders",
+    "lvl": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "reqId": "req_1410"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:11.164Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1411"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:18.147Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1412"
+  },
+  {
+    "ts": "2026-04-10T14:31:21.288Z",
+    "svc": "gateway",
+    "lvl": "WARN",
+    "message": "Upstream latency trend increasing (post-14:00 degradation)",
+    "reqId": "req_1413"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:28.201Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1414"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:34.054Z",
+    "service": "auth",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1415"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:42.214Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1416"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:48.780Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1417"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:51.599Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1418"
+  },
+  {
+    "timestamp": "2026-04-10T14:31:57.142Z",
+    "service": "gateway",
+    "level": "WARN",
+    "request_id": "req_1419"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:04.017Z",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1420"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:13.360Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1421"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:18.826Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1422"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:22.030Z",
+    "service": "auth",
+    "level": "ERROR",
+    "request_id": "req_1423"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:29.492Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1424"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:37.417Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1425"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:43.494Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1426"
+  },
+  {
+    "ts": "2026-04-10T14:32:46.904Z",
+    "svc": "payments",
+    "lvl": "WARN",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "reqId": "req_1427"
+  },
+  {
+    "timestamp": "2026-04-10T14:32:54.102Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1428"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:00.168Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1429"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:06.115Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1430"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:10.042Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1431"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:16.843Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1432"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:24.041Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1433"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:27.101Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1434"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:36.576Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1435"
+  },
+  {
+    "ts": "2026-04-10T14:33:41.827Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "reqId": "req_1436"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:46.381Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "request_id": "req_1437"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:53.039Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1438"
+  },
+  {
+    "timestamp": "2026-04-10T14:33:58.495Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1439"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:05.193Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1440"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:12.482Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1441"
+  },
+  {
+    "ts": "2026-04-10T14:34:19.576Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "reqId": "req_1442"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:20.891Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request (escalating impact)",
+    "request_id": "req_1443"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:29.777Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1444"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:35.503Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request (escalating impact)",
+    "request_id": "req_1445"
+  },
+  {
+    "ts": "2026-04-10T14:34:40.248Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "reqId": "req_1446"
+  },
+  {
+    "ts": "2026-04-10T14:34:49.109Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "reqId": "req_1447"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:54.956Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1448"
+  },
+  {
+    "timestamp": "2026-04-10T14:34:57.992Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Token validation latency increased (post-14:00 degradation)",
+    "request_id": "req_1449"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:06.198Z",
+    "level": "ERROR",
+    "message": "PSP dependency returned 502 for charge request (escalating impact)",
+    "request_id": "req_1450"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:13.286Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Retrying PSP call due to elevated latency (post-14:00 degradation)",
+    "request_id": "req_1451"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:15.897Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1452"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:21.986Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1453"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:27.148Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1454"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:33.335Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1455"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:42.472Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1456"
+  },
+  {
+    "ts": "2026-04-10T14:35:49.740Z",
+    "svc": "gateway",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "reqId": "req_1457"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:52.421Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1458"
+  },
+  {
+    "timestamp": "2026-04-10T14:35:59.631Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1459"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:05.611Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "request_id": "req_1460"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:10.098Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1461"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:19.211Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1462"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:25.167Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1463"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:31.745Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Order write queue lag increased (post-14:00 degradation)",
+    "request_id": "req_1464"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:37.636Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1465"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:40.551Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1466"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:49.820Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "request_id": "req_1467"
+  },
+  {
+    "timestamp": "2026-04-10T14:36:52.943Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1468"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:01.450Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->auth token introspection timeout (escalating impact)",
+    "request_id": "req_1469"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:04.896Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1470"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:09.662Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Database connection pool saturation warning (post-14:00 degradation)",
+    "request_id": "req_1471"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:18.089Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1472"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:22.001Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1473"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:27.293Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1474"
+  },
+  {
+    "ts": "2026-04-10T14:37:37.445Z",
+    "svc": "gateway",
+    "lvl": "WARN",
+    "message": "Gateway retries exceeded baseline (post-14:00 degradation)",
+    "reqId": "req_1475"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:42.513Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments status lookup failed (escalating impact)",
+    "request_id": "req_1476"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:49.725Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1477"
+  },
+  {
+    "timestamp": "2026-04-10T14:37:51.504Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1478"
+  },
+  {
+    "ts": "2026-04-10T14:38:00.711Z",
+    "svc": "auth",
+    "lvl": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "reqId": "req_1479"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:07.097Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: identity-provider timeout (escalating impact)",
+    "request_id": "req_1480"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:10.558Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1481"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:15.362Z",
+    "service": "orders",
+    "level": "WARN",
+    "message": "Inventory service returned stale data (post-14:00 degradation)",
+    "request_id": "req_1482"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:23.858Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1483"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:30.799Z",
+    "service": "gateway",
+    "level": "WARN",
+    "message": "Circuit breaker opened intermittently (post-14:00 degradation)",
+    "request_id": "req_1484"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:35.392Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1485"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:42.041Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->orders upstream returned 503 (escalating impact)",
+    "request_id": "req_1486"
+  },
+  {
+    "ts": "2026-04-10T14:38:45.500Z",
+    "svc": "auth",
+    "lvl": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "reqId": "req_1487"
+  },
+  {
+    "timestamp": "2026-04-10T14:38:52.879Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1488"
+  },
+  {
+    "ts": "2026-04-10T14:39:01.047Z",
+    "svc": "orders",
+    "lvl": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "reqId": "req_1489"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:06.861Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1490"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:10.036Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->inventory read timeout (escalating impact)",
+    "request_id": "req_1491"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:16.349Z",
+    "service": "auth",
+    "level": "WARN",
+    "message": "Auth cache nearing eviction threshold (post-14:00 degradation)",
+    "request_id": "req_1492"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:22.014Z",
+    "service": "payments",
+    "level": "ERROR",
+    "message": "Dependency failure: orders->payments RPC connection reset (escalating impact)",
+    "request_id": "req_1493"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:32.108Z",
+    "service": "payments",
+    "level": "WARN",
+    "message": "Payment idempotency lock wait detected (post-14:00 degradation)",
+    "request_id": "req_1494"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:36.975Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1495"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:40.848Z",
+    "service": "gateway",
+    "level": "ERROR",
+    "message": "Dependency failure: gateway->payments upstream closed connection (escalating impact)",
+    "request_id": "req_1496"
+  },
+  {
+    "timestamp": "2026-04-10T14:39:45.641Z",
+    "service": "orders",
+    "level": "ERROR",
+    "message": "Kafka dependency failure while publishing order event (escalating impact)",
+    "request_id": "req_1497"
+  },
+  {
+    "ts": "2026-04-10T14:39:55.242Z",
+    "svc": "payments",
+    "lvl": "ERROR",
+    "message": "Dependency failure: gateway->payments timeout (escalating impact)",
+    "reqId": "req_1498"
+  },
+  {
+    "timestamp": "2026-04-10T14:40:00.324Z",
+    "service": "auth",
+    "level": "ERROR",
+    "message": "Auth dependency failure: redis session store unreachable (escalating impact)",
+    "request_id": "req_1499"
+  }
+]

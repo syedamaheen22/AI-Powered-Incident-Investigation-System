@@ -1,0 +1,245 @@
+[
+  {
+    "service": "auth-service",
+    "version": "v2.3.4",
+    "timestamp": "2026-04-10T10:00:00Z",
+    "change_description": "Upgraded dependencies for improved security"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.9.5-hotfix.2",
+    "timestamp": "2026-04-10T10:05:00Z",
+    "change_description": "Fixed issue with order status display"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.0.1",
+    "timestamp": "2026-04-10T10:15:00Z",
+    "change_description": "Added support for new payment method (is_breaking_change): true"
+  },
+  {
+    "service": "payments-service",
+    "version": "v2.5.3",
+    "timestamp": "2026-04-10T10:20:00Z",
+    "change_description": "Improved performance by optimizing database queries"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.4.0-hotfix.1",
+    "timestamp": "2026-04-10T10:25:00Z",
+    "change_description": "Refactored token validation logic for better security"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.9.5",
+    "timestamp": "2026-04-10T10:30:00Z",
+    "change_description": "Added feature to display order history"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.0.2",
+    "timestamp": "2026-04-10T10:35:00Z",
+    "change_description": "Updated payment gateway integration for new API endpoint"
+  },
+  {
+    "service": "payments-service",
+    "version": "v2.5.4",
+    "timestamp": "2026-04-10T10:40:00Z",
+    "change_description": "Fixed issue with transaction retry mechanism"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.3.5-hotfix.1",
+    "timestamp": "2026-04-10T11:15:00Z",
+    "change_description": "Updated dependencies for improved security and performance (is_breaking_change): false"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.9.6",
+    "timestamp": "2026-04-10T11:25:00Z",
+    "change_description": "Improved error handling for order processing"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.5",
+    "timestamp": "2026-04-10T11:35:00Z",
+    "change_description": "Updated password hashing algorithm for enhanced security"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.7.8",
+    "timestamp": "2026-04-10T11:40:05Z",
+    "change_description": "Minor performance optimization for search queries"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.2.0",
+    "timestamp": "2026-04-10T11:45:00Z",
+    "change_description": "Upgraded payment gateway library to v1.5.4"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.1.0",
+    "timestamp": "2026-04-10T11:50:10Z",
+    "change_description": "Refactored token validation logic for better security",
+    "is_breaking_change": true
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.8.0",
+    "timestamp": "2026-04-10T11:55:15Z",
+    "change_description": "Added support for new payment methods"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.2.1",
+    "timestamp": "2026-04-10T12:00:20Z",
+    "change_description": "Fixed issue with delayed transaction processing"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.1.1",
+    "timestamp": "2026-04-10T12:05:25Z",
+    "change_description": "Minor bug fix for session management"
+  },
+  {
+    "service": "payments-service",
+    "version": "v4.0.3",
+    "timestamp": "2026-04-10T12:10:30Z",
+    "change_description": "Updated library for improved credit card processing"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.8.1-hotfix.1",
+    "timestamp": "2026-04-10T12:15:35Z",
+    "change_description": "Fixed issue with order status updates"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.2.2",
+    "timestamp": "2026-04-10T12:20:40Z",
+    "change_description": "Upgraded SSL certificate for improved security"
+  },
+  {
+    "service": "auth-service",
+    "version": "v1.8.2-hotfix.1",
+    "timestamp": "2026-04-10T12:35:00Z",
+    "change_description": "Minor bug fix for token validation"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v1.4.5",
+    "timestamp": "2026-04-10T12:40:00Z",
+    "change_description": "Library upgrade for WebSocket protocol handling"
+  },
+  {
+    "service": "payments-service",
+    "version": "v2.0.0",
+    "timestamp": "2026-04-10T12:45:00Z",
+    "change_description": "Updated payment gateway integration",
+    "is_breaking_change": true
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.5.3",
+    "timestamp": "2026-04-10T12:50:00Z",
+    "change_description": "Schema changes for order status updates"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.0",
+    "timestamp": "2026-04-10T13:05:00Z",
+    "change_description": "Refactored token validation logic",
+    "is_breaking_change": true
+  },
+  {
+    "service": "gateway-service",
+    "version": "v1.5.4",
+    "timestamp": "2026-04-10T13:10:00Z",
+    "change_description": "Minor performance optimizations"
+  },
+  {
+    "service": "payments-service",
+    "version": "v2.0.1",
+    "timestamp": "2026-04-10T13:15:00Z",
+    "change_description": "Stricter error handling for payment processing"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.5.4-hotfix.1",
+    "timestamp": "2026-04-10T13:20:00Z",
+    "change_description": "Bug fix for order cancellation workflow"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.1",
+    "timestamp": "2026-04-10T13:45:00Z",
+    "change_description": "Additional logging for authentication flows"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v1.5.5-hotfix.2",
+    "timestamp": "2026-04-10T13:55:00Z",
+    "change_description": "Critical fix for WebSocket connection issues"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.1.3-hotfix.1",
+    "timestamp": "2026-04-10T14:02:00Z",
+    "change_description": "Hotfix for JWT secret rotation to prevent token validation errors"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.9.5",
+    "timestamp": "2026-04-10T14:05:00Z",
+    "change_description": "Rolled back to previous stable version due to order processing issues"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.5",
+    "timestamp": "2026-04-10T14:08:00Z",
+    "change_description": "Rolled back auth-service to a known good state"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.4.2-hotfix.1",
+    "timestamp": "2026-04-10T14:11:00Z",
+    "change_description": "Hotfix for payment processing timeout issues"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.1.3",
+    "timestamp": "2026-04-10T14:13:00Z",
+    "change_description": "Reverted to previous version after rolling back to v2.0.5"
+  },
+  {
+    "service": "payments-service",
+    "version": "v2.2.4-hotfix.1",
+    "timestamp": "2026-04-10T14:15:00Z",
+    "change_description": "Hotfix for payment processing timeouts due to network issues"
+  },
+  {
+    "service": "orders-service",
+    "version": "v1.9.5",
+    "timestamp": "2026-04-10T14:18:00Z",
+    "change_description": "Re-enabled order processing feature flags after resolving issues"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.4",
+    "timestamp": "2026-04-10T14:20:00Z",
+    "change_description": "Updated token validation library to fix security vulnerabilities"
+  },
+  {
+    "service": "gateway-service",
+    "version": "v3.5.1-hotfix.1",
+    "timestamp": "2026-04-10T14:23:00Z",
+    "change_description": "Hotfix for payment processing errors due to incorrectly configured routing"
+  },
+  {
+    "service": "auth-service",
+    "version": "v2.0.5",
+    "timestamp": "2026-04-10T14:25:00Z",
+    "change_description": "Reverted to previous version after issues with v2.1.3 were resolved"
+  }
+]

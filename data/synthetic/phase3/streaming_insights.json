@@ -1,0 +1,22 @@
+[
+  {
+    "step": 1,
+    "stage": "retrieval",
+    "message": "Loaded incident context for \"Auth-Service Error and Cascading Failures on 2026-04-10\" and aligned evidence from logs, tickets, deployments, and graph outputs."
+  },
+  {
+    "step": 2,
+    "stage": "timeline",
+    "message": "Identified incident window 2026-04-10T11:50:10Z to 2026-04-10T12:45:00Z."
+  },
+  {
+    "step": 3,
+    "stage": "root-cause",
+    "message": "Most likely root cause: payments-service v2.0.0: Updated payment gateway integration."
+  },
+  {
+    "step": 4,
+    "stage": "confidence",
+    "message": "Calibrated confidence score computed at 0.98 using evidence corroboration, deployment signals, graph impact, and user feedback."
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-04-02T05:59:19.315Z",
+  "hands_on_example": "Minimal KG lookup integrated into an agent-style route->lookup->respond flow",
+  "entities_loaded": 5,
+  "relations_loaded": 11,
+  "sample_triples": [
+    [
+      "Berlin",
+      "HAS_PLACE",
+      "East Side Gallery"
+    ],
+    [
+      "East Side Gallery",
+      "SUITS_BUDGET",
+      "cheap"
+    ],
+    [
+      "East Side Gallery",
+      "HAS_TAG",
+      "art"
+    ]
+  ],
+  "query_results": [
+    {
+      "query": {
+        "city": "berlin",
+        "tag": "art",
+        "budget": "cheap"
+      },
+      "matched_places": [
+        "East Side Gallery"
+      ],
+      "matched_cuisines": [
+        "Street Food Markets"
+      ],
+      "reasoning_trace": [
+        "Found 3 places connected to berlin.",
+        "After tag+budget filters, 1 places remain.",
+        "Found 1 cuisine options for budget=cheap."
+      ]
+    },
+    {
+      "query": {
+        "city": "berlin",
+        "tag": "outdoors",
+        "budget": "cheap"
+      },
+      "matched_places": [
+        "Tempelhofer Feld"
+      ],
+      "matched_cuisines": [
+        "Street Food Markets"
+      ],
+      "reasoning_trace": [
+        "Found 3 places connected to berlin.",
+        "After tag+budget filters, 1 places remain.",
+        "Found 1 cuisine options for budget=cheap."
+      ]
+    }
+  ],
+  "minimal_agent_flow": {
+    "question": "Find cheap art-focused options in Berlin and include food ideas.",
+    "parsed_query": {
+      "city": "berlin",
+      "tag": "art",
+      "budget": "cheap"
+    },
+    "response": "Grounded by KG lookup for berlin (art, cheap). Places: East Side Gallery. Cuisine: Street Food Markets."
+  }
+}

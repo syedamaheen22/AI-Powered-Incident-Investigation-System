@@ -1,0 +1,1726 @@
+{
+  "run_date": "2026-03-25T06:17:57.752Z",
+  "embedding_model": "nomic-embed-text",
+  "top_k": 5,
+  "chunking_config": {
+    "fixed_size_words": 180,
+    "overlap_size_words": 180,
+    "overlap_words": 60,
+    "recursive_max_words": 180
+  },
+  "strategy_summary": [
+    {
+      "strategy": "fixed_size",
+      "total_questions": 25,
+      "answerable_questions": 20,
+      "hits_at_5_total": 15,
+      "hits_at_5_answerable": 14,
+      "hit_rate_at_5_total": 0.6,
+      "hit_rate_at_5_answerable": 0.7
+    },
+    {
+      "strategy": "overlapping",
+      "total_questions": 25,
+      "answerable_questions": 20,
+      "hits_at_5_total": 16,
+      "hits_at_5_answerable": 14,
+      "hit_rate_at_5_total": 0.64,
+      "hit_rate_at_5_answerable": 0.7
+    },
+    {
+      "strategy": "recursive",
+      "total_questions": 25,
+      "answerable_questions": 20,
+      "hits_at_5_total": 9,
+      "hits_at_5_answerable": 9,
+      "hit_rate_at_5_total": 0.36,
+      "hit_rate_at_5_answerable": 0.45
+    }
+  ],
+  "question_runs": [
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c336",
+        "JPM-fixed_size-c348",
+        "JPM-fixed_size-c335",
+        "JPM-fixed_size-c1"
+      ],
+      "retrieved_text_preview": [
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "information. Refer to Note 32 for further details on total net revenue and total noninterest expense. The following sections provide a comparative discussion of the Firm’s results by business segments",
+        "of $2.8 billion, $4.0 billion and $3.3 billion for the years ended December 31, 2024, 2023 and 2022, respectively. Effective January 1, 2024, the Firm adopted updates to the Accounting for Investments",
+        "31 % 25 % Year ended December 31,CorporateTotal (in millions, except ratios) 2024 2023 2022 2024 2023 2022 Total net revenue$ 17,394 (b) $ 8,038 $ 80 $ 180,593 (b) $ 162,366 $ 132,277 Total noninteres",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c348",
+        "JPM-fixed_size-c1",
+        "JPM-fixed_size-c308",
+        "JPM-fixed_size-c289"
+      ],
+      "retrieved_text_preview": [
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "of $2.8 billion, $4.0 billion and $3.3 billion for the years ended December 31, 2024, 2023 and 2022, respectively. Effective January 1, 2024, the Firm adopted updates to the Accounting for Investments",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. 2024 compared with 2023 Compensat",
+        "Republic Bank from the FDIC on May 1, 2023. As a result, the year-to-date results include the twelve-month impact of First Republic compared with eight months in the prior-year period. Where meaningfu"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q03",
+      "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c708",
+        "JPM-fixed_size-c288",
+        "JPM-fixed_size-c2",
+        "JPM-fixed_size-c280",
+        "JPM-fixed_size-c785"
+      ],
+      "retrieved_text_preview": [
+        "$8.0 billion based on the fair value of the Visa C shares. In addition, the second quarter of 2024 also reflected other Visa-related activity, including the fair value changes of the Visa C shares and",
+        "(b) Reflects the Firm’s ratios under the Basel III Standardized approach. Refer to Capital Risk Management on pages 97–107 for additional information. (c) NII and NIR refer to net interest income and ",
+        "data (period-end) Loans $ 1,347,988 $ 1,323,706 $ 1,135,647 Total assets 4,002,814 3,875,393 3,665,743 Deposits 2,406,032 2,400,688 2,340,179 Common stockholders’ equity 324,708 300,474 264,928 Total ",
+        "non-GAAP financial measure. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages 67–69 for a discussion of these measures. (b)For the years ended December ",
+        "(c) 4,203 (c) 860 Operating losses 1,417 1,228 1,101 Contribution of Visa shares (a) 1,000 — — First Republic-related expense (b) 777 1,060 — (a) Represents the contribution of a portion of Visa C sha"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q04",
+      "question": "How many employees did JPMorgan Chase have at year-end 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c1",
+        "JPM-fixed_size-c308",
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c221",
+        "JPM-fixed_size-c216"
+      ],
+      "retrieved_text_preview": [
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. 2024 compared with 2023 Compensat",
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "opened approximately 150 new branches – including the first two J.P. Morgan Financial Centers in Manhattan and San Francisco – and three Community Center branches in the Bronx and Brooklyn in New York",
+        "year) by engaging customers with products, services and seamless expe- riences across both digital and branch channels. Our branches are still the storefront of JPMorganChase, with more than 41 millio"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q05",
+      "question": "What was JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c279",
+        "JPM-fixed_size-c431",
+        "JPM-fixed_size-c280",
+        "JPM-fixed_size-c992",
+        "JPM-fixed_size-c412"
+      ],
+      "retrieved_text_preview": [
+        "(“CET1”) capital ratio (c)(d) 15.7 15.0 13.2 Tier 1 capital ratio (c)(d) 16.8 16.6 14.9 Total capital ratio (c)(d) 18.5 18.5 16.8 Tier 1 leverage ratio (b)(c) 7.2 7.2 6.6 Supplementary leverage ratio ",
+        "January 1, 2026. JPMSE is required by the EU Single Resolution Board to maintain MREL. As of December 31, 2024, JPMSE was compliant with its MREL requirements. The following table presents JPMSE’s ris",
+        "non-GAAP financial measure. Refer to Explanation and Reconciliation of the Firm’s Use of Non-GAAP Financial Measures on pages 67–69 for a discussion of these measures. (b)For the years ended December ",
+        "year over a three-year period. As of December 31, 2024 and 2023, the Firm’s CET1 capital reflected the remaining benefit of $720 million and $1.4 billion, respectively, associated with the CECL capita",
+        "buffers applicable to the Firm for the period ended December 31, 2024. For the period ended December 31, 2023, the Basel III Standardized CET1, Tier 1, and Total capital ratio requirements applicable "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q06",
+      "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c375",
+        "JPM-fixed_size-c437",
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c348",
+        "JPM-fixed_size-c1"
+      ],
+      "retrieved_text_preview": [
+        "$ (743) Total assets (period- end)$ 1,323,967 $ 1,348,437 $ 1,328,219 Loans (period-end) 1,964 1,924 2,181 Deposits (b) 27,581 21,826 14,203 Employees 49,610 47,530 44,196 (a)Included tax-equivalent a",
+        "for the three months ended December 31, 2024, September 30, 2024 and December 31, 2023 based on the Firm’s interpretation of the LCR framework. Three months ended Average amount (in millions) December",
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "of $2.8 billion, $4.0 billion and $3.3 billion for the years ended December 31, 2024, 2023 and 2022, respectively. Effective January 1, 2024, the Firm adopted updates to the Accounting for Investments",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total "
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q07",
+      "question": "What cash dividend per share did JPMorgan Chase declare in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c422",
+        "JPM-fixed_size-c708",
+        "JPM-fixed_size-c425",
+        "JPM-fixed_size-c960",
+        "JPM-fixed_size-c1"
+      ],
+      "retrieved_text_preview": [
+        "Co./2024 Form 10-K Capital actions Common stock dividends The Firm’s common stock dividends are planned as part of the Capital Management governance framework in line with the Firm’s capital managemen",
+        "$8.0 billion based on the fair value of the Visa C shares. In addition, the second quarter of 2024 also reflected other Visa-related activity, including the fair value changes of the Visa C shares and",
+        "Firm’s equity securities. Preferred stock Preferred stock dividends were $1.3 billion, $1.5 billion, and $1.6 billion for the years ended December 31, 2024, 2023, and 2022, respectively. During the ye",
+        "based on unfavorable changes in the Firm’s credit ratings, financial ratios, earnings or stock price. Notes to consolidated financial statements 290JPMorgan Chase & Co./2024 Form 10-K Note 21 – Prefer",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q08",
+      "question": "What was JPMorgan Chase's Return on Tangible Common Equity (ROTCE) in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c282",
+        "JPM-fixed_size-c534",
+        "JPM-fixed_size-c308",
+        "JPM-fixed_size-c295",
+        "JPM-fixed_size-c296"
+      ],
+      "retrieved_text_preview": [
+        "Index 100.00 118.39 152.34 124.75 157.54 196.96 December 31, (in dollars) JPMorganChaseKBW BankS&P FinancialsS&P 500 201920202021202220232024 75 100 125 150 175 200 JPMorgan Chase & Co./2024 Form 10-K",
+        "VaR increased by $4 million for the year ended December 31, 2024 when compared with the prior year. The increase was predominantly driven by the impact of the Firm’s receipt of Visa C shares on Corpor",
+        "a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. 2024 compared with 2023 Compensat",
+        "for wholesale and consumer clients during 2024, consisting of approximately: $2.8 trillion Total credit provided and capital raised (including loans and commitments) $250 billion Credit for consumers ",
+        "Co-Chief Executive Officer of CIB. •On December 12, 2024, the Firm announced that Michele G. Buck, 63, had been elected as a director of the Firm, effective March 17, 2025. Ms. Buck is Chairman of the"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q09",
+      "question": "What was JPMorgan Chase's provision for credit losses in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c341",
+        "JPM-fixed_size-c619",
+        "JPM-fixed_size-c884",
+        "JPM-fixed_size-c898",
+        "JPM-fixed_size-c291"
+      ],
+      "retrieved_text_preview": [
+        "credit losses, predominantly driven by Card Services, and a $408 million net addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related com",
+        "$919.3 billion at December 31, 2024. The Firm’s allowance for loan losses represents management’s estimate of expected credit losses over the remaining expected life of the Firm's loan portfolios and ",
+        "year ended December 31, 2022, new TDRs were $801 million. New TDRs for the year ended December 31, 2022 reflected extended maturity dates and covenant waivers primarily in the Commercial and Industria",
+        "$ 455 28,248 — 516,577 544,825 20,423 — 461,688 482,111 $ 28,248 $ — $ 517,041 $ 545,289 $ 20,423 $ — $ 462,143 $ 482,566 JPMorgan Chase & Co./2024 Form 10-K269 Discussion of changes in the allowance ",
+        "allowance for credit losses of $2.0 billion. Net charge-offs increased by $2.4 billion, driven by Card Services, reflecting the seasoning of vintages originated in recent years, credit normalization, "
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q10",
+      "question": "What was JPMorgan Chase's book value per share at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c708",
+        "JPM-fixed_size-c1",
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c288",
+        "JPM-fixed_size-c287"
+      ],
+      "retrieved_text_preview": [
+        "$8.0 billion based on the fair value of the Visa C shares. In addition, the second quarter of 2024 also reflected other Visa-related activity, including the fair value changes of the Visa C shares and",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "(b) Reflects the Firm’s ratios under the Basel III Standardized approach. Refer to Capital Risk Management on pages 97–107 for additional information. (c) NII and NIR refer to net interest income and ",
+        "Firm, the 2024 Form 10-K should be read in its entirety. Financial performance of JPMorganChase Year ended December 31, (in millions, except per share data and ratios)20242023Change Selected income st"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q11",
+      "question": "What were Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c99",
+        "JNJ-fixed_size-c109",
+        "JNJ-fixed_size-c107",
+        "JNJ-fixed_size-c115",
+        "JNJ-fixed_size-c234"
+      ],
+      "retrieved_text_preview": [
+        "segments that represented approximately 18.2%, 15.1% and 14.2% of the total gross revenues. 2024 Sales by geographic region (in billions) $20.2 $4.7 $13.6 $50.3 Europe Western Hemisphere (ex. U.S.) As",
+        "Abiomed sales reflect the strength of all major commercialized regions driven by the continued adoption of Impella 5.5 and Impella RP. The Vision franchise achieved sales of $5.1 billion in 2024, repr",
+        "(1.5) Contact Lenses/Other 3,733 3,702 0.8 2.6 (1.8) Surgical 1,413 1,370 3.2 4.3 (1.1) Total MedTech Sales $31,857 30,400 4.8% 6.2% (1.4) % (1) Previously referred to as Interventional Solutions (2) ",
+        "Segment Sales (Dollars in Millions)202420232024202320242023 Innovative Medicine $18,91918,24656,96454,759 33.2% 33.3 MedTech 3,7404,66931,85730,400 11.7 15.4 Segment earnings before tax (1) 22,65922,9",
+        "million in fiscal years 2024, 2023 and 2022, respectively. 2024 Annual Report81 17. Segments of business and geographic areas Following the separation of the Consumer Health business in the fiscal thi"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q12",
+      "question": "What was Johnson & Johnson's adjusted diluted net earnings per share in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c227",
+        "JNJ-fixed_size-c8",
+        "JNJ-fixed_size-c9",
+        "JNJ-fixed_size-c226",
+        "JNJ-fixed_size-c112"
+      ],
+      "retrieved_text_preview": [
+        "from discontinuing operations — 8.520.59 Total net earnings per share - diluted $5.79 13.726.73 (Shares in Millions) The diluted net earnings per share calculation excluded the following number of sha",
+        "translational currency. Adjusted net earnings and adjusted diluted net earnings per share excludes special items and intangible asset amortization expense. Free cash flow is defined as cash flow from ",
+        "shares outstanding (Diluted) 2,429.4 2,560.4 Adjusted net earnings per share from Continuing Operations (Diluted) $ 9.98 $ 9.92 Sales Growth % 2024 vs. 2023TotalOperationalCurrency Worldwide as report",
+        "of balance sheet accounts for highly inflationary economies are reflected in the operating results. A rollforward of the changes during fiscal years 2024, 2023 and 2022 for foreign currency translatio",
+        "from the V-Wave acquisition in the MedTech business In-Process Research and Development Impairments (IPR&D): In the fiscal year 2024, the Company recorded a charge of approximately $0.2 billion associ"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q13",
+      "question": "For how many consecutive years had Johnson & Johnson increased its dividend as of 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c130",
+        "JNJ-fixed_size-c143",
+        "JNJ-fixed_size-c253",
+        "JNJ-fixed_size-c109",
+        "JNJ-fixed_size-c97"
+      ],
+      "retrieved_text_preview": [
+        "end of 2024 and 2023 were $36.6 billion and $29.3 billion, respectively. The increase in the borrowings was due to the issuance of new debt in 2024. In 2024, net debt (cash and current marketable secu",
+        "Ukraine subsidiaries subsequent to the Kenvue separation. In March of 2022, the Company took steps to suspend all advertising, enrollment in clinical trials, and any additional investment in Russia. T",
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years.",
+        "Abiomed sales reflect the strength of all major commercialized regions driven by the continued adoption of Impella 5.5 and Impella RP. The Vision franchise achieved sales of $5.1 billion in 2024, repr",
+        "6.5% in 2023. These sales changes consisted of the following: Sales increase/(decrease) due to:20242023 Volume 5.9% 6.8% Price 0.0 0.6 Currency (1.6) (0.9) Total 4.3% 6.5% The net impact of acquisitio"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q14",
+      "question": "What was Johnson & Johnson's total debt balance at the end of fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c130",
+        "JNJ-fixed_size-c197",
+        "JNJ-fixed_size-c114",
+        "JNJ-fixed_size-c313",
+        "JNJ-fixed_size-c199"
+      ],
+      "retrieved_text_preview": [
+        "end of 2024 and 2023 were $36.6 billion and $29.3 billion, respectively. The increase in the borrowings was due to the issuance of new debt in 2024. In 2024, net debt (cash and current marketable secu",
+        "liabilities as of January 1, 2023. (6) In fiscal year 2024, the Company recorded $105 million of contingent consideration related to Proteologix. In fiscal year 2022, the Company recorded $704 million",
+        "fair value of the Idorsia equity securities held. Interest (Income) Expense: Interest income in the fiscal years 2024 and 2023 was $1.3 billion. Interest expense in the fiscal years 2024 and 2023 was ",
+        "on the Financial Statements and Internal Control over Financial Reporting We have audited the accompanying consolidated balance sheets of Johnson & Johnson and its subsidiaries (the “Company”) as of D",
+        "2046 1,978 3.74 1,977 3.74 3.75% Notes due 2047 822 3.76 832 3.76 3.500% Notes due 2048 744 3.52 743 3.52 2.250% Notes due 2050 808 2.29 826 2.29 66 5.25% Debentures due 2054 843 5.26 — — 2.450% Notes"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q15",
+      "question": "What was Johnson & Johnson's approximate free cash flow in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c253",
+        "JNJ-fixed_size-c8",
+        "JNJ-fixed_size-c123",
+        "JNJ-fixed_size-c156",
+        "JNJ-fixed_size-c121"
+      ],
+      "retrieved_text_preview": [
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years.",
+        "translational currency. Adjusted net earnings and adjusted diluted net earnings per share excludes special items and intangible asset amortization expense. Free cash flow is defined as cash flow from ",
+        "fiscal second quarter of 2024, the Company issued senior unsecured notes for a total of $6.7 billion. For additional details on borrowings, see Note 7 to the Consolidated Financial Statements. The net",
+        "of year (Note 1) $24,10521,85914,127 Supplemental cash flow data Cash paid during the year for: Interest $1,9901,836982 Interest, net of amount capitalized 1,9111,766933 Income taxes, inclusive of dis",
+        "Statements for additional details on cash, cash equivalents and marketable securities. Cash flow from operations of $24.3 billion was the result of: (Dollars In billions) $14.1 Net Earnings 8.4 non-ca"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q16",
+      "question": "What MedTech product did Johnson & Johnson receive FDA clearance for partial-knee and robot-assisted spine surgery in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c6",
+        "JNJ-fixed_size-c4",
+        "JNJ-fixed_size-c254",
+        "JNJ-fixed_size-c101",
+        "JNJ-fixed_size-c145"
+      ],
+      "retrieved_text_preview": [
+        "major markets and FDA clearance of our VELYS system for both robot-assisted spine and partial-knee surgery. We also received an expanded FDA indication for our Impella heart pumps to treat pediatric p",
+        "Since January 2024, we invested approximately $50 billion in research and development and other inorganic growth opportunities, including the recently announced planned acquisition of Intra-Cellular T",
+        "the Company's consolidated financial statements. Milestone payments incurred prior to regulatory approval are expensed as research and development expense when the milestone event occurs. The fiscal y",
+        "0.3 — Other 1,1891,306 (8.9) (7.8) (1.1) Total Innovative Medicine Sales $56,96454,759 4.0% 5.7% (1.7) % 2024 Annual Report25 Immunology products sales were $17.8 billion in 2024, representing a decre",
+        "cost containment and government legislation relating to sales, promotions, pricing and reimbursement of healthcare products. 2024 Annual Report41 Changes in the behavior and spending patterns of purch"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q17",
+      "question": "What planned acquisition did Johnson & Johnson announce in 2024 that is referenced in the annual report?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c4",
+        "JNJ-fixed_size-c244",
+        "JNJ-fixed_size-c253",
+        "JNJ-fixed_size-c250",
+        "JNJ-fixed_size-c254"
+      ],
+      "retrieved_text_preview": [
+        "Since January 2024, we invested approximately $50 billion in research and development and other inorganic growth opportunities, including the recently announced planned acquisition of Intra-Cellular T",
+        "fiscal years 2024 and 2023 of $81,818 and $70,733, respectively. 2024 Annual Report89 18. Acquisitions and divestitures Subsequent to the fiscal year end 2024, the Company announced it has entered int",
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years.",
+        "for the fiscal year 2024 were not material. During the fiscal year 2023, the Company did not make any acquisitions that qualified as a business combination. During the fiscal year 2022, certain busine",
+        "the Company's consolidated financial statements. Milestone payments incurred prior to regulatory approval are expensed as research and development expense when the milestone event occurs. The fiscal y"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q18",
+      "question": "What was Johnson & Johnson's full-year adjusted net earnings in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c114",
+        "JNJ-fixed_size-c112",
+        "JNJ-fixed_size-c9",
+        "JNJ-fixed_size-c224",
+        "JNJ-fixed_size-c253"
+      ],
+      "retrieved_text_preview": [
+        "fair value of the Idorsia equity securities held. Interest (Income) Expense: Interest income in the fiscal years 2024 and 2023 was $1.3 billion. Interest expense in the fiscal years 2024 and 2023 was ",
+        "from the V-Wave acquisition in the MedTech business In-Process Research and Development Impairments (IPR&D): In the fiscal year 2024, the Company recorded a charge of approximately $0.2 billion associ",
+        "shares outstanding (Diluted) 2,429.4 2,560.4 Adjusted net earnings per share from Continuing Operations (Diluted) $ 9.98 $ 9.92 Sales Growth % 2024 vs. 2023TotalOperationalCurrency Worldwide as report",
+        "Millions) Foreign Currency Translation Gain/ (Loss) On Securities Employee Benefit Plans Gain/ (Loss) On Derivatives & Hedges Total Accumulated Other Comprehensive Income (Loss) January 2, 2022 $(10,0",
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years."
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q19",
+      "question": "What are JPMorgan Chase's two primary branded services mentioned in the annual report, and which customer segments do they each serve?",
+      "source": "JPM",
+      "type": "synthesis",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c1075",
+        "JPM-fixed_size-c1041",
+        "JPM-fixed_size-c329",
+        "JPM-fixed_size-c196",
+        "JPM-fixed_size-c330"
+      ],
+      "retrieved_text_preview": [
+        "customer uses the same identifier as both a Consumer and a Small business, the customer is included in both metrics. CCO: Chief Compliance Officer CCP: “Central counterparty” is a clearing house that ",
+        "periods. The Firm also assesses the level of capital required for each LOB on at least an annual basis. The Firm’s LOBs also provide various business metrics which are utilized by the Firm and its inv",
+        "Corporate & Investment Bank and Commercial Banking business segments to form one reportable segment, the Commercial & Investment Bank (“CIB”). As a result of the reorganization, the Firm has three rep",
+        "Global Corporate Banking and Global Investment Banking client segments. 27 Extel: an Institutional Investor Company. 28 Represents U.S. dollar payment instructions for direct payments and credit trans",
+        "expense items. The Firm periodically assesses the assumptions, methodologies and reporting classifications used for segment reporting, and therefore further refinements may be implemented in future pe"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q20",
+      "question": "How many major products did Johnson & Johnson launch in its MedTech segment in 2024, and name at least two specific platforms mentioned?",
+      "source": "JNJ",
+      "type": "synthesis",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c4",
+        "JNJ-fixed_size-c107",
+        "JNJ-fixed_size-c31",
+        "JNJ-fixed_size-c109",
+        "JNJ-fixed_size-c5"
+      ],
+      "retrieved_text_preview": [
+        "Since January 2024, we invested approximately $50 billion in research and development and other inorganic growth opportunities, including the recently announced planned acquisition of Intra-Cellular T",
+        "(1.5) Contact Lenses/Other 3,733 3,702 0.8 2.6 (1.8) Surgical 1,413 1,370 3.2 4.3 (1.1) Total MedTech Sales $31,857 30,400 4.8% 6.2% (1.4) % (1) Previously referred to as Interventional Solutions (2) ",
+        "agreements, the Company expects continued launches of biosimilar versions of STELARA in Europe and the United States in 2025 which will impact the Company’s sales of STELARA. Trademarks The Company’s ",
+        "Abiomed sales reflect the strength of all major commercialized regions driven by the continued adoption of Impella 5.5 and Impella RP. The Vision franchise achieved sales of $5.1 billion in 2024, repr",
+        "in annual revenue. Other key growth drivers include ERLEADA, CARVYKTI, and TREMFYA. Equally impressive is our pace of innovation, which resulted in 27 approvals in major markets. Among the most notabl"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q21",
+      "question": "What was the exact salary of JPMorgan Chase's CEO Jamie Dimon in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c238",
+        "JPM-fixed_size-c1",
+        "JPM-fixed_size-c295",
+        "JPM-fixed_size-c308",
+        "JPM-fixed_size-c290"
+      ],
+      "retrieved_text_preview": [
+        "’22 2024 Annual Report85 HIPS U.S. 1,057996943 6.2 5.6 International 581564571 3.0 (1.2) Worldwide 1,6381,5601,514 5.0 3.0 KNEES U.S. 922896851 2.9 5.3 International 623559508 11.3 10.2 Worldwide 1,54",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "for wholesale and consumer clients during 2024, consisting of approximately: $2.8 trillion Total credit provided and capital raised (including loans and commitments) $250 billion Credit for consumers ",
+        "a $1.0 billion contribution of Visa shares to the JPMorgan Chase Foundation recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. 2024 compared with 2023 Compensat",
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q22",
+      "question": "What was Johnson & Johnson's quarterly revenue breakdown for Q3 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c290",
+        "JPM-fixed_size-c336",
+        "JPM-fixed_size-c293",
+        "JPM-fixed_size-c335",
+        "JPM-fixed_size-c348"
+      ],
+      "retrieved_text_preview": [
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "information. Refer to Note 32 for further details on total net revenue and total noninterest expense. The following sections provide a comparative discussion of the Firm’s results by business segments",
+        "Results of Operations and Consolidated Balance Sheets Analysis on pages 59–62 and pages 63–65, respectively, for a further discussion of the Firm's results, including the provision for credit losses, ",
+        "31 % 25 % Year ended December 31,CorporateTotal (in millions, except ratios) 2024 2023 2022 2024 2023 2022 Total net revenue$ 17,394 (b) $ 8,038 $ 80 $ 180,593 (b) $ 162,366 $ 132,277 Total noninteres",
+        "of $2.8 billion, $4.0 billion and $3.3 billion for the years ended December 31, 2024, 2023 and 2022, respectively. Effective January 1, 2024, the Firm adopted updates to the Accounting for Investments"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q23",
+      "question": "How many hospital systems did JPMorgan Chase partner with in its healthcare lending division in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c250",
+        "JPM-fixed_size-c145",
+        "JNJ-fixed_size-c157",
+        "JNJ-fixed_size-c6",
+        "JNJ-fixed_size-c4"
+      ],
+      "retrieved_text_preview": [
+        "for the fiscal year 2024 were not material. During the fiscal year 2023, the Company did not make any acquisitions that qualified as a business combination. During the fiscal year 2022, certain busine",
+        "tion, nuclear and biological threats, cyberse- curity and strategic competition in the Arctic, to name just a few. • JPMorganChase Center for Geopolitics. We are creating a new group that builds on ou",
+        "a broad range of products in the healthcare field. The Company conducts business in virtually all countries of the world and its primary focus is on products related to human health and well-being. Ke",
+        "major markets and FDA clearance of our VELYS system for both robot-assisted spine and partial-knee surgery. We also received an expanded FDA indication for our Impella heart pumps to treat pediatric p",
+        "Since January 2024, we invested approximately $50 billion in research and development and other inorganic growth opportunities, including the recently announced planned acquisition of Intra-Cellular T"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q24",
+      "question": "What is Johnson & Johnson's projected revenue target for fiscal year 2027?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JPM-fixed_size-c290",
+        "JNJ-fixed_size-c115",
+        "JPM-fixed_size-c336",
+        "JPM-fixed_size-c293",
+        "JNJ-fixed_size-c234"
+      ],
+      "retrieved_text_preview": [
+        "excluding Markets was $92.4 billion, up 3%. –Noninterest revenue (“NIR”) was $85.0 billion, up 23%, predominantly driven by a $7.9 billion net gain related to Visa shares recorded in the second quarte",
+        "Segment Sales (Dollars in Millions)202420232024202320242023 Innovative Medicine $18,91918,24656,96454,759 33.2% 33.3 MedTech 3,7404,66931,85730,400 11.7 15.4 Segment earnings before tax (1) 22,65922,9",
+        "information. Refer to Note 32 for further details on total net revenue and total noninterest expense. The following sections provide a comparative discussion of the Firm’s results by business segments",
+        "Results of Operations and Consolidated Balance Sheets Analysis on pages 59–62 and pages 63–65, respectively, for a further discussion of the Firm's results, including the provision for credit losses, ",
+        "million in fiscal years 2024, 2023 and 2022, respectively. 2024 Annual Report81 17. Segments of business and geographic areas Following the separation of the Consumer Health business in the fiscal thi"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q25",
+      "question": "How many data centers does JPMorgan Chase operate globally as of 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "fixed_size",
+      "retrieved_chunk_ids": [
+        "JNJ-fixed_size-c41",
+        "JPM-fixed_size-c246",
+        "JPM-fixed_size-c215",
+        "JPM-fixed_size-c231",
+        "JPM-fixed_size-c216"
+      ],
+      "retrieved_text_preview": [
+        "requirements, and unlawful cross-border data transfers. In the U.S., the Federal Trade Commission has stepped up enforcement of data privacy with several significant settlements (including settlements",
+        "our operations. We are investing to build the data infrastructure needed to integrate AI into our operating environment. The CIB now has over 175 AI use cases in production, with large parts of our te",
+        "are the fuel that enables it all. Jennifer Piepszak Chief Operating Officer CONSUMER & COMMUNITY BANKING63 Consumer & Community Banking I’m very proud of how Consumer & Community Banking (CCB) deliver",
+        "BANKING67 Finally, we’ve increased operational efficiency across the business. About 80% of all applications are automati- cally decisioned, and we continue to streamline and automate more back- end p",
+        "year) by engaging customers with products, services and seamless expe- riences across both digital and branch channels. Our branches are still the storefront of JPMorganChase, with more than 41 millio"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c503",
+        "JPM-overlapping-c542",
+        "JPM-overlapping-c502",
+        "JPM-overlapping-c1",
+        "JPM-overlapping-c439"
+      ],
+      "retrieved_text_preview": [
+        "to conform with the current presentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. (c)Inclu",
+        "except where otherwise noted)202420232022 Total net revenue (a) Europe/Middle East/Africa$ 15,191 $ 14,418 $ 15,716 Asia-Pacific 8,867 7,891 8,043 Latin America/Caribbean 2,427 2,161 2,288 Total inter",
+        "31 % 25 % Year ended December 31,CorporateTotal (in millions, except ratios) 2024 2023 2022 2024 2023 2022 Total net revenue$ 17,394 (b) $ 8,038 $ 80 $ 180,593 (b) $ 162,366 $ 132,277 Total noninteres",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "Results of Operations and Consolidated Balance Sheets Analysis on pages 59–62 and pages 63–65, respectively, for a further discussion of the Firm's results, including the provision for credit losses, "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c24",
+        "JPM-overlapping-c564",
+        "JPM-overlapping-c23",
+        "JPM-overlapping-c1",
+        "JPM-overlapping-c503"
+      ],
+      "retrieved_text_preview": [
+        "measures. 3 Adjusted net income excludes $5.4 billion from net income in 2024 as a result of the net gain related to Visa shares and the donation of Visa shares to pre-fund contributions to the Firm's",
+        "& Co./2024 Form 10-K 2024 compared with 2023 Net income was $10.6 billion, compared with $2.8 billion in the prior year. Net revenue was $17.4 billion, compared with $8.0 billion in the prior year. Ne",
+        "13% \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e \u001e $4.00 $4.33 $1.35 $2.26 $3.96 $4.48 $5.19 $4.34 $5.29 $6.00 $6.31 $10.72 $15.36 $12.09 $16.23 $19.75 \u001e \u001e \u001e \u001e $8.88 \u001e $9.00 $6.19 $2.35 $5.6 $11.7 $29.1 $39.1 1 Adjust",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "to conform with the current presentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. (c)Inclu"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q03",
+      "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c1061",
+        "JPM-overlapping-c1062",
+        "JPM-overlapping-c432",
+        "JPM-overlapping-c800",
+        "JPM-overlapping-c1440"
+      ],
+      "retrieved_text_preview": [
+        "2024, Visa commenced an initial exchange offer for any and all outstanding Visa B-1 shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 sha",
+        "Firm had disposed of all of its Visa C shares through sales in the second and third quarters of 2024 and through a $1.0 billion contribution to the Firm’s Foundation in the second quarter of 2024. The",
+        "its Class B-1 common shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa Class B-1 common shares in exchange for a combination of Visa Class B-",
+        "equity position which is publicly traded, as well as Visa C shares which the Firm disposed of in the second and third quarters of 2024. The impact of Visa C shares resulted in elevated average and max",
+        "share. In the event of a liquidation or dissolution of the Firm, JPMorganChase’s preferred stock then outstanding takes precedence over the Firm’s common stock with respect to the payment of dividends"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q04",
+      "question": "How many employees did JPMorgan Chase have at year-end 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c1",
+        "JPM-overlapping-c331",
+        "JPM-overlapping-c442",
+        "JPM-overlapping-c502",
+        "JPM-overlapping-c441"
+      ],
+      "retrieved_text_preview": [
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "opened approximately 150 new branches – including the first two J.P. Morgan Financial Centers in Manhattan and San Francisco – and three Community Center branches in the Bronx and Brooklyn in New York",
+        "for wholesale and consumer clients during 2024, consisting of approximately: $2.8 trillion Total credit provided and capital raised (including loans and commitments) $250 billion Credit for consumers ",
+        "31 % 25 % Year ended December 31,CorporateTotal (in millions, except ratios) 2024 2023 2022 2024 2023 2022 Total net revenue$ 17,394 (b) $ 8,038 $ 80 $ 180,593 (b) $ 162,366 $ 132,277 Total noninteres",
+        "Commercial Card. (b) Users of all mobile platforms who have logged in within the past 90 days. (c) Reflects the reorganization of the Firm's business segments. Refer to Business Segment & Corporate Re"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q05",
+      "question": "What was JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c418",
+        "JPM-overlapping-c646",
+        "JPM-overlapping-c1490",
+        "JPM-overlapping-c645",
+        "JPM-overlapping-c639"
+      ],
+      "retrieved_text_preview": [
+        "(“CET1”) capital ratio (c)(d) 15.7 15.0 13.2 Tier 1 capital ratio (c)(d) 16.8 16.6 14.9 Total capital ratio (c)(d) 18.5 18.5 16.8 Tier 1 leverage ratio (b)(c) 7.2 7.2 6.6 Supplementary leverage ratio ",
+        "January 1, 2026. JPMSE is required by the EU Single Resolution Board to maintain MREL. As of December 31, 2024, JPMSE was compliant with its MREL requirements. The following table presents JPMSE’s ris",
+        "17.2 Total capital ratio 18.5 17.3 17.7 17.6 (a)The capital metrics reflect the CECL capital transition provisions. (b)Includes the impacts of certain assets associated with First Republic to which th",
+        "least 75% of the Tier 1 leverage ratio minimum must be met with CET1 capital. J.P. Morgan SE JPMSE is a wholly-owned subsidiary of JPMorgan Chase Bank, N.A. and has authority to engage in banking, inv",
+        "the impact of the CECL capital transition provisions as of December 31, 2024 and 2023. December 31, 2024December 31, 2023 (in billions, except ratio) External TLACLTD External TLACLTD Total eligible a"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q06",
+      "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c562",
+        "JPM-overlapping-c655",
+        "JPM-overlapping-c1040",
+        "JPM-overlapping-c942",
+        "JPM-overlapping-c1"
+      ],
+      "retrieved_text_preview": [
+        "$ (743) Total assets (period- end)$ 1,323,967 $ 1,348,437 $ 1,328,219 Loans (period-end) 1,964 1,924 2,181 Deposits (b) 27,581 21,826 14,203 Employees 49,610 47,530 44,196 (a)Included tax-equivalent a",
+        "for the three months ended December 31, 2024, September 30, 2024 and December 31, 2023 based on the Firm’s interpretation of the LCR framework. Three months ended Average amount (in millions) December",
+        "in principal transactions revenue, and were not material for the years ended December 31, 2024, 2023 and 2022. Unrealized (gains)/losses are reported in OCI, and were $(50) million, $(158) million and",
+        "Assets Trading assets$ 3,885 $ 2,170 Loans 36,510 37,611 All other assets 681 591 Total assets$ 41,076 $ 40,372 Liabilities Beneficial interests issued by consolidated VIEs$ 27,323 $ 23,020 All other ",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total "
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q07",
+      "question": "What cash dividend per share did JPMorgan Chase declare in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c633",
+        "JPM-overlapping-c1061",
+        "JPM-overlapping-c637",
+        "JPM-overlapping-c632",
+        "JPM-overlapping-c1"
+      ],
+      "retrieved_text_preview": [
+        "Firm’s dividends are subject to approval by the Board of Directors on a quarterly basis. Refer to Note 21 and Note 26 for information regarding dividend restrictions. The following table shows the com",
+        "2024, Visa commenced an initial exchange offer for any and all outstanding Visa B-1 shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 sha",
+        "Firm’s equity securities. Preferred stock Preferred stock dividends were $1.3 billion, $1.5 billion, and $1.6 billion for the years ended December 31, 2024, 2023, and 2022, respectively. During the ye",
+        "table presents the capital allocated to each LOB and Corporate. December 31, (in billions) January 1, 202520242023 Consumer & Community Banking$ 56.0 $ 54.5 $ 55.5 Commercial & Investment Bank 149.5 1",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q08",
+      "question": "What was JPMorgan Chase's Return on Tangible Common Equity (ROTCE) in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c800",
+        "JPM-overlapping-c442",
+        "JPM-overlapping-c441",
+        "JPM-overlapping-c425",
+        "JPM-overlapping-c1061"
+      ],
+      "retrieved_text_preview": [
+        "equity position which is publicly traded, as well as Visa C shares which the Firm disposed of in the second and third quarters of 2024. The impact of Visa C shares resulted in elevated average and max",
+        "for wholesale and consumer clients during 2024, consisting of approximately: $2.8 trillion Total credit provided and capital raised (including loans and commitments) $250 billion Credit for consumers ",
+        "Commercial Card. (b) Users of all mobile platforms who have logged in within the past 90 days. (c) Reflects the reorganization of the Firm's business segments. Refer to Business Segment & Corporate Re",
+        "as of December 31, 2024. The Firm is a leader in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing and asset management. U",
+        "2024, Visa commenced an initial exchange offer for any and all outstanding Visa B-1 shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 sha"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q09",
+      "question": "What was JPMorgan Chase's provision for credit losses in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c764",
+        "JPM-overlapping-c458",
+        "JPM-overlapping-c511",
+        "JPM-overlapping-c928",
+        "JPM-overlapping-c528"
+      ],
+      "retrieved_text_preview": [
+        "commitments. The Firm's allowance for credit losses generally consists of: •the allowance for loan losses, which covers the Firm’s retained loan portfolios (scored and risk- rated) and is presented se",
+        "credit losses$ 10,678 $ 9,320 $ 6,389 2024 compared with 2023 The provision for credit losses was $10.7 billion, reflecting $8.6 billion of net charge-offs and a $2.0 billion net addition to the allow",
+        "credit losses, predominantly driven by Card Services, and a $408 million net addition to the allowance for credit losses to establish the allowance for the First Republic loans and lending-related com",
+        "$919.3 billion at December 31, 2024. The Firm’s allowance for loan losses represents management’s estimate of expected credit losses over the remaining expected life of the Firm's loan portfolios and ",
+        "as well as higher technology and brokerage expense partially offset by lower legal expense. The provision for credit losses was $762 million, reflecting: •net charge-offs of $617 million, primarily in"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q10",
+      "question": "What was JPMorgan Chase's book value per share at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c1061",
+        "JPM-overlapping-c432",
+        "JPM-overlapping-c800",
+        "JPM-overlapping-c1",
+        "JPM-overlapping-c1062"
+      ],
+      "retrieved_text_preview": [
+        "2024, Visa commenced an initial exchange offer for any and all outstanding Visa B-1 shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 sha",
+        "its Class B-1 common shares. On May 6, 2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa Class B-1 common shares in exchange for a combination of Visa Class B-",
+        "equity position which is publicly traded, as well as Visa C shares which the Firm disposed of in the second and third quarters of 2024. The impact of Visa C shares resulted in elevated average and max",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "Firm had disposed of all of its Visa C shares through sales in the second and third quarters of 2024 and through a $1.0 billion contribution to the Firm’s Foundation in the second quarter of 2024. The"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q11",
+      "question": "What were Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c148",
+        "JNJ-overlapping-c163",
+        "JNJ-overlapping-c160",
+        "JNJ-overlapping-c158",
+        "JNJ-overlapping-c172"
+      ],
+      "retrieved_text_preview": [
+        "segments that represented approximately 18.2%, 15.1% and 14.2% of the total gross revenues. 2024 Sales by geographic region (in billions) $20.2 $4.7 $13.6 $50.3 Europe Western Hemisphere (ex. U.S.) As",
+        "Abiomed sales reflect the strength of all major commercialized regions driven by the continued adoption of Impella 5.5 and Impella RP. The Vision franchise achieved sales of $5.1 billion in 2024, repr",
+        "(1.5) Contact Lenses/Other 3,733 3,702 0.8 2.6 (1.8) Surgical 1,413 1,370 3.2 4.3 (1.1) Total MedTech Sales $31,857 30,400 4.8% 6.2% (1.4) % (1) Previously referred to as Interventional Solutions (2) ",
+        "patients with Crohn's Disease (GRAVITI) •• TREMFYA (guselkumab)Treatment of Patients with Crohn's Disease (GALAXI) •• TREMFYA (guselkumab)Treatment of Patients with Pediatric Psoriasis • UPTRAVI (sele",
+        "Segment Sales (Dollars in Millions)202420232024202320242023 Innovative Medicine $18,91918,24656,96454,759 33.2% 33.3 MedTech 3,7404,66931,85730,400 11.7 15.4 Segment earnings before tax (1) 22,65922,9"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q12",
+      "question": "What was Johnson & Johnson's adjusted diluted net earnings per share in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c339",
+        "JNJ-overlapping-c340",
+        "JNJ-overlapping-c227",
+        "JNJ-overlapping-c13",
+        "JNJ-overlapping-c195"
+      ],
+      "retrieved_text_preview": [
+        "2024, 2023 and 2022, respectively. 78 15. Earnings per share The following is a reconciliation of basic net earnings per share to diluted net earnings per share for the fiscal years ended December 29,",
+        "from discontinuing operations — 8.520.59 Total net earnings per share - diluted $5.79 13.726.73 (Shares in Millions) The diluted net earnings per share calculation excluded the following number of sha",
+        "- basic $5.845.266.23 Discontinued operations - basic —8.620.60 Total net earnings per share - basic $5.8413.886.83 Continuing operations - diluted $5.795.206.14 Discontinued operations - diluted —8.5",
+        "shares outstanding (Diluted) 2,429.4 2,560.4 Adjusted net earnings per share from Continuing Operations (Diluted) $ 9.98 $ 9.92 Sales Growth % 2024 vs. 2023TotalOperationalCurrency Worldwide as report",
+        "and total debt) in 2024 and 30.0% of total capital in 2023. Shareholders’ equity per share at the end of 2024 was $29.70 compared to $28.57 at year-end 2023. A summary of borrowings can be found in No"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q13",
+      "question": "For how many consecutive years had Johnson & Johnson increased its dividend as of 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c5",
+        "JNJ-overlapping-c195",
+        "JNJ-overlapping-c144",
+        "JNJ-overlapping-c11",
+        "JNJ-overlapping-c194"
+      ],
+      "retrieved_text_preview": [
+        "enabled Johnson & Johnson to increase our dividend for the 62nd consecutive year. We know this use of capital is important, and we remain committed to returning value to our shareholders. Our strong b",
+        "and total debt) in 2024 and 30.0% of total capital in 2023. Shareholders’ equity per share at the end of 2024 was $29.70 compared to $28.57 at year-end 2023. A summary of borrowings can be found in No",
+        "shareholders. 22 Research & development $ In Billions 17.2 15.1 20242023 Acquisitions* (net of cash acquired) $ In Billions 16.9 0.5 20242023 Dividends paid per share In Dollars 4.91 4.70 20242023 * I",
+        "2024 3 26 products/platforms generating $1+ billion in annual sales 62 consecutive years of increased dividends 81 years guided by Our Credo 15 major MedTech products launched 27 Innovative Medicine a",
+        "2024, the Company secured a new 364-day Credit Facility of $10 billion, which expires on June 25, 2025. Interest charged on borrowings under the credit line agreement is based on either Secured Overni"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q14",
+      "question": "What was Johnson & Johnson's total debt balance at the end of fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c299",
+        "JNJ-overlapping-c170",
+        "JNJ-overlapping-c300",
+        "JNJ-overlapping-c171",
+        "JNJ-overlapping-c194"
+      ],
+      "retrieved_text_preview": [
+        "Fair value of the long-term debt was estimated using market prices, which were corroborated by quoted broker prices and significant other observable inputs. The Company has access to substantial sourc",
+        "includes the loss of $0.4 billion on the completion of the debt for equity exchange of the retained stake in Kenvue. The fiscal year 2023 includes $0.4 billion related to the unfavorable change in the",
+        "the current portion of long-term debt amounted to approximately $6.0 billion and $3.5 billion at the end of fiscal years 2024 and 2023, respectively. The current portion of the long-term debt was $1.7",
+        "and marketable securities total of $22.9 billion and $22.6 billion average balance in 2023. The total debt balance at the end of 2024 was $36.6 billion with an average debt balance of $33.0 billion as",
+        "2024, the Company secured a new 364-day Credit Facility of $10 billion, which expires on June 25, 2025. Interest charged on borrowings under the credit line agreement is based on either Secured Overni"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q15",
+      "question": "What was Johnson & Johnson's approximate free cash flow in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c180",
+        "JNJ-overlapping-c379",
+        "JNJ-overlapping-c179",
+        "JNJ-overlapping-c184",
+        "JNJ-overlapping-c181"
+      ],
+      "retrieved_text_preview": [
+        "& cash flows Cash and cash equivalents were $24.1 billion at the end of 2024 as compared to $21.9 billion at the end of 2023. The primary sources and uses of cash that contributed to the $2.2 billion ",
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years.",
+        "of 15%, as established by the Organization for Economic Co-operation and Development (OECD) Pillar Two Framework that was supported by over 130 countries worldwide. Several EU and non-EU countries hav",
+        "fiscal second quarter of 2024, the Company issued senior unsecured notes for a total of $6.7 billion. For additional details on borrowings, see Note 7 to the Consolidated Financial Statements. The net",
+        "Statements for additional details on cash, cash equivalents and marketable securities. Cash flow from operations of $24.3 billion was the result of: (Dollars In billions) $14.1 Net Earnings 8.4 non-ca"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q16",
+      "question": "What MedTech product did Johnson & Johnson receive FDA clearance for partial-knee and robot-assisted spine surgery in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c8",
+        "JNJ-overlapping-c6",
+        "JNJ-overlapping-c162",
+        "JNJ-overlapping-c381",
+        "JNJ-overlapping-c151"
+      ],
+      "retrieved_text_preview": [
+        "depression, and OPSUMIT for pediatric pulmonary arterial hypertension. MedTech For the second year in a row, we reported more than $30 billion in MedTech sales, with particularly strong momentum in ca",
+        "Innovative Medicine, to the more than 40 smaller collaborations, partnerships, and licenses signed in 2024, we are laying the foundation for tomorrow’s treatments and cures with our investments today.",
+        "related to the VELYS Robotic assisted solution and global procedure growth. Growth in Trauma was driven by the adoption of recently launched products. The decline in Spine, Sports & Other was primaril",
+        "the Company completed the acquisition of V-Wave Ltd, a privately-held company focused on developing innovative treatment options for patients with heart failure, for an upfront payment of $0.6 billion",
+        "0.3 — Other 1,1891,306 (8.9) (7.8) (1.1) Total Innovative Medicine Sales $56,96454,759 4.0% 5.7% (1.7) % 2024 Annual Report25 Immunology products sales were $17.8 billion in 2024, representing a decre"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q17",
+      "question": "What planned acquisition did Johnson & Johnson announce in 2024 that is referenced in the annual report?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c5",
+        "JNJ-overlapping-c380",
+        "JNJ-overlapping-c379",
+        "JNJ-overlapping-c381",
+        "JNJ-overlapping-c367"
+      ],
+      "retrieved_text_preview": [
+        "enabled Johnson & Johnson to increase our dividend for the 62nd consecutive year. We know this use of capital is important, and we remain committed to returning value to our shareholders. Our strong b",
+        "goodwill and other intangible assets, supplemental pro forma information for fiscal years 2024, 2023 and 2022 is not provided, as the impact of the aforementioned acquisitions did not have a material ",
+        "end 2024 on the Consolidated Balance Sheet. The amortizable intangible assets were primarily comprised of already in-market products of the Impella® platform with an average weighted life of 14 years.",
+        "the Company completed the acquisition of V-Wave Ltd, a privately-held company focused on developing innovative treatment options for patients with heart failure, for an upfront payment of $0.6 billion",
+        "in the Company’s consolidated financial statements. The excess of the purchase price over the fair value of the acquired net assets, where applicable, is recorded as goodwill. The results of operation"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q18",
+      "question": "What was Johnson & Johnson's full-year adjusted net earnings in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c12",
+        "JNJ-overlapping-c236",
+        "JNJ-overlapping-c13",
+        "JNJ-overlapping-c195",
+        "JNJ-overlapping-c227"
+      ],
+      "retrieved_text_preview": [
+        "Intra-Cellular Therapies. 2024 Annual Report The tables below are provided to reconcile certain non-GAAP financial disclosures in the 2024 Chairman’s Letter. Reconciliation of Non-GAAP Financial Measu",
+        "of the IPO, Johnson & Johnson owned approximately 89.6% of the total outstanding shares of Kenvue Common Stock and at July 2, 2023, the non-controlling interest of $1.3 billion associated with Kenvue ",
+        "shares outstanding (Diluted) 2,429.4 2,560.4 Adjusted net earnings per share from Continuing Operations (Diluted) $ 9.98 $ 9.92 Sales Growth % 2024 vs. 2023TotalOperationalCurrency Worldwide as report",
+        "and total debt) in 2024 and 30.0% of total capital in 2023. Shareholders’ equity per share at the end of 2024 was $29.70 compared to $28.57 at year-end 2023. A summary of borrowings can be found in No",
+        "- basic $5.845.266.23 Discontinued operations - basic —8.620.60 Total net earnings per share - basic $5.8413.886.83 Continuing operations - diluted $5.795.206.14 Discontinued operations - diluted —8.5"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q19",
+      "question": "What are JPMorgan Chase's two primary branded services mentioned in the annual report, and which customer segments do they each serve?",
+      "source": "JPM",
+      "type": "synthesis",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c1556",
+        "JPM-overlapping-c1612",
+        "JPM-overlapping-c1561",
+        "JPM-overlapping-c493",
+        "JPM-overlapping-c425"
+      ],
+      "retrieved_text_preview": [
+        "by the Firm’s Operating Committee, whose members act collectively as the Firm’s CODM. Segment results are presented on a managed basis. Refer to Segment & Corporate results in this footnote for a furt",
+        "customer uses the same identifier as both a Consumer and a Small business, the customer is included in both metrics. CCO: Chief Compliance Officer CCP: “Central counterparty” is a clearing house that ",
+        "periods. The Firm also assesses the level of capital required for each LOB on at least an annual basis. The Firm’s LOBs also provide various business metrics which are utilized by the Firm and its inv",
+        "Corporate & Investment Bank and Commercial Banking business segments to form one reportable segment, the Commercial & Investment Bank (“CIB”). As a result of the reorganization, the Firm has three rep",
+        "as of December 31, 2024. The Firm is a leader in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing and asset management. U"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q20",
+      "question": "How many major products did Johnson & Johnson launch in its MedTech segment in 2024, and name at least two specific platforms mentioned?",
+      "source": "JNJ",
+      "type": "synthesis",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c6",
+        "JNJ-overlapping-c160",
+        "JNJ-overlapping-c161",
+        "JNJ-overlapping-c56",
+        "JNJ-overlapping-c46"
+      ],
+      "retrieved_text_preview": [
+        "Innovative Medicine, to the more than 40 smaller collaborations, partnerships, and licenses signed in 2024, we are laying the foundation for tomorrow’s treatments and cures with our investments today.",
+        "(1.5) Contact Lenses/Other 3,733 3,702 0.8 2.6 (1.8) Surgical 1,413 1,370 3.2 4.3 (1.1) Total MedTech Sales $31,857 30,400 4.8% 6.2% (1.4) % (1) Previously referred to as Interventional Solutions (2) ",
+        "the differentiated Wound Closure portfolio as well as increased procedure volume. This growth was offset by the negative impact of currency and the Acclarent divestiture. The Orthopaedics franchise sa",
+        "the Medicare program, starting in 2026 for Medicare Part D drugs and 2028 for Medicare Part B drugs. On August 29, 2023, the Centers for Medicare & Medicaid Services (“CMS”) published the first “Selec",
+        "agreements, the Company expects continued launches of biosimilar versions of STELARA in Europe and the United States in 2025 which will impact the Company’s sales of STELARA. Trademarks The Company’s "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q21",
+      "question": "What was the exact salary of JPMorgan Chase's CEO Jamie Dimon in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c62",
+        "JPM-overlapping-c1",
+        "JNJ-overlapping-c342",
+        "JPM-overlapping-c442",
+        "JNJ-overlapping-c12"
+      ],
+      "retrieved_text_preview": [
+        "As of December 29, 2024 and December 31, 2023 the number of employees was approximately: 20242023 Employees (1) 139,800 134,400 Full-time equivalent (FTE) positions (2) 138,100 131,900 (1) “Employee” ",
+        "Resolute Annual Report 2024 Financial Highlights As of or for the year ended December 31, (in millions, except per share, ratio data and employees) 2024 2023 2022 Selected income statement data Total ",
+        "the 2022 Long-Term Incentive Plan were 111 million at the end of fiscal year 2024. The compensation cost that has been charged against income for these plans was $1,176 million, $1,087 million and $1,",
+        "for wholesale and consumer clients during 2024, consisting of approximately: $2.8 trillion Total credit provided and capital raised (including loans and commitments) $250 billion Credit for consumers ",
+        "Intra-Cellular Therapies. 2024 Annual Report The tables below are provided to reconcile certain non-GAAP financial disclosures in the 2024 Chairman’s Letter. Reconciliation of Non-GAAP Financial Measu"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q22",
+      "question": "What was Johnson & Johnson's quarterly revenue breakdown for Q3 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c503",
+        "JNJ-overlapping-c459",
+        "JPM-overlapping-c439",
+        "JNJ-overlapping-c249",
+        "JPM-overlapping-c502"
+      ],
+      "retrieved_text_preview": [
+        "to conform with the current presentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. (c)Inclu",
+        "167319 Total Programs $269$798 (1) The fiscal year of 2024 included $102 million in Restructuring on the Consolidated Statement of Earnings. The fiscal year of 2023 included $449 million in Restructur",
+        "Results of Operations and Consolidated Balance Sheets Analysis on pages 59–62 and pages 63–65, respectively, for a further discussion of the Firm's results, including the provision for credit losses, ",
+        "products, which are included in sales to customers. Profit-share payments were less than 2.0% of the total revenues in the fiscal year 2024 and 2023, respectively, and less than 3.0% of total revenues",
+        "31 % 25 % Year ended December 31,CorporateTotal (in millions, except ratios) 2024 2023 2022 2024 2023 2022 Total net revenue$ 17,394 (b) $ 8,038 $ 80 $ 180,593 (b) $ 162,366 $ 132,277 Total noninteres"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q23",
+      "question": "How many hospital systems did JPMorgan Chase partner with in its healthcare lending division in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JPM-overlapping-c218",
+        "JNJ-overlapping-c9",
+        "JPM-overlapping-c217",
+        "JNJ-overlapping-c235",
+        "JNJ-overlapping-c237"
+      ],
+      "retrieved_text_preview": [
+        "on improving the U.S. health- care system. In its first three years, Morgan Health has invested $217 million in nine health- care companies. These investments have focused on advanced primary care and",
+        "system, which allows clinical trials to begin in the U.S. 2024 Annual Report The power behind our success and our future Johnson & Johnson has an unrivaled portfolio and pipeline, with the financial m",
+        "tion, nuclear and biological threats, cyberse- curity and strategic competition in the Arctic, to name just a few. • JPMorganChase Center for Geopolitics. We are creating a new group that builds on ou",
+        "a broad range of products in the healthcare field. The Company conducts business in virtually all countries of the world and its primary focus is on products related to human health and well-being. Ke",
+        "are reflected as discontinued operations in the Company’s Consolidated Financial Statements through the date of the exchange offer (see Note 21 for additional details). Unless otherwise indicated, the"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q24",
+      "question": "What is Johnson & Johnson's projected revenue target for fiscal year 2027?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c359",
+        "JNJ-overlapping-c172",
+        "JPM-overlapping-c439",
+        "JNJ-overlapping-c249",
+        "JPM-overlapping-c503"
+      ],
+      "retrieved_text_preview": [
+        "Additions to Property, Plant & Equipment Depreciation and Amortization (Dollars in Millions)202420232022202420232022 Innovative Medicine $1,7101,6531,374$3,7603,8473,687 MedTech 2,4432,3722,1203,2372,",
+        "Segment Sales (Dollars in Millions)202420232024202320242023 Innovative Medicine $18,91918,24656,96454,759 33.2% 33.3 MedTech 3,7404,66931,85730,400 11.7 15.4 Segment earnings before tax (1) 22,65922,9",
+        "Results of Operations and Consolidated Balance Sheets Analysis on pages 59–62 and pages 63–65, respectively, for a further discussion of the Firm's results, including the provision for credit losses, ",
+        "products, which are included in sales to customers. Profit-share payments were less than 2.0% of the total revenues in the fiscal year 2024 and 2023, respectively, and less than 3.0% of total revenues",
+        "to conform with the current presentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 and 6 for additional information. (c)Inclu"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q25",
+      "question": "How many data centers does JPMorgan Chase operate globally as of 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "overlapping",
+      "retrieved_chunk_ids": [
+        "JNJ-overlapping-c61",
+        "JPM-overlapping-c347",
+        "JPM-overlapping-c441",
+        "JPM-overlapping-c322",
+        "JNJ-overlapping-c62"
+      ],
+      "retrieved_text_preview": [
+        "requirements, and unlawful cross-border data transfers. In the U.S., the Federal Trade Commission has stepped up enforcement of data privacy with several significant settlements (including settlements",
+        "improve our scale, resilience and speed to market. With the migration to new data centers largely behind us, we’re investing to enhance core platforms, particularly in Card, Consumer Banking and Home ",
+        "Commercial Card. (b) Users of all mobile platforms who have logged in within the past 90 days. (c) Reflects the reorganization of the Firm's business segments. Refer to Business Segment & Corporate Re",
+        "are the fuel that enables it all. Jennifer Piepszak Chief Operating Officer CONSUMER & COMMUNITY BANKING63 Consumer & Community Banking I’m very proud of how Consumer & Community Banking (CCB) deliver",
+        "As of December 29, 2024 and December 31, 2023 the number of employees was approximately: 20242023 Employees (1) 139,800 134,400 Full-time equivalent (FTE) positions (2) 138,100 131,900 (1) “Employee” "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q01",
+      "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c402",
+        "JPM-recursive-c466",
+        "JPM-recursive-c10",
+        "JPM-recursive-c530",
+        "JPM-recursive-c486"
+      ],
+      "retrieved_text_preview": [
+        "–Noninterest revenue (“NIR”) was $85.0 billion, up \n23%, predominantly driven by a $7.9 billion net \ngain related to Visa shares recorded in the second \nquarter of 2024, higher asset management fees i",
+        "Prior-period amounts have been revised to conform with the current \npresentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 an",
+        "There is much more \ndetail on all of this in section three. 2024 was another strong year for JPMorganChase, with our firm generating \nrecord revenue for the seventh consecutive year, as well as settin",
+        "2024 compared with 2023\nNet income was $10.6 billion, compared with $2.8 \nbillion in the prior year. Net revenue was $17.4 billion, compared with $8.0 \nbillion in the prior year. Net interest income w",
+        "Effective \nJanuary 1, 2024, the Firm adopted updates to the Accounting for \nInvestments in Tax Credit Structures Using the Proportional \nAmortization Method guidance, under the modified \nretrospective"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q02",
+      "question": "What was JPMorgan Chase's net income in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c23",
+        "JPM-recursive-c6",
+        "JPM-recursive-c530",
+        "JPM-recursive-c858",
+        "JPM-recursive-c471"
+      ],
+      "retrieved_text_preview": [
+        "3 Adjusted net income excludes $5.4 billion from net income in 2024 as a result of the net gain related to Visa  \nshares and the donation of Visa shares to pre-fund contributions to the Firm's Foundat",
+        "2024\nYear of Firsts\nCOMMERCIAL & INVESTMENT BANK\nGenerated $25 billion of net income  \non revenue of $70 billion\n#1 #1 \nIN DEPOSITS AND FOR SMALL BUSINESSES\nNamed #1 in retail deposit market share \nan",
+        "2024 compared with 2023\nNet income was $10.6 billion, compared with $2.8 \nbillion in the prior year. Net revenue was $17.4 billion, compared with $8.0 \nbillion in the prior year. Net interest income w",
+        "JPMorgan Chase & Co. Consolidated statements of income\n172JPMorgan Chase & Co./2024 Form 10-K",
+        "2024 compared with 2023\nNet income was $17.6 billion, down 17%. Net revenue was $71.5 billion, up 2%. Net interest income was $54.9 billion, flat when \ncompared with the prior year, reflecting:\n•lower"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q03",
+      "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c968",
+        "JPM-recursive-c969",
+        "JPM-recursive-c455",
+        "JPM-recursive-c400",
+        "JPM-recursive-c466"
+      ],
+      "retrieved_text_preview": [
+        "On May 6, \n2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 shares in exchange \nfor a combination of Visa B-2 shares and Visa Class C common shares (“Visa",
+        "The \nconversion rate of Visa B-2 shares to Visa A shares was  1.5430 at December 31, 2024  and may be adjusted by Visa \ndepending on developments related to the litigation matters. The outcome of thos",
+        "Period-endAverage\nDec 31,\n2024\nDec 31,\n2023\nYear ended December 31,\n(in millions, except per share and ratio data)202420232022\nCommon stockholders’ equity$  324,708 $   300,474 $  312,370   $  282,056",
+        "Refer to Capital Risk Management on pages 97–107 \nfor additional information. (c)  NII and NIR refer to net interest income and noninterest revenue, \nrespectively. Markets consists of CIB's Fixed Inco",
+        "Prior-period amounts have been revised to conform with the current \npresentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 an"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q04",
+      "question": "How many employees did JPMorgan Chase have at year-end 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c426",
+        "JPM-recursive-c523",
+        "JPM-recursive-c10",
+        "JPM-recursive-c1",
+        "JPM-recursive-c329"
+      ],
+      "retrieved_text_preview": [
+        "2024 compared with 2023\nCompensation expense increased driven by:\n•higher revenue-related compensation across the \nLOBs,\n•growth in the number of employees across the LOBs \nand Corporate, primarily in",
+        "The \nincrease in 2024 includes the impact of onboarding participants \nin the Firm’s employee stock plans during the fourth quarter of \n2024. 86JPMorgan Chase & Co./2024 Form 10-K",
+        "There is much more \ndetail on all of this in section three. 2024 was another strong year for JPMorganChase, with our firm generating \nrecord revenue for the seventh consecutive year, as well as settin",
+        "Resolute \nAnnual  \nReport  \n2024",
+        "5. CULTIVATE TALENT\nOur more than 140,000 employees \nacross the globe help make dreams \npossible for tens of millions of custom-\ners, strengthening the communities \nwhere we operate and the economy \no"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q05",
+      "question": "What was JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c602",
+        "JPM-recursive-c575",
+        "JPM-recursive-c576",
+        "JPM-recursive-c1353",
+        "JPM-recursive-c590"
+      ],
+      "retrieved_text_preview": [
+        "December 31, 2024\nRegulatory \nMinimum \nratios\n(a)\n(in millions, except ratios)Actual\nTotal capital$ 43,298   \nCET1 capital ratio 20.0 % 4.5 %\nTier 1 capital ratio 20.0    6.0   \nTotal capital ratio 34",
+        "StandardizedAdvanced\n(in millions, except ratios)\nDecember 31, \n2024\nDecember 31, \n2023\nCapital ratio \nrequirements\n(b)\nDecember 31, \n2024\nDecember 31, \n2023\nCapital ratio \nrequirements\n(b)\nRisk-based",
+        "For the period \nended December 31, 2023, the Basel III Standardized CET1, Tier 1, and Total capital ratio requirements applicable to the Firm were 11.4%, \n12.9%, and 14.9%, respectively; the Basel III",
+        "CECL Regulatory Capital Transition\nBeginning January 1, 2022, the $2.9 billion CECL \ncapital benefit, provided by the Federal Reserve in \nresponse to the COVID-19 pandemic, is being phased \nout at 25%",
+        "As of January 1, \n2025, changes to the Firm’s capital allocations are \nprimarily a result of updates to the Firm’s current \ncapital requirements and changes in RWA for each \nLOB under rules currently "
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q06",
+      "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c1405",
+        "JPM-recursive-c1406",
+        "JPM-recursive-c952",
+        "JPM-recursive-c402",
+        "JPM-recursive-c466"
+      ],
+      "retrieved_text_preview": [
+        "As of or for the year ended December 31, \n(in millions)Revenue\n(b)\nExpense\n(c)\nIncome before \nincome tax expenseNet incomeTotal assets\n2024\nEurope/Middle East/Africa$    22,353 $    12,843 $ 9,510 $ 6",
+        "(b)Revenue is composed of net interest income and noninterest revenue. (c)Expense is composed of noninterest expense and the provision for credit losses. (d)Total assets for the U.K. were approximatel",
+        "For the year ended December 31, 2024\nLevel 3 assets were $23.8 billion at December 31, 2024, \nreflecting an increase of $127 million from December 31, \n2023. The increase for the year ended December 3",
+        "–Noninterest revenue (“NIR”) was $85.0 billion, up \n23%, predominantly driven by a $7.9 billion net \ngain related to Visa shares recorded in the second \nquarter of 2024, higher asset management fees i",
+        "Prior-period amounts have been revised to conform with the current \npresentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 an"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q07",
+      "question": "What cash dividend per share did JPMorgan Chase declare in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c968",
+        "JPM-recursive-c591",
+        "JPM-recursive-c455",
+        "JPM-recursive-c10",
+        "JPM-recursive-c1315"
+      ],
+      "retrieved_text_preview": [
+        "On May 6, \n2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 shares in exchange \nfor a combination of Visa B-2 shares and Visa Class C common shares (“Visa",
+        "Capital actions\nCommon stock dividends \nThe Firm’s common stock dividends are planned as \npart of the Capital Management governance \nframework in line with the Firm’s capital management \nobjectives. O",
+        "Period-endAverage\nDec 31,\n2024\nDec 31,\n2023\nYear ended December 31,\n(in millions, except per share and ratio data)202420232022\nCommon stockholders’ equity$  324,708 $   300,474 $  312,370   $  282,056",
+        "There is much more \ndetail on all of this in section three. 2024 was another strong year for JPMorganChase, with our firm generating \nrecord revenue for the seventh consecutive year, as well as settin",
+        "The dividend rate for each quarterly dividend period commencing on \nAugust 1, 2023 was three-month term SOFR (plus a spread adjustment of 0.26% per annum) plus the spread of 3.30%. (i)The dividend rat"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q08",
+      "question": "What was JPMorgan Chase's Return on Tangible Common Equity (ROTCE) in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c1",
+        "JPM-recursive-c501",
+        "JPM-recursive-c536",
+        "JPM-recursive-c1246",
+        "JPM-recursive-c1435"
+      ],
+      "retrieved_text_preview": [
+        "Resolute \nAnnual  \nReport  \n2024",
+        "JPMorgan Chase & Co./2024 Form 10-K81",
+        "90JPMorgan Chase & Co./2024 Form 10-K",
+        "JPMorgan Chase & Co./2024 Form 10-K273",
+        "JPMorgan Chase & Co./2024 Form 10-K319"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q09",
+      "question": "What was JPMorgan Chase's provision for credit losses in 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c492",
+        "JPM-recursive-c707",
+        "JPM-recursive-c1228",
+        "JPM-recursive-c473",
+        "JPM-recursive-c513"
+      ],
+      "retrieved_text_preview": [
+        "The provision for credit losses was $762 million, \nreflecting: \n•net charge-offs of $617 million, primarily in Real \nEstate, largely concentrated in Office, and\n•a $145 million net addition to the all",
+        "ALLOWANCE FOR CREDIT LOSSES\nThe Firm’s allowance for credit losses represents \nmanagement's estimate of expected credit losses over \nthe remaining expected life of the Firm's financial \nassets measure",
+        "Discussion of changes in the allowance\nThe allowance for credit losses as of December 31, \n2024 was $26.9 billion, reflecting a net addition of $2.1 \nbillion from December 31, 2023. The net addition t",
+        "The provision for credit losses was $10.0 billion, \nreflecting:\n•net charge-offs of $7.9 billion, up $2.6 billion, \nincluding $2.4 billion in Card Services, reflecting the \nseasoning of vintages origi",
+        "The provision in the prior year was $159 million, \nreflecting a $146 million addition to the allowance for \ncredit losses to establish the allowance for the First \nRepublic loans and lending-related c"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q10",
+      "question": "What was JPMorgan Chase's book value per share at end of 2024?",
+      "source": "JPM",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c968",
+        "JPM-recursive-c455",
+        "JPM-recursive-c2",
+        "JPM-recursive-c402",
+        "JPM-recursive-c10"
+      ],
+      "retrieved_text_preview": [
+        "On May 6, \n2024, the Firm announced that Visa had accepted the Firm’s tender of its 37.2 million Visa B-1 shares in exchange \nfor a combination of Visa B-2 shares and Visa Class C common shares (“Visa",
+        "Period-endAverage\nDec 31,\n2024\nDec 31,\n2023\nYear ended December 31,\n(in millions, except per share and ratio data)202420232022\nCommon stockholders’ equity$  324,708 $   300,474 $  312,370   $  282,056",
+        "Financial Highlights\nAs of or for the year ended December 31,\n(in millions, except per share, ratio data and employees)   2024          2023         2022\nSelected income statement data\nTotal net reven",
+        "–Noninterest revenue (“NIR”) was $85.0 billion, up \n23%, predominantly driven by a $7.9 billion net \ngain related to Visa shares recorded in the second \nquarter of 2024, higher asset management fees i",
+        "There is much more \ndetail on all of this in section three. 2024 was another strong year for JPMorganChase, with our firm generating \nrecord revenue for the seventh consecutive year, as well as settin"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q11",
+      "question": "What were Johnson & Johnson's Innovative Medicine segment sales in fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c147",
+        "JNJ-recursive-c160",
+        "JNJ-recursive-c138",
+        "JNJ-recursive-c184",
+        "JNJ-recursive-c137"
+      ],
+      "retrieved_text_preview": [
+        "MedTech segment\nThe MedTech segment sales in 2024 were $31.9 billion, an increase of 4.8% from 2023, which included operational growth of \n6.2% and a negative currency impact of 1.4%. U.S. sales were ",
+        "Innovative Medicine segment:\nIn 2024, the Innovative Medicine segment income before tax as a percent to sales was 33.2% versus 33.3% in 2023.",
+        "2024 Sales by geographic region (in billions)\n$20.2\n$4.7\n$13.6\n$50.3\nEurope\nWestern \nHemisphere \n(ex. U.S.)\nAsia-Pacific, \nAfrica\nU.S. 2024 Sales by segment (in billions)\n$57.0\n$31.9\nInnovative \nMedic",
+        "Below are tables that show the progression of accrued rebates, returns, promotions, reserve for doubtful accounts and reserve \nfor cash discounts by segment of business for the fiscal years ended Dece",
+        "In 2024, sales by companies in Europe experienced a decline of 1.0% as compared to the prior year, which included an \noperational decline of 0.6% and a negative currency impact of 0.4%. In fiscal 2024"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q12",
+      "question": "What was Johnson & Johnson's adjusted diluted net earnings per share in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c319",
+        "JNJ-recursive-c135",
+        "JNJ-recursive-c327",
+        "JNJ-recursive-c419",
+        "JNJ-recursive-c197"
+      ],
+      "retrieved_text_preview": [
+        "15. Earnings per share\nThe following is a reconciliation of basic net earnings per share to diluted net earnings per share for the fiscal years ended \nDecember 29, 2024, December 31, 2023 and January ",
+        "Research & \ndevelopment\n$ In Billions\n17.2\n15.1\n20242023\nAcquisitions* \n(net of cash acquired)\n$ In Billions\n16.9\n0.5\n20242023\nDividends paid \nper share\n In Dollars\n4.91\n4.70\n20242023\n*  Includes busi",
+        "A summary of the restricted share units and performance share units activity under the Plans as of December 29, 2024 is \npresented below:\n(Shares in Thousands)\nOutstanding\nRestricted Share Units\nOutst",
+        "On August 23, 2023, Johnson & Johnson completed the disposition of an additional 80.1% ownership of Kenvue Common \nStock through an exchange offer, which resulted in Johnson & Johnson acquiring 190,95",
+        "As of and for each \nof the fiscal years ending December 29, 2024 and December 31, 2023, the business of the Company’s Israel subsidiaries \nrepresented 1% of the Company’s consolidated assets and repre"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q13",
+      "question": "For how many consecutive years had Johnson & Johnson increased its dividend as of 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c178",
+        "JNJ-recursive-c135",
+        "JNJ-recursive-c3",
+        "JNJ-recursive-c4",
+        "JNJ-recursive-c136"
+      ],
+      "retrieved_text_preview": [
+        "On January 2, 2025, the Board of Directors declared a regular cash dividend of $1.24 per share, payable on March 4, 2025 to \nshareholders of record as of February 18, 2025. 36",
+        "Research & \ndevelopment\n$ In Billions\n17.2\n15.1\n20242023\nAcquisitions* \n(net of cash acquired)\n$ In Billions\n16.9\n0.5\n20242023\nDividends paid \nper share\n In Dollars\n4.91\n4.70\n20242023\n*  Includes busi",
+        "Dear shareholders,\nIn 2024, we continued to establish Johnson & Johnson as \nhealthcare’s leading, most comprehensive innovation \npowerhouse. With our focus on pharmaceuticals and medical \ntechnology, ",
+        "Our strong balance sheet also allowed Johnson & Johnson \nto pursue strategic actions that will position us for \nsustained, differentiated growth through the end of the \ndecade and beyond. Since Januar",
+        "companies were $50.3 billion in 2024 and $46.4 billion in 2023. This represents increases of 8.3% in 2024 \nand 10.6% in 2023. In the fiscal 2024, acquisitions and divestitures had a net positive impac"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q14",
+      "question": "What was Johnson & Johnson's total debt balance at the end of fiscal year 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c158",
+        "JNJ-recursive-c286",
+        "JNJ-recursive-c169",
+        "JNJ-recursive-c280",
+        "JNJ-recursive-c285"
+      ],
+      "retrieved_text_preview": [
+        "The fiscal year 2023 includes $0.4 billion related to the unfavorable change in the fair value of the remaining stake in Kenvue and $0.4 \nbillion related to the partial impairment of Idorsia convertib",
+        "Commitment fees under the agreements are not material. Throughout fiscal years 2024 and 2023, the Company continued to have access to liquidity through the commercial \npaper market. Short-term borrowi",
+        "$4,1564,9582,374\nTotal Foreign\n2,5583,6162,849\nTotal cash taxes paid net of refunds\n$6,714$8,574$5,223\n(1)\nIncludes TCJA foreign undistributed earnings payments of $2.0 billion in fiscal year 2024, $1",
+        "7. Borrowings\nThe components of long-term debt are as follows:\n(Dollars in Millions)2024",
+        "5.25% Debentures due 2054\n843 5.26    — —    \n2.450% Notes due 2060\n1,058 2.49    1,073 2.49    \nOther\n83  —     69  —    \nSubtotal\n32,400\n(4)\n 3.36% \n(1)\n27,350\n(4)\n 2.98% \n(1)\nLess current portion\n1"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q15",
+      "question": "What was Johnson & Johnson's approximate free cash flow in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c166",
+        "JNJ-recursive-c135",
+        "JNJ-recursive-c169",
+        "JNJ-recursive-c11",
+        "JNJ-recursive-c167"
+      ],
+      "retrieved_text_preview": [
+        "Liquidity and capital resources\nLiquidity & cash flows\nCash and cash equivalents were $24.1 billion at the end of 2024 as compared to $21.9 billion at the end of 2023. The primary sources and uses of ",
+        "Research & \ndevelopment\n$ In Billions\n17.2\n15.1\n20242023\nAcquisitions* \n(net of cash acquired)\n$ In Billions\n16.9\n0.5\n20242023\nDividends paid \nper share\n In Dollars\n4.91\n4.70\n20242023\n*  Includes busi",
+        "$4,1564,9582,374\nTotal Foreign\n2,5583,6162,849\nTotal cash taxes paid net of refunds\n$6,714$8,574$5,223\n(1)\nIncludes TCJA foreign undistributed earnings payments of $2.0 billion in fiscal year 2024, $1",
+        "2023TotalOperationalCurrency\nWorldwide as reported\n 4.3%  5.9%  (1.6) %\nCOVID-19 Vaccine impact\n (1.2)      (1.1)     (0.1)  \nWorldwide excluding COVID-19 Vaccine\n 5.5      7.0     (1.5)  \nFree Cash F",
+        "Cash flow from operations of $24.3 billion was the result of:\n(Dollars In billions)\n$14.1\nNet Earnings\n8.4\nnon-cash expenses and other adjustments primarily for depreciation and amortization, stock-ba"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q16",
+      "question": "What MedTech product did Johnson & Johnson receive FDA clearance for partial-knee and robot-assisted spine surgery in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c6",
+        "JNJ-recursive-c356",
+        "JNJ-recursive-c5",
+        "JNJ-recursive-c98",
+        "JNJ-recursive-c9"
+      ],
+      "retrieved_text_preview": [
+        "MedTech\nFor the second year in a row, we reported more than $30 \nbillion in MedTech sales, with particularly strong \nmomentum in cardiovascular. The pace of our MedTech innovation also remained strong",
+        "On July 11, 2024, the Company completed the acquisition of Yellow Jersey, a demerged subsidiary of Numab Therapeutics AG, \nto secure the global rights to NM26, a novel, investigational first-in-class ",
+        "March 2025\nInnovative Medicine\nInnovative Medicine reported $57 billion in sales. DARZALEX became our first brand to exceed $3 billion in \nsales in a single quarter and SPRAVATO became our 26th \nplatf",
+        "Risks related to product development, regulatory approval \nand commercialization\nSignificant challenges or delays in the Company’s innovation, development and implementation of new products, \ntechnolo",
+        "Delivering for\nOur Credo stakeholders\n7%\noperational sales growth\n1, 2\n$88.8 billion\nconsolidated sales\n~$50 billion\ninvested in research and development and inorganic \ninnovation since January 2024\n3"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q17",
+      "question": "What planned acquisition did Johnson & Johnson announce in 2024 that is referenced in the annual report?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c355",
+        "JNJ-recursive-c135",
+        "JNJ-recursive-c4",
+        "JNJ-recursive-c356",
+        "JNJ-recursive-c345"
+      ],
+      "retrieved_text_preview": [
+        "Asset acquisitions\nAcquired In-process research and development (IPR&D) in an asset acquisition is immediately expensed as research and \ndevelopment expense in the Company's consolidated financial sta",
+        "Research & \ndevelopment\n$ In Billions\n17.2\n15.1\n20242023\nAcquisitions* \n(net of cash acquired)\n$ In Billions\n16.9\n0.5\n20242023\nDividends paid \nper share\n In Dollars\n4.91\n4.70\n20242023\n*  Includes busi",
+        "Our strong balance sheet also allowed Johnson & Johnson \nto pursue strategic actions that will position us for \nsustained, differentiated growth through the end of the \ndecade and beyond. Since Januar",
+        "On July 11, 2024, the Company completed the acquisition of Yellow Jersey, a demerged subsidiary of Numab Therapeutics AG, \nto secure the global rights to NM26, a novel, investigational first-in-class ",
+        "The excess of the purchase price over the fair value of the acquired net \nassets, where applicable, is recorded as goodwill. The results of operations of these acquisitions have been included in the \n"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q18",
+      "question": "What was Johnson & Johnson's full-year adjusted net earnings in 2024?",
+      "source": "JNJ",
+      "type": "factual",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c135",
+        "JNJ-recursive-c157",
+        "JNJ-recursive-c10",
+        "JNJ-recursive-c197",
+        "JNJ-recursive-c136"
+      ],
+      "retrieved_text_preview": [
+        "Research & \ndevelopment\n$ In Billions\n17.2\n15.1\n20242023\nAcquisitions* \n(net of cash acquired)\n$ In Billions\n16.9\n0.5\n20242023\nDividends paid \nper share\n In Dollars\n4.91\n4.70\n20242023\n*  Includes busi",
+        "Other (income) expense, net for the fiscal year 2024 reflected less expense of $1.9 billion as compared to the prior year \nprimarily due to the following:\n(Dollars in Billions)(Income)/Expense20242023",
+        "The tables below are provided to reconcile certain non-GAAP financial disclosures in the 2024 \nChairman’s Letter. Reconciliation of Non-GAAP Financial Measures\n(Dollars in Millions Except Per Share Da",
+        "As of and for each \nof the fiscal years ending December 29, 2024 and December 31, 2023, the business of the Company’s Israel subsidiaries \nrepresented 1% of the Company’s consolidated assets and repre",
+        "companies were $50.3 billion in 2024 and $46.4 billion in 2023. This represents increases of 8.3% in 2024 \nand 10.6% in 2023. In the fiscal 2024, acquisitions and divestitures had a net positive impac"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q19",
+      "question": "What are JPMorgan Chase's two primary branded services mentioned in the annual report, and which customer segments do they each serve?",
+      "source": "JPM",
+      "type": "synthesis",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c394",
+        "JPM-recursive-c1408",
+        "JPM-recursive-c456",
+        "JPM-recursive-c488",
+        "JPM-recursive-c1463"
+      ],
+      "retrieved_text_preview": [
+        "Morgan and \nChase brands, the Firm serves millions of customers, \npredominantly in the U.S., and many of the world’s \nmost prominent corporate, institutional and \ngovernment clients globally. JPMorgan",
+        "The business \nsegments are determined based on the products and \nservices provided, or the type of customer served, and \nthey reflect the manner in which financial information is \nevaluated by the Fir",
+        "BUSINESS SEGMENT & CORPORATE RESULTS\nThe Firm is managed on an LOB basis. Effective in the second quarter of 2024, the Firm reorganized its reportable \nbusiness segments by combining the former Corpor",
+        "Banking & Payments Revenue by Client Coverage \nSegment: \n(a)\nGlobal Corporate Banking & Global Investment \nBanking provides banking products and services \ngenerally to large corporations, financial in",
+        "CB: Commercial Banking\nCCAR: Comprehensive Capital Analysis and Review\nCCB: Consumer & Community Banking\nCCB Consumer customer: A unique individual that has \nfinancial ownership or decision-making pow"
+      ],
+      "hit_at_5": true
+    },
+    {
+      "question_id": "q20",
+      "question": "How many major products did Johnson & Johnson launch in its MedTech segment in 2024, and name at least two specific platforms mentioned?",
+      "source": "JNJ",
+      "type": "synthesis",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c149",
+        "JNJ-recursive-c151",
+        "JNJ-recursive-c56",
+        "JNJ-recursive-c5",
+        "JNJ-recursive-c4"
+      ],
+      "retrieved_text_preview": [
+        "The decline in Advanced \nSurgery was primarily due to China volume-based procurement across all platforms and competitive pressures in Energy and \nEndocutters. This was partially offset by the strengt",
+        "The Cardiovascular franchise, which includes sales from Shockwave Medical (Shockwave) acquired on May 31, 2024, achieved \nsales of $7.7 billion in 2024, representing an increase of 21.4% from 2023. El",
+        "According to patent settlement and license agreements, the Company expects continued \nlaunches of biosimilar versions of STELARA in Europe and the United States in 2025 which will impact the Company’s",
+        "March 2025\nInnovative Medicine\nInnovative Medicine reported $57 billion in sales. DARZALEX became our first brand to exceed $3 billion in \nsales in a single quarter and SPRAVATO became our 26th \nplatf",
+        "Our strong balance sheet also allowed Johnson & Johnson \nto pursue strategic actions that will position us for \nsustained, differentiated growth through the end of the \ndecade and beyond. Since Januar"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q21",
+      "question": "What was the exact salary of JPMorgan Chase's CEO Jamie Dimon in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c1",
+        "JNJ-recursive-c470",
+        "JPM-recursive-c6",
+        "JPM-recursive-c1294",
+        "JPM-recursive-c1094"
+      ],
+      "retrieved_text_preview": [
+        "Resolute \nAnnual  \nReport  \n2024",
+        "S-K\nExhibit Table\nItem No. Description\nof Exhibit\n2024 Annual Report119",
+        "2024\nYear of Firsts\nCOMMERCIAL & INVESTMENT BANK\nGenerated $25 billion of net income  \non revenue of $70 billion\n#1 #1 \nIN DEPOSITS AND FOR SMALL BUSINESSES\nNamed #1 in retail deposit market share \nan",
+        "U.S.Non-U.S.Total\n2025$ 222,676 $ 89,427 $  312,103 \n2026    749  87  836 \n2027    482  2  484 \n2028     149  18  167 \n2029     314      721      1,035 \nAfter 5 years     162      129  291 \nTotal$ 224",
+        "RSUs, PSUs and SARs activity \nGenerally, compensation expense for RSUs and PSUs is measured based on the number of units granted multiplied \nby the stock price at the grant date, and for SARs, is meas"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q22",
+      "question": "What was Johnson & Johnson's quarterly revenue breakdown for Q3 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c10",
+        "JPM-recursive-c402",
+        "JPM-recursive-c466",
+        "JPM-recursive-c407",
+        "JPM-recursive-c490"
+      ],
+      "retrieved_text_preview": [
+        "There is much more \ndetail on all of this in section three. 2024 was another strong year for JPMorganChase, with our firm generating \nrecord revenue for the seventh consecutive year, as well as settin",
+        "–Noninterest revenue (“NIR”) was $85.0 billion, up \n23%, predominantly driven by a $7.9 billion net \ngain related to Visa shares recorded in the second \nquarter of 2024, higher asset management fees i",
+        "Prior-period amounts have been revised to conform with the current \npresentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 an",
+        "Business segment highlights\nSelected business metrics for each of the Firm’s lines \nof business (“LOB”) are presented below for the full \nyear of 2024. CCB\nROE 32%\n•Average deposits down 6%; client \ni",
+        "2024 compared with 2023\nNet income was $24.8 billion, up 23%. Net revenue was $70.1 billion, up 9%. Banking & Payments revenue was $35.3 billion, up 11%. •Investment Banking revenue was $9.6 billion, "
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q23",
+      "question": "How many hospital systems did JPMorgan Chase partner with in its healthcare lending division in 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c225",
+        "JNJ-recursive-c224",
+        "JPM-recursive-c339",
+        "JNJ-recursive-c3",
+        "JPM-recursive-c322"
+      ],
+      "retrieved_text_preview": [
+        "• Morgan Health. Back in 2021, we launched \nMorgan Health, a new division with an aim to \ndeliver and scale new healthcare models that \nimprove the quality, affordability and equity of \nemployer-spons",
+        "Unless otherwise indicated, the information in the notes to the Consolidated Financial Statements refer only \nto Johnson & Johnson’s continuing operations. In the fiscal second quarter of 2024 the Com",
+        "Since the start of 2024, we’ve \nhired more than 300 bankers across \nGlobal Banking. Our goal is to continue \nto grow market share across 28 sub-\nsectors in investment banking with a \nparticular emphas",
+        "Dear shareholders,\nIn 2024, we continued to establish Johnson & Johnson as \nhealthcare’s leading, most comprehensive innovation \npowerhouse. With our focus on pharmaceuticals and medical \ntechnology, ",
+        "CONSUMER & COMMUNITY BANKING66\npreventing higher-risk transactions \nthat originate from social media. To \nintroduce new, secure payments solu-\ntions, we’ve rolled out Paze\nSM\n, a digital \nwallet creat"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q24",
+      "question": "What is Johnson & Johnson's projected revenue target for fiscal year 2027?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JPM-recursive-c402",
+        "JPM-recursive-c466",
+        "JNJ-recursive-c338",
+        "JPM-recursive-c308",
+        "JPM-recursive-c336"
+      ],
+      "retrieved_text_preview": [
+        "–Noninterest revenue (“NIR”) was $85.0 billion, up \n23%, predominantly driven by a $7.9 billion net \ngain related to Visa shares recorded in the second \nquarter of 2024, higher asset management fees i",
+        "Prior-period amounts have been revised to conform with the current \npresentation. (b)Included a $7.9 billion net gain related to Visa shares recorded in the second quarter of 2024. Refer to Notes 2 an",
+        "Additions to Property,\nPlant & Equipment\nDepreciation and\nAmortization\n(Dollars in Millions)202420232022202420232022\nInnovative Medicine\n$1,7101,6531,374$3,7603,8473,687\nMedTech\n2,4432,3722,1203,2372,",
+        "CONSUMER & COMMUNITY BANKING63\nConsumer &  \nCommunity Banking\nI’m very proud of how Consumer & \nCommunity Banking (CCB) delivered \nfor our customers, communities and \nemployees in 2024, as we focused ",
+        "Securities Services \nSecurities Services delivered another \nrecord year with $5.1 billion in revenue\n5\n, \nan increase of over $800 million since \n2020. This business plays a central role \nin J.P. Morg"
+      ],
+      "hit_at_5": false
+    },
+    {
+      "question_id": "q25",
+      "question": "How many data centers does JPMorgan Chase operate globally as of 2024?",
+      "source": "NONE",
+      "type": "unanswerable",
+      "strategy": "recursive",
+      "retrieved_chunk_ids": [
+        "JNJ-recursive-c101",
+        "JPM-recursive-c369",
+        "JPM-recursive-c309",
+        "JPM-recursive-c345",
+        "JNJ-recursive-c71"
+      ],
+      "retrieved_text_preview": [
+        "The application of AI in our business is \nemerging and evolving alongside new laws and regulations that may entail significant costs or ultimately limit our ability to \ncontinue the use of these techn",
+        "Fast forward to today: The Corporate \nResponsibility department’s work is a \ncentral part of our firm’s strategy. With \nteam members around the world, we \nhelp JPMorganChase develop hyper- \nlocal solu",
+        "We’ve grown con-\nsumer relationships by 14% from 2019 \n(3% year-over-year) and small business \nrelationships by 51% (10% year-over-\nyear) by engaging customers with \nproducts, services and seamless ex",
+        "The CIB now has over 175 AI use cases \nin production, with large parts of our \nteam using our internal large language \nmodel platform to deliver insights and \nimprove efficiency across a range of \ndai",
+        "The Company conducts global surveys that offer its employees the ability to provide feedback and \nvaluable insight to help address potential human resources risks and identify opportunities to improve"
+      ],
+      "hit_at_5": false
+    }
+  ],
+  "advanced_analysis": {
+    "improved_cases": [
+      {
+        "question_id": "q06",
+        "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+        "advanced_hit": true,
+        "fixed_hit": false,
+        "overlap_hit": false
+      }
+    ],
+    "worse_cases": [
+      {
+        "question_id": "q01",
+        "question": "What was JPMorgan Chase's total net revenue for fiscal year 2024?",
+        "advanced_hit": false,
+        "fixed_hit": true,
+        "overlap_hit": true
+      },
+      {
+        "question_id": "q02",
+        "question": "What was JPMorgan Chase's net income in 2024?",
+        "advanced_hit": false,
+        "fixed_hit": true,
+        "overlap_hit": true
+      },
+      {
+        "question_id": "q03",
+        "question": "What was JPMorgan Chase's closing share price at end of 2024?",
+        "advanced_hit": false,
+        "fixed_hit": true,
+        "overlap_hit": false
+      }
+    ]
+  }
+}

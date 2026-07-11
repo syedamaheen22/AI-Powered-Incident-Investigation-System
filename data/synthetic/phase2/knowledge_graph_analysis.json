@@ -1,0 +1,982 @@
+{
+  "generated_at": "2026-04-21T11:22:05.004Z",
+  "graph_summary": {
+    "total_nodes": 12,
+    "total_edges": 16,
+    "nodes_by_type": {
+      "service": [
+        "auth-service",
+        "orders-service",
+        "payments-service",
+        "gateway-service",
+        "notifications-service"
+      ],
+      "storage": [
+        "redis-cache",
+        "user-db",
+        "orders-db",
+        "payments-db"
+      ],
+      "external": [
+        "stripe-gateway",
+        "ldap-service",
+        "sendgrid-api"
+      ]
+    },
+    "edges_by_relationship": {
+      "stores_in": 5,
+      "depends_on": 3,
+      "calls": 8
+    },
+    "most_connected": [
+      {
+        "node": "auth-service",
+        "in": 3,
+        "out": 4,
+        "total": 7
+      },
+      {
+        "node": "orders-service",
+        "in": 1,
+        "out": 4,
+        "total": 5
+      },
+      {
+        "node": "payments-service",
+        "in": 2,
+        "out": 3,
+        "total": 5
+      },
+      {
+        "node": "notifications-service",
+        "in": 2,
+        "out": 2,
+        "total": 4
+      },
+      {
+        "node": "gateway-service",
+        "in": 0,
+        "out": 3,
+        "total": 3
+      }
+    ]
+  },
+  "dependency_traversal": [
+    {
+      "start_node": "gateway-service",
+      "direction": "downstream",
+      "direct_dependencies": [
+        "auth-service",
+        "orders-service",
+        "payments-service"
+      ],
+      "all_dependencies": [
+        {
+          "path": [
+            "gateway-service",
+            "auth-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "user-db"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "ldap-service"
+          ],
+          "relationships": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "notifications-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "notifications-service",
+            "sendgrid-api"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "depends_on"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "gateway-service",
+            "auth-service",
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "auth-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "payments-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "payments-service",
+            "payments-db"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "depends_on"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "payments-service",
+            "auth-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "calls"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "orders-db"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "orders-service",
+            "notifications-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "gateway-service",
+            "payments-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        }
+      ],
+      "summary": {
+        "total_affected": 11,
+        "by_type": {
+          "service": [
+            "auth-service",
+            "notifications-service",
+            "orders-service",
+            "payments-service"
+          ],
+          "storage": [
+            "redis-cache",
+            "user-db",
+            "payments-db",
+            "orders-db"
+          ],
+          "external": [
+            "ldap-service",
+            "sendgrid-api",
+            "stripe-gateway"
+          ]
+        }
+      }
+    },
+    {
+      "start_node": "auth-service",
+      "direction": "downstream",
+      "direct_dependencies": [
+        "redis-cache",
+        "user-db",
+        "ldap-service",
+        "notifications-service"
+      ],
+      "all_dependencies": [
+        {
+          "path": [
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "stores_in"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "auth-service",
+            "user-db"
+          ],
+          "relationships": [
+            "stores_in"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "auth-service",
+            "ldap-service"
+          ],
+          "relationships": [
+            "depends_on"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "auth-service",
+            "notifications-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "auth-service",
+            "notifications-service",
+            "sendgrid-api"
+          ],
+          "relationships": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "auth-service",
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        }
+      ],
+      "summary": {
+        "total_affected": 5,
+        "by_type": {
+          "storage": [
+            "redis-cache",
+            "user-db"
+          ],
+          "external": [
+            "ldap-service",
+            "sendgrid-api"
+          ],
+          "service": [
+            "notifications-service"
+          ]
+        }
+      }
+    },
+    {
+      "start_node": "orders-service",
+      "direction": "downstream",
+      "direct_dependencies": [
+        "auth-service",
+        "payments-service",
+        "orders-db",
+        "notifications-service"
+      ],
+      "all_dependencies": [
+        {
+          "path": [
+            "orders-service",
+            "auth-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "user-db"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "ldap-service"
+          ],
+          "relationships": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "notifications-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "notifications-service",
+            "sendgrid-api"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "depends_on"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "orders-service",
+            "auth-service",
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationships": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "path": [
+            "orders-service",
+            "payments-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "orders-service",
+            "payments-service",
+            "payments-db"
+          ],
+          "relationships": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationships": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "payments-service",
+            "auth-service"
+          ],
+          "relationships": [
+            "calls",
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "path": [
+            "orders-service",
+            "orders-db"
+          ],
+          "relationships": [
+            "stores_in"
+          ],
+          "depth": 0
+        },
+        {
+          "path": [
+            "orders-service",
+            "notifications-service"
+          ],
+          "relationships": [
+            "calls"
+          ],
+          "depth": 0
+        }
+      ],
+      "summary": {
+        "total_affected": 10,
+        "by_type": {
+          "service": [
+            "auth-service",
+            "notifications-service",
+            "payments-service"
+          ],
+          "storage": [
+            "redis-cache",
+            "user-db",
+            "payments-db",
+            "orders-db"
+          ],
+          "external": [
+            "ldap-service",
+            "sendgrid-api",
+            "stripe-gateway"
+          ]
+        }
+      }
+    }
+  ],
+  "impact_analysis": [
+    {
+      "failed_node": "auth-service",
+      "node_info": {
+        "id": "auth-service",
+        "type": "service",
+        "owner": "team-auth",
+        "region": "us-east-1",
+        "description": "User authentication and token management"
+      },
+      "direct_callers": [
+        "orders-service",
+        "payments-service",
+        "gateway-service"
+      ],
+      "full_blast_radius": [
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "orders-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "payments-service",
+          "affected_type": "service",
+          "impact_path": [
+            "payments-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls"
+          ],
+          "depth": 1
+        },
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "payments-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "payments-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "auth-service"
+          ],
+          "relationship_chain": [
+            "calls"
+          ],
+          "depth": 1
+        }
+      ],
+      "critical_services_at_risk": [
+        "orders-service",
+        "gateway-service",
+        "payments-service"
+      ],
+      "summary": {
+        "total_impacted": 6,
+        "services_impacted": 6,
+        "storage_impacted": 0,
+        "external_impacted": 0
+      }
+    },
+    {
+      "failed_node": "redis-cache",
+      "node_info": {
+        "id": "redis-cache",
+        "type": "storage",
+        "owner": "team-platform",
+        "region": "us-east-1",
+        "description": "Session storage and distributed cache"
+      },
+      "direct_callers": [
+        "auth-service",
+        "notifications-service"
+      ],
+      "full_blast_radius": [
+        {
+          "affected_node": "auth-service",
+          "affected_type": "service",
+          "impact_path": [
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "orders-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 3
+        },
+        {
+          "affected_node": "payments-service",
+          "affected_type": "service",
+          "impact_path": [
+            "payments-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "payments-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 3
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "payments-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls",
+            "stores_in"
+          ],
+          "depth": 3
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "auth-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "notifications-service",
+          "affected_type": "service",
+          "impact_path": [
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "stores_in"
+          ],
+          "depth": 1
+        },
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "auth-service",
+          "affected_type": "service",
+          "impact_path": [
+            "auth-service",
+            "notifications-service",
+            "redis-cache"
+          ],
+          "relationship_chain": [
+            "calls",
+            "stores_in"
+          ],
+          "depth": 2
+        }
+      ],
+      "critical_services_at_risk": [
+        "auth-service",
+        "orders-service",
+        "gateway-service",
+        "payments-service",
+        "notifications-service"
+      ],
+      "summary": {
+        "total_impacted": 10,
+        "services_impacted": 10,
+        "storage_impacted": 0,
+        "external_impacted": 0
+      }
+    },
+    {
+      "failed_node": "stripe-gateway",
+      "node_info": {
+        "id": "stripe-gateway",
+        "type": "external",
+        "owner": "stripe-inc",
+        "region": "global",
+        "description": "Third-party payment processor"
+      },
+      "direct_callers": [
+        "payments-service"
+      ],
+      "full_blast_radius": [
+        {
+          "affected_node": "payments-service",
+          "affected_type": "service",
+          "impact_path": [
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationship_chain": [
+            "depends_on"
+          ],
+          "depth": 1
+        },
+        {
+          "affected_node": "orders-service",
+          "affected_type": "service",
+          "impact_path": [
+            "orders-service",
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationship_chain": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 2
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "orders-service",
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationship_chain": [
+            "calls",
+            "calls",
+            "depends_on"
+          ],
+          "depth": 3
+        },
+        {
+          "affected_node": "gateway-service",
+          "affected_type": "service",
+          "impact_path": [
+            "gateway-service",
+            "payments-service",
+            "stripe-gateway"
+          ],
+          "relationship_chain": [
+            "calls",
+            "depends_on"
+          ],
+          "depth": 2
+        }
+      ],
+      "critical_services_at_risk": [
+        "payments-service",
+        "orders-service",
+        "gateway-service"
+      ],
+      "summary": {
+        "total_impacted": 4,
+        "services_impacted": 4,
+        "storage_impacted": 0,
+        "external_impacted": 0
+      }
+    }
+  ],
+  "shortest_paths": [
+    {
+      "from": "gateway-service",
+      "to": "stripe-gateway",
+      "result": {
+        "path": [
+          "gateway-service",
+          "payments-service",
+          "stripe-gateway"
+        ],
+        "relationships": [
+          "calls",
+          "depends_on"
+        ]
+      }
+    },
+    {
+      "from": "gateway-service",
+      "to": "sendgrid-api",
+      "result": {
+        "path": [
+          "gateway-service",
+          "auth-service",
+          "notifications-service",
+          "sendgrid-api"
+        ],
+        "relationships": [
+          "calls",
+          "calls",
+          "depends_on"
+        ]
+      }
+    },
+    {
+      "from": "orders-service",
+      "to": "user-db",
+      "result": {
+        "path": [
+          "orders-service",
+          "auth-service",
+          "user-db"
+        ],
+        "relationships": [
+          "calls",
+          "stores_in"
+        ]
+      }
+    }
+  ]
+}

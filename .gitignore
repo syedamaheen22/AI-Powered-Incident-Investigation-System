@@ -1,0 +1,13 @@
+node_modules
+
+.env
+
+# Chroma vector database (local, generated during runs)
+chroma/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
